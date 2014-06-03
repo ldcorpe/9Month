@@ -1,0 +1,172 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+
+\documentclass[10pt]{article} 
+
+\usepackage[utf8]{inputenc} 
+\usepackage{mciteplus}
+\usepackage{multicols}
+\usepackage{geometry}
+\usepackage{cite}
+\usepackage{caption}
+\usepackage{subcaption}
+\geometry{a4paper}
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (e.g. matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure//table in a single float
+\usepackage{amsmath}
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{plain} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Higgs decaying to two photons at CMS}
+\author{Louie Corpe \\Supervisors: Paul Dauncey, Chris Seez }
+%\date{}
+%\hoffset = 0pt
+%\voffset = -50pt
+%\oddsidemargin = 0pt
+%\topmargin = 0pt
+%\headheight = 0pt
+%\headsep = 25pt
+%\textheight = 750pt
+%\textwidth = 455pt
+%\marginparsep = 0pt
+%\marginparwidth = 0pt
+%\footskip = 30pt
+
+\oddsidemargin=0pt           % No extra space wasted after first inch.
+\evensidemargin=0pt          % Ditto (for two-sided output).
+\topmargin=0pt               % Same for top of page.
+\headheight=0pt              % Don't waste any space on unused headers.
+\headsep=0pt
+\textwidth=16cm              % Effectively controls the right margin.
+\textheight=24cm
+
+\begin{document}
+\maketitle
+
+\renewcommand{\abstractname}{}
+\begin{abstract}
+An overview of the study of the Higgs boson via its decay to two photons at CMS is presented. A brief introduction into the history of the Standard Model and the motivation for Higgs searches is given, as well as a detailed description of the CMS experiment at CERN. The analysis of the $H \rightarrow \gamma\gamma$ decay mode is described in some detail, with reference to recent work. A discussion on the outlook and future work to be done in this decay channel is also given.
+\end{abstract}
+
+%\begin{multicols}{2}
+\section{The SM and the Higgs boson}
+
+The standard model (SM) of particle physics came into being in the mid-1970's, when the discovery of the $J / \psi$ particle~\cite{RichterPsi,TingJ} and results from deep inelastic scattering experiments at SLAC confirmed the predictions of quark models. The SM has been an immensely successful theory, accurately describing many processes in high energy physics. Among other features, the model placed all fundamental forces apart from gravity into one framework, and united the electromagnetic and weak forces into the electroweak force~\cite{GIM,Salam,Weinberg}. In order to do this, a mechanism was required to permit the $W^{\pm}$ and $Z$ vector bosons to have mass while allowing the photon to remain massless. Crucially, this process was required to preserve gauge invariance. Such a theory was independently proposed by several theorists~\cite{BroutEnglert,Higgs1,Higgs2,Kibble1,Higgs3,Kibble2}, and is commonly referred to as the Higgs mechanism. In 1964, Higgs postulated that one outcome of this mechanism was that it should yield an observable particle, the Higgs boson~\cite{Higgs2}. Over the decades, the particles postulated by the SM were discovered: the $\tau$ lepton in 1975~\cite{tauDisc}, the $b$ quark in 1977~\cite{bquarkDisc}, the gluon in 1979~\cite{Gluon1,Gluon2,Gluon3}, the $Z$ and $W^{\pm}$ bosons in 1983~\cite{ZDisc,WDisc}, the top quark in 1995~\cite{tquarkDisc1,tquarkDisc2} and the $\nu_{\tau}$ in 2000~\cite{TauNuDisc}. Each new discovery cemented the SM as one of the most successful theories of modern times. By the turn of the millennium, all but one particle postulated by the SM had been observed: the Higgs boson, which had proved elusive despite decades of searches. The Higgs search prompted the construction of the Large Hadron Collider (LHC) at CERN, and two multi-purpose detectors, ATLAS and CMS, were designed with the Higgs observation as one of their main physics goals. In 2012, the two experiments jointly announced the observation of a Higgs-like particle of mass $\sim$125 GeV, ending a 50-year lull between postulation and discovery~\cite{CMSHDisc,ATLASHDisc}.
+
+Although the SM has been very successful as a theory, it falls short of being a “theory of everything", and is clearly incomplete. For instance, it does not accommodate mass terms for neutrinos, which are required to explain the origin of neutrino oscillations observed in many experiments~\cite{SuperK,SNO,DayaBay}. Furthermore, it does not contain a viable candidate for dark matter, which is needed to explain the mass deficit of the universe~\cite{DM}. Other issues such as the hierarchy problem~\cite{Hierarchy} and the origin of matter-antimatter asymmetry in our universe~\cite{Asymmetry} also persist. Clearly, the SM is incomplete or approximate, and many efforts in modern high energy physics are being made to discover “Beyond the Standard Model" (BSM) physics. Supersymmetry proposes one such extension to the SM, but many other models exist, and the search for new physics will be one of the primary objectives of experimentalists during run II of the LHC in 2015.
+
+Even in the  Higgs sector, more work remains to be done. For example, at the time of writing, it remains unproven (although there is strong evidence) that the observed Higgs boson couples to fermions. Precision measurements of the properties of this particle are needed: does it behave like the SM predicts? Is there only one such particle? Detailed studies are required to ascertain couplings, the differential cross section, width and other attributes of this Higgs particle. Deviations from the expected values of such properties could provide valuable insight into the nature or indeed existence of BSM physics.
+
+\section{The LHC and CMS}
+
+
+The LHC is a synchrotron that was built in the tunnel which previously contained the Large Electron Positron (LEP) collider at CERN, near Geneva. It has a circumference of 27km and was designed to collide beams of protons (or lead ions) head on. In its latest run, it achieved a centre of mass energy of $\sqrt{s}=8$ TeV. The LHC shut down for a planned upgrade period in 2012, and is due to restart collisions in March 2015. At this stage, it should be able to deliver a centre of mass energy close to its design value of $\sqrt{s}=14$ TeV. 
+As mentioned previously, the LHC is equipped with two multi-purpose detectors, CMS and ATLAS, which simultaneously discovered the Higgs boson using the data from run I. This report will focus on the CMS detector. The overall layout can be seen in the figure 1 below~\cite{CMSTDR}.
+\begin{figure}[h]
+
+  \centering
+  \includegraphics[width=0.8\textwidth]{"CMSExploded"}
+  \caption{The CMS detector perspective view.}
+\end{figure}
+
+CMS is a layered detector over 21m long and 14m in diameter, weighing over 12,500 tons. It consists of a superconducting solenoid magnet 13m long and 5.9m in diameter, generating a 3.8T magnetic field. On the outside of this, 4 layers of iron act as a return yoke, and house muon detector chambers (drift tubes in the barrel region and cathode strip chambers in the end cap region). The high magnetic field allows for good energy resolution in the compact space of the detector. The calorimeters and inner tracker are housed within the solenoid. The inner tracker consists of 4 layers of silicon pixel detectors close to the interaction region, surrounded by 10 layers of silicon micro-strip detectors. These allow reconstruction of tracks and secondary vertices in the high track multiplicity environment of the LHC. The electromagnetic calorimeter (ECAL) is made up of an array of 61,200 lead PbWO$_4$ (lead tungstate) crystals in the barrel section and 14,648 crystals in the end caps~\cite{CMSTDR}. This is a central feature of the CMS detector as it allows for excellent energy resolution of incoming photons. The resolution of the ECAL is modelled with the equation \begin{equation} \left( \frac{\sigma}{E}\right) ^2= \left( \frac{S}{\sqrt{E}} \right)^2 + \left( \frac{N}{E} \right)^2 + C^2\end{equation} where $S$ represents the stochastic term, $N$ represents the noise terms and $C$ represents a constant term~\cite{CMSDesign}. The design values of these parameters are approximately $S=2.8\%$ GeV$^\frac{1}{2}$, $ N= 0.12$ GeV and $C=0.3 \%$. The performance of the ECAL matched these design values during the 2012 run~\cite{ECAL2012}. The ECAL is then surrounded by a sampling hadronic calorimeter composed of brass/scintillator in the body and iron/quartz-fibre in the forward regions. 
+
+
+\section{Higgs production and decay modes at the LHC}
+
+According to SM, the Higgs boson's coupling with particles is proportional to their mass. As such, its production modes in the environment of the LHC are dominated by interactions involving the heavier particles of the SM. Typically, the Higgs boson is produced by one of the following mechanisms, as illustrated in figure 2: a) gluon-gluon fusion, via a loop of top quarks, b) vector boson fusion (so-called “VBF"), with associated quark production, c) associated vector boson production (also known as “Higgsstrahlung") and d) top quark fusion with associated top quark production.
+
+\begin{figure}[h!]
+
+
+  \includegraphics[width=0.95\textwidth]{"test"}
+  \caption{Higgs production mechanisms at the LHC.}
+\end{figure}
+
+By the same token, the SM Higgs boson decays to pairs of particles with branching ratios proportional to the square of their mass. The production of a pair of $t$ quarks is not kinematically allowed because their mass is high, so the most likely decay modes are $H \rightarrow ZZ \text{, } W^{\pm}W^{\mp}$, $ b\bar{b}$ and $ \tau^+ \tau^-$. In addition, a small fraction of decays of the Higgs boson ($<1\%$) can occur via a loop diagram to a pair of high-energy photons. The branching fractions and cross sections of these production and decay modes are available in the Handbook of LHC Higgs Cross Sections~\cite{H_XS1,H_XS2}.
+
+
+\begin{figure}[h!]
+
+  \centering
+%\begin{subfigure}[b]{0.52\textwidth}  
+%\includegraphics[width=\textwidth]{"Higgs_XS"} 
+%\caption{Higgs production cross sections} 
+%\end{subfigure}
+%\begin{subfigure}[b]{0.4\textwidth}  
+  %\includegraphics[width=\textwidth]{"Higgs_BR"}  
+%\caption{Higgs decay branching ratios}
+%\end{subfigure}
+\includegraphics[width=\textwidth]{"SignalStrength"}
+\caption{The signal strengths of the Higgs boson observation by decay mode and in combination at ATLAS (left) and CMS (right). The results are consistent with the observation of a particle of $m_H \sim 125$ GeV~\cite{H_XS3}.}
+\end{figure}
+
+The Higgs boson was discovered in 2012 using data from runs at $\sqrt{s}=7$ and $8$ TeV, and was found to have a mass $m_H \sim 125$ GeV. The signal strengths of the various decay modes at the CMS and ATLAS experiments can be seen in figure 3. Despite fewer than $1\%$ of Higgs boson decays occurring via $H \rightarrow \gamma \gamma$, this channel played a crucial role in the discovery, and remains one of the two most sensitive methods of studying the Higgs boson. This is in part thanks to the excellent performance of the CMS ECAL.
+
+\section{Detailed description the $H \rightarrow \gamma \gamma$ analysis}
+
+The $H \rightarrow \gamma \gamma$ analysis relies on the fact that there is a small but non-negligible branching fraction of Higgs bosons which decay to two highly energetic photons via loops of particles, generally virtual top quarks or $W^{\pm}$ vector bosons. Although around the mass $m_H \sim 125$ GeV there is a large irreducible QCD background, the excellent diphoton energy resolution ($\sim 1 \%$) of the CMS ECAL allows the reconstruction of a narrow peak above the background. The resolution available via this decay channel meant that it was identified early on as “one of the most promising channels in the search for a SM Higgs boson in the low mass range"~\cite{Seez}. The following description is based on the analysis of the $\sqrt{s}=7$ and $8$ TeV data samples~cite{HDisc}.
+
+%Once candidate photon pairs are isolated, they are classed into mutually exclusive categories with different signal to background ratios. This allows the overall sensitivity of the analysis to be improved. These categories are distinguished by the properties of the reconstructed photons, and whether two jets were also recorded, corresponding to the VBF Higgs production mode. 
+The analysis depends heavily on boosted decision trees (BDTs) to identify and classify events. A BDT is an algorithm which categorises items based on multiple input variables~\cite{BDT}. Different weights are applied depending on whether an item passes or fails cuts based on these input variables. The weights are summed at the end and the final value is used to determine which category the item falls in. The algorithm is trained (i.e. the aforementioned weights and cut thresholds are determined) with simulations or data with similar properties. %A day-to-day example of such an algorithm would be an email spam filter, where the items are to be classified as genuine or spam. The input variables would be, for example, frequency of exclamation marks or dollar signs, quality of spelling, use of the recipient's name. The output might be a value from 0 to 1 representing the probability that the email is spam, and above a certain value, the email would be directed to the relevant folder.
+
+The first step in the analysis is to identify candidate diphoton events. There is a loose trigger, identifying any pair of photons in an event based on ECAL isolation, shower shape and energy. A more stringent selection takes place later to choose only diphoton events likely to have originated from a Higgs decay.
+ 
+The next step is to locate the photon production vertex. This is an important step because an accurate determination of the origin of the photon tracks can be combined with the measured ECAL energies and spatial location of the photon showers to accurately reconstruct the Higgs 4-momentum, and thus its invariant mass. A simple analysis of conservation of 4-momentum in the laboratory frame yields the required formula:
+\begin{equation} m_H=m_{\gamma\gamma}=\sqrt{2E_1 E_2 (1-\cos{\alpha})} \end{equation} where $m_{\gamma\gamma} $ is the invariant mass of the diphoton system, $E_{1,2}$ are the energies of the reconstructed photons and $\alpha$ is the opening angle between the two photons.
+It is clear that since the ECAL resolution is excellent, $E_{1,2}$ are well known. The only other contribution to the mass resolution comes from the opening angle $\alpha$. In order to accurately measure this angle, the photon creation vertex must be identified to within 10 mm of its true position. If this is the case, the error contribution from $\alpha$ is negligeable.
+
+Vertex identification can be achieved by matching the kinematic properties of the tracks coming from these vertices with the diphoton system's transverse momentum. Another option is to use information from the tracker if the photon converted into at $e^+ e^-$ pair: in this case the track directions can be combined with the impact position in the ECAL to extrapolate back to the photon production vertex. A BDT trained on simulated data is used to identify the vertex, using quantities such as those mentioned above as input variables. The vertex identification efficiency is measured to be of the order of 80$\%$, and the associated systematic uncertainty is well understood. 
+
+Since the photon pairs expected from Higgs decay should be highly energetic, offline cuts are applied to select candidate diphoton events likely to have originated from a Higgs boson decay. These cuts are defined as $E_T > m_{\gamma \gamma}/3$ for one candidate photon and $E_T > m_{\gamma \gamma}/4$ for the other~\cite{HSearch}, where $E_T$ is the transverse energy of the photon and $m_{\gamma\gamma}$ is the invariant mass of the diphoton system. It is possible that a photon may have pair converted ($\gamma \rightarrow e^+ e^-$) before reaching the ECAL. Such occurrences are identified using the variable $R_9$, defined as the sum of the energy of the $3 \times 3$ array of lead tungstate crystals centred around the most energetic crystal in the supercluster, divided by the total energy of said supercluster. A value of $R_9$ smaller than $0.94$ is indicative of a photon having undergone pair conversion. $R_9$ is used as an input variable in a BDT which classifies events based on their sensitivity, as described below. A further BDT is also used to remove “non-prompt" photons (i.e. photons not created at the primary vertex) and other particles misidentified as photons, such as pions.
+
+The events are then segmented into categories based on the expected signal to background ratio and diphoton invariant mass resolution. Studying these separately increases the overall sensitivity of the analysis. An additional categorisation where candidate events also pass a dijet trigger corresponds to VBF Higgs production (See figure 2.b: the quarks are scattered at a sufficiently large opening angle for them to undergo hadronisation and form jets rather than be lost down the beam-pipe). This mode is analysed separately because its signal to background ratio is over an order to magnitude better than for the other categories~\cite{HSearch}. The categorisation is achieved using another BDT, where the input variables are chosen to be dimensionless to avoid any bias in the mass distribution. For example, the transverse momenta of the photons are used amongst other input variables, but they are scaled by the calculated diphoton invariant mass to yield a dimensionless criterion.
+
+The background model is obtained using a data-driven technique rather than a MC prediction, as this avoids any systematic uncertainties based on mis-modelling. For each of the categories, the diphoton mass distribution outside of the region of interest is fitted. The function used to fit the data is chosen based on minimisation of the bias introduced in each case. Candidate functions involve exponentials, power laws, polynomials and Laurent series. The bias is found to be negligible when Bernsteins of order 3 to 5 (depending on the category) are used.
+
+Finally, the observed invariant mass distribution is compared to that predicted by the background fit. An observed excess of events around $\sim125.0$ GeV with a local significance of $4.1 \sigma$ in the $\gamma \gamma$ decay channel signalled the existence of the Higgs boson in 2012. Combined with measurements from other decay modes, CMS anounced a measuremement of $m_H=125.3 \pm 0.4 \text{(stat.)} \pm 0.5 \text{(syst.)}$ GeV with a local observed significance of $5.0 \sigma$~\cite{HDisc}.
+
+
+\section{Future work}
+
+The $H \rightarrow \gamma \gamma$ working group are in the process of finalising the legacy analysis for the $\sqrt{s}=7$ and $8$ TeV data samples from run I. This will include a mass measurement for the Higgs boson based on a similar analysis to the one described above. An analysis of the spin properties of this particle, which I was involved in, will also be included. This publication will reflect the final word on the older data samples from the perspective of the CMS $H \rightarrow \gamma \gamma$ analysis. The LHC should begin colliding again in 2015, and new data will then become available. Various new measurements will need to be made to further understand the properties of the Higgs boson. Further data will be able to shed light on the existence of a potential second Higgs boson (multiple such bosons are predicted in various BSM frameworks), and will allow precision measurements of differential cross sections, couplings and spin/parity. Deviations from the expected properties of the SM Higgs boson could signal the potential existence of BSM physics.  $H\rightarrow \gamma \gamma$ will remain one of the most sensitive channels with which to analyse the properties of the Higgs during run II.
+On a more personal note, my work within the CMS experiement will intially be centred around the ECAL, preparing for calibration in run II. The way that photons are reconstructed is being modified, and I will help determine what the effect of this change will be on the sensitivity of the $H \rightarrow \gamma \gamma$ analysis. As 2015 approaches, I will become involved in planning and implementing the next round of analysis, to help further pin down the properties of the Higgs boson.
+
+\section{Conclusion}
+
+To conclude, it is clear that even though we have now discovered the elusive Higgs boson, many questions remain unanswered. In 2015, some BSM theories which might help to answer these questions will be tested. If nothing is found in direct searches, the precision analysis of the properties of the Higgs boson will be one of key avenues with which to search for deviations from the SM. As such, further understanding of the Higgs boson's properties are not only desirable, but indeed imperative if we are to understand more about the fundamental  structure of the universe.
+
+
+\bibliographystyle{unsrt}
+\bibliography{mybib}
+%\end{multicols}
+\end{document}

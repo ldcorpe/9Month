@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: 9_month_transfer_report.aux
+The style file: unsrt.bst
+Database file #1: mybib.bib
+Warning--empty journal in DM
+Warning--there's a number but no volume in DM
+Warning--there's a number but no volume in Hierarchy
+Warning--empty journal in CMSTDR
+Warning--empty journal in H_XS1
+Warning--there's a number but no volume in H_XS1
+Warning--empty journal in H_XS2
+Warning--there's a number but no volume in H_XS2
+Warning--empty journal in H_XS3
+Warning--there's a number but no volume in H_XS3
+You've used 39 entries,
+            1791 wiz_defined-function locations,
+            703 strings with 8803 characters,
+and the built_in function-call counts, 8545 in all, are:
+= -- 783
+> -- 324
+< -- 0
++ -- 124
+- -- 85
+* -- 600
+:= -- 1394
+add.period$ -- 118
+call.type$ -- 39
+change.case$ -- 39
+chr.to.int$ -- 0
+cite$ -- 49
+duplicate$ -- 344
+empty$ -- 852
+format.name$ -- 85
+if$ -- 1871
+int.to.chr$ -- 0
+int.to.str$ -- 39
+missing$ -- 39
+newline$ -- 199
+num.names$ -- 39
+pop$ -- 57
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 133
+stack$ -- 0
+substring$ -- 739
+swap$ -- 34
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 10
+while$ -- 81
+width$ -- 41
+write$ -- 426
+(There were 10 warnings)

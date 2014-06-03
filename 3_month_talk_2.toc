@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.26pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{The SM Higgs Boson}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{LHC, CMS and ECAL}{9}{0}{1}
+\beamer@sectionintoc {2}{$H \rightarrow \gamma \gamma $}{13}{0}{2}
+\beamer@subsectionintoc {2}{1}{Photon and Vertex Identification }{13}{0}{2}
+\beamer@subsectionintoc {2}{2}{Event Categorisation and Analysis}{20}{0}{2}
+\beamer@sectionintoc {3}{Outlook and future work}{24}{0}{3}

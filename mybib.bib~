@@ -1,0 +1,552 @@
+@article{RichterPsi,
+  title = "{Discovery of a Narrow Resonance in $e^+ e^-$ Annihilation}",
+  author = "Augustin, J. E. and others",
+  journal = "Phys. Rev. Lett.",
+  volume = {33},
+  issue = {23},
+  pages = {1406--1408},
+  numpages = {0},
+  year = {1974},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.33.1406},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.33.1406}
+}
+@article{TingJ,
+  title = "{Experimental Observation of a Heavy Particle $ {J} $}",
+  author = {Aubert, J. J. and others},
+  journal = {Phys. Rev. Lett.},
+  volume = {33},
+  issue = {23},
+  pages = {1404--1406},
+  numpages = {0},
+  year = {1974},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.33.1404},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.33.1404}
+}
+
+@article{CMSDesign,
+  author         = "Chatrchyan, S. and others",
+  title          = "{The CMS experiment at the CERN LHC}",
+  collaboration  = "CMS Collaboration",
+  journal        = "JINST",
+  volume         = "3",
+  pages          = "S08004",
+  doi            = "10.1088/1748-0221/3/08/S08004",
+ year           = "2008",
+  SLACcitation   = "%%CITATION = JINST,3,S08004;%%",
+}
+
+@Article{tquarkDisc2,
+  author        = "Abachi, S. and others",
+  collaboration = "D0",
+  title         = "{Observation of the top quark}",
+  journal       = "Phys. Rev. Lett.",
+  volume        = "74",
+  pages         = "2632-2637",
+  year          = "1995",
+  eprint        = "hep-ex/9503003",
+  archivePrefix = "arXiv",
+}
+
+@Article{tquarkDisc1,
+  author        = "Abe, F. and others",
+  collaboration = "CDF",
+  title         = "{Observation of top quark production in anti-p p collisions}",
+  journal       = "Phys. Rev. Lett.",
+  volume        = "74",
+  pages         = "2626-2631",
+  year          = "1995",
+  eprint        = "hep-ex/9503002",
+  archivePrefix = "arXiv",
+}
+
+@Article{WDisc,
+  author        = "Banner, M. and others",
+  collaboration = "UA2",
+  title         = "{Observation of single isolated electrons of high transverse momentum in events with missing transverse energy at the CERN $\bar{p}-p$ collider}",
+  journal       = "Phys. Lett.",
+  volume        = "B122",
+  pages         = "476-485",
+  year          = "1983",
+}
+
+@Article{ZDisc,
+  author        = "Arnison, G. and others",
+  collaboration = "UA1",
+  title         = "{Experimental observation of lepton pairs of invariant mass around $ 95 \, \text{GeV} $ at the CERN SPS collider}",
+  journal       = "Phys. Lett.",
+  volume        = "B126",
+  pages         = "398-410",
+  year          = "1983",
+}
+
+@article{bquarkDisc,
+  author        = "Herb, S. W.  and others",
+  title         = "{Observation of a dimuon resonance at 9.5-GeV in 400-GeV proton - nucleus collisions}",
+  journal       = "Phys. Rev. Lett.",
+  volume        = "39",
+  pages         = "252-255",
+  year          = "1977",
+}
+
+
+
+@article{TauDisc,
+  author        = "Perl, M. L. and others",
+  title         = "{Evidence for anomalous lepton production in $e^+$ $e^-$ annihilation}",
+  journal       = "Phys. Rev. Lett.",
+  volume        = "35",
+  pages         = "1489-1492",
+  year          = "1975",
+}
+
+
+@phdthesis{Egede,
+  author        = "Egede, U.",
+  title         = "{The search for a Standard Model Higgs at the LHC and
+    electron identification using transition radiation in the
+    ATLAS tracker}",
+school        = "Lund U.",
+address       = "Lund",
+year          = "1998",
+note          = "Presented on 16 Jan 1998",
+}
+@article{H_XS1,
+  author         = "Dittmaier, S. and others",
+  title          = "{Handbook of LHC Higgs Cross Sections: 1. Inclusive
+    Observables}",
+collaboration  = "LHC Higgs Cross Section Working Group",
+doi            = "10.5170/CERN-2011-002",
+year           = "2011",
+eprint         = "1101.0593",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ph",
+number   = "arXiv:1101.0593. CERN-2011-002",
+SLACcitation   = "%%CITATION = ARXIV:1101.0593;%%",
+}
+
+
+@Article{HDisc,
+  author        = "Chatrchyan, S. and others",
+  collaboration = "CMS",
+  title         = "{Observation of a new boson with mass near 125 GeV in pp collisions at $\sqrt{s}$ = 7 and 8 TeV}",
+  journal       = "JHEP",
+  volume        = "06",
+  pages         = "081",
+  year          = "2013",
+  eprint        = "1303.45:71",
+  archivePrefix = "arXiv",
+  primaryClass  = "hep-ex",
+}
+
+@article{H_XS2,
+  author        = "Dittmaier, S. and others",
+
+  title         = "{Handbook of LHC Higgs Cross Sections: 2. Differential
+    Distributions}",
+collaboration = "LHC Higgs Cross Section Working Group",
+address       = "Geneva",
+number        = "arXiv:1201.3084. CERN-2012-002",
+year          = "2012",
+}
+
+
+@article{Seez,
+  author         = "Seez, C. J. and others",
+  title          = "{Photon decay modes of the intermediate mass Higgs}",
+  collaboration  = "ECFA Higgs Working Group",
+  journal        = "Conf. Proc.",
+  volume         = "C901004",
+  pages          = "474-487",
+  year           = "1990",
+  SLACcitation   = "%%CITATION = CONFP,C901004,474;%%",
+}
+
+@article{HSearch,
+  author         = "Chatrchyan, S and others",
+  title          = "{Search for the standard model Higgs boson decaying into
+    two photons in $pp$ collisions at $\sqrt{s}=7$ TeV}",
+collaboration  = "CMS Collaboration",
+journal        = "Phys. Lett.",
+volume         = "B710",
+pages          = "403-425",
+doi            = "10.1016/j.physletb.2012.03.003",
+year           = "2012",
+eprint         = "1202.1487",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ex",
+reportNumber   = "CMS-HIG-11-033, CERN-PH-EP-2012-024",
+SLACcitation   = "%%CITATION = ARXIV:1202.1487;%%",
+}
+
+@article{GIM,
+  title = "{Weak Interactions with Lepton-Hadron Symmetry}",
+  author = {Glashow, S. L. and Iliopoulos, J. and Maiani, L.},
+  journal = {Phys. Rev.},
+  volume = {D2},
+  issue = {7},
+  pages = {1285--1292},
+  numpages = {0},
+  year = {1970},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.2.1285},
+  url = {http://link.aps.org/doi/10.1103/PhysRevD.2.1285}
+}
+@article{Salam,
+  author         = "Salam, A.",
+  title          = "{Weak and Electromagnetic Interactions}",
+  journal        = "Conf. Proc.",
+  volume         = "C680519",
+  pages          = "367-377",
+  year           = "1968",
+  SLACcitation   = "%%CITATION = CONFP,C680519,367;%%",
+}
+
+@article{Weinberg,
+  title = "{A Model of Leptons}",
+  author = {Weinberg, S.},
+  journal = {Phys. Rev. Lett.},
+  volume = {19},
+  issue = {21},
+  pages = {1264--1266},
+  numpages = {0},
+  year = {1967},
+  month = {Nov},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.19.1264},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.19.1264}
+}
+
+@article{BroutEnglert,
+  title = {Broken Symmetry and the Mass of Gauge Vector Mesons},
+  author = {Englert, F. and Brout, R.},
+  journal = {Phys. Rev. Lett.},
+  volume = {13},
+  issue = {9},
+  pages = {321--323},
+  numpages = {0},
+  year = {1964},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.13.321},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.13.321}
+}
+
+@article{Higgs1,
+  abstract = {Not Available},
+  added-at = {2007-09-22T20:12:41.000+0200},
+  author = {Higgs, P. W.},
+  biburl = {http://www.bibsonomy.org/bibtex/29d10ab44ba275bcd0a6553ae628234c0/stuartw},
+  citeulike-article-id = {918519},
+  date-added = {2006-11-01 13:16:32 +0000},
+  date-modified = {2007-03-26 15:09:52 +0100},
+  doi = {10.1016/0031-9163(64)91136-9},
+  interhash = {8b511c2addba2018cabe8697208c5f6a},
+  intrahash = {9d10ab44ba275bcd0a6553ae628234c0},
+  journal = {Phys. Lett.},
+  keywords = {higgs},
+  month = {September},
+  pages = {132--133},
+  priority = {2},
+  timestamp = {2007-09-22T20:12:41.000+0200},
+  title = {Broken symmetries, massless particles and gauge fields},
+  url = {http://dx.doi.org/10.1016/0031-9163(64)91136-9},
+  volume = 12,
+  year = 1964
+}
+
+@article{Higgs2,
+  title = {Broken Symmetries and the Masses of Gauge Bosons},
+  author = {Higgs, P. W.},
+  journal = {Phys. Rev. Lett.},
+  volume = {13},
+  issue = {16},
+  pages = {508--509},
+  numpages = {0},
+  year = {1964},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.13.508},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.13.508}
+}
+
+
+@article{Kibble1,
+  title = {Global Conservation Laws and Massless Particles},
+  author = {Guralnik, G. S. and Hagen, C. R. and Kibble, T. W. B.},
+  journal = {Phys. Rev. Lett.},
+  volume = {13},
+  issue = {20},
+  pages = {585--587},
+  numpages = {0},
+  year = {1964},
+  month = {Nov},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.13.585},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.13.585}
+}
+
+@article{Higgs3,
+  title = {Spontaneous Symmetry Breakdown without Massless Bosons},
+  author = {Higgs, P. W.},
+  journal = {Phys. Rev.},
+  volume = {145},
+  issue = {4},
+  pages = {1156--1163},
+  numpages = {0},
+  year = {1966},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRev.145.1156},
+  url = {http://link.aps.org/doi/10.1103/PhysRev.145.1156}
+}
+
+@article{Kibble2,
+  title = {Symmetry Breaking in Non-Abelian Gauge Theories},
+  author = {Kibble, T. W. B.},
+  journal = {Phys. Rev.},
+  volume = {155},
+  issue = {5},
+  pages = {1554--1561},
+  numpages = {0},
+  year = {1967},
+  month = {Mar},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRev.155.1554},
+  url = {http://link.aps.org/doi/10.1103/PhysRev.155.1554}
+}
+
+@article{ATLASHDisc,
+  author         = "Aad, G. and others",
+  title          = "{Observation of a new particle in the search for the
+    Standard Model Higgs boson with the ATLAS detector at the
+    LHC}",
+collaboration  = "ATLAS Collaboration",
+journal        = "Phys. Lett.",
+volume         = "B716",
+pages          = "1-29",
+doi            = "10.1016/j.physletb.2012.08.020",
+year           = "2012",
+eprint         = "1207.7214",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ex",
+reportNumber   = "CERN-PH-EP-2012-218",
+SLACcitation   = "%%CITATION = ARXIV:1207.7214;%%",
+}
+
+@article{CMSHDisc,
+  author         = "Chatrchyan, S. and others",
+  title          = "{Observation of a new boson at a mass of 125 GeV with the
+    CMS experiment at the LHC}",
+collaboration  = "CMS Collaboration",
+journal        = "Phys. Lett.",
+volume         = "B716",
+pages          = "30-61",
+doi            = "10.1016/j.physletb.2012.08.021",
+year           = "2012",
+eprint         = "1207.7235",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ex",
+reportNumber   = "CMS-HIG-12-028, CERN-PH-EP-2012-220",
+SLACcitation   = "%%CITATION = ARXIV:1207.7235;%%",
+}
+
+@article{TauNuDisc,
+  author         = "Kodama, K. and others",
+  title          = "{Observation of tau neutrino interactions}",
+  collaboration  = "DONUT Collaboration",
+  journal        = "Phys. Lett.",
+  volume         = "B504",
+  pages          = "218-224",
+  doi            = "10.1016/S0370-2693(01)00307-0",
+  year           = "2001",
+  eprint         = "hep-ex/0012035",
+  archivePrefix  = "arXiv",
+  primaryClass   = "hep-ex",
+  reportNumber   = "FERMILAB-PUB-00-335-E",
+  SLACcitation   = "%%CITATION = HEP-EX/0012035;%%",
+}
+
+
+@ARTICLE{Gluon1,
+  author = "Brandelik, R. and others",
+  title = "{Evidence for planar events in e$^{+}$e$^{-}$ annihilation at high energies}",
+  journal = {Phys. Lett. B},
+  year = 1979,
+  month = sep,
+  volume = 86,
+  pages = {243-249},
+  doi = {10.1016/0370-2693(79)90830-X},
+  adsurl = {http://adsabs.harvard.edu/abs/1979PhLB...86..243B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@ARTICLE{Gluon2,
+  author = "Barber, D.~P. and others",
+  title = "{Discovery of Three-Jet Events and a Test of Quantum Chromodynamics at PETRA}",
+  journal = {Phys. Rev. Lett.},
+  year = 1979,
+  month = sep,
+  volume = 43,
+  pages = {830-833},
+  doi = {10.1103/PhysRevLett.43.830},
+  adsurl = {http://adsabs.harvard.edu/abs/1979PhRvL..43..830B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Gluon3,
+  author = "Berger, C. and others",
+  title = "{Evidence for gluon bremsstrahlung in e$^{+}$e$^{-}$ annihilations at high energies}",
+  journal = {Phys. Lett. B},
+  year = 1979,
+  month = oct,
+  volume = 86,
+  pages = {418-425},
+  doi = {10.1016/0370-2693(79)90869-4},
+  adsurl = {http://adsabs.harvard.edu/abs/1979PhLB...86..418B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@article{CMSTDR,
+  author        = "Bayatian, G. L. and others", 
+  title         = "{CMS Physics: Technical Design Report Volume 1: Detector
+    Performance and Software}",
+publisher     = "CERN",
+collaboration = "CMS Collaboration",
+address       = "Geneva",
+series        = "Technical Design Report CMS",
+year          = "2006",
+}
+
+
+@article{Hierarchy,
+  author         = "Martin, S. P.",
+  title          = "{A Supersymmetry primer}",
+  year           = "1997",
+  journal  ="Kane, G.L. (ed.): Perspectives on supersymmetry II",
+  number = {arXiv:hep-ph/9709356},
+  eprint         = "hep-ph/9709356",
+  archivePrefix  = "arXiv",
+  primaryClass   = "hep-ph",
+  SLACcitation   = "%%CITATION = HEP-PH/9709356;%%",
+}
+
+
+@article{Asymmetry,
+  author         = "Sarkar, U.",
+  title          = "{Particle and astroparticle physics}",
+  journal      = "Taylor and  Francis",
+  year           = "2008",
+  SLACcitation   = "%%CITATION = INSPIRE-1217913;%%",
+}
+
+
+
+@ARTICLE{DayaBay,
+  author = "An, F.~P. and Bai, J.~Z. and Balantekin, A.~B. and others",
+  title = "{Observation of Electron-Antineutrino Disappearance at Daya Bay}",
+  journal = {Phys. Rev. Lett.},
+  archivePrefix = "arXiv",
+  eprint = {1203.1669},
+  primaryClass = "hep-ex",
+  keywords = {Neutrino mass and mixing},
+  year = 2012,
+  month = apr,
+  volume = 108,
+  number = 17,
+  eid = {171803},
+  pages = {171803},
+  doi = {10.1103/PhysRevLett.108.171803},
+  adsurl = {http://adsabs.harvard.edu/abs/2012PhRvL.108q1803A},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{SNO,
+  author = "Ahmad, Q.~R. and Allen, R.~C. and Andersen, T.~C. and others",
+  title = "{Measurement of the Rate of $\nu_{e} + d \rightarrow  p + p + e^{-}$ Interactions Produced by $^{8}$B Solar Neutrinos at the Sudbury Neutrino Observatory}",
+  journal = {Phys. Rev. Lett.},
+  eprint = {nucl-ex/0106015},
+  year = 2001,
+  month = aug,
+  volume = 87,
+  number = 7,
+  eid = {071301},
+  pages = {071301},
+  doi = {10.1103/PhysRevLett.87.071301},
+  adsurl = {http://adsabs.harvard.edu/abs/2001PhRvL..87g1301A},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{ECAL2012,
+  author         = "De Guio, Federico",
+  title          = "{Performance of the CMS electromagnetic calorimeter and
+    its role in the hunt for the Higgs boson in the two-photon
+    channel}",
+collaboration  = "CMS collaboration",
+journal        = "J.Phys.Conf.Ser.",
+volume         = "455",
+pages          = "012028",
+doi            = "10.1088/1742-6596/455/1/012028",
+year           = "2013",
+SLACcitation   = "%%CITATION = 00462,455,012028;%%",
+}
+@ARTICLE{SuperK,
+  author = "Fukuda, Y. and Hayakawa, T. and Ichihara, E. and others",
+  title = "{Evidence for Oscillation of Atmospheric Neutrinos}",
+  journal = {Phys. Rev. Lett.},
+  eprint = {hep-ex/9807003},
+  year = 1998,
+  month = aug,
+  volume = 81,
+  pages = {1562-1567},
+  doi = {10.1103/PhysRevLett.81.1562},
+  adsurl = {http://adsabs.harvard.edu/abs/1998PhRvL..81.1562F},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@Article{DM,
+  author = "Ade, P.~A.~R. and Aghanim, N. and Armitage-Caplan, C. and others",
+  title = "{Planck 2013 results. I. Overview of products and scientific results}",
+  number = {arXiv:1303.5062},
+  primaryClass = "astro-ph.CO",
+  keywords = {Astrophysics - Cosmology and Extragalactic Astrophysics},
+  year = 2013,
+  month = mar,
+  adsurl = {http://adsabs.harvard.edu/abs/2013arXiv1303.5062P},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@article{H_XS3,
+  author = "Heinemeyer, S. and Mariotti, C. and Passarino, G. and others",
+  title   = "{Handbook of LHC Higgs Cross Sections: 3. Higgs
+    Properties}",
+collaboration = "LHC Higgs Cross Section Working Group",
+address       = "Geneva",
+number        = "arXiv:1307.1347. CERN-2013-004",
+year          = "2013",
+note          = "Comments: 404 pages, 139 figures, to be submitted to CERN
+  Report. Working Group web page:
+  https://twiki.cern.ch/twiki/bin/view/LHCPhysics/CrossSections",
+}
+@article{BDT,
+  title = "Boosted decision trees as an alternative to artificial neural networks for particle identification ",
+  journal = "Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment ",
+  volume = "543",
+  number = "2–3",
+  pages = "577 - 584",
+  year = "2005",
+  note = "",
+  issn = "0168-9002",
+  doi = "http://dx.doi.org/10.1016/j.nima.2004.12.018",
+  url = "http://www.sciencedirect.com/science/article/pii/S0168900205000355",
+  author = "Byron P. Roe and Hai-Jun Yang and Ji Zhu and Yong Liu and Ion Stancu and Gordon McGregor",
+  keywords = "Boosted decision trees",
+  keywords = "Artificial neural network",
+  keywords = "Particle identification",
+  keywords = "Neutrino oscillations",
+  keywords = "MiniBooNE "
+}
+

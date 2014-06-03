@@ -1,0 +1,270 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+\documentclass{beamer}
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+ \usepackage{sidecap}
+ \usepackage{xcolor}
+\useoutertheme{infolines}
+
+\title[$H \rightarrow \gamma \gamma$ at CMS]
+{Analysis of Higgs bosons decaying to two photons at CMS}
+
+%\subtitle
+%{Include Only If Paper Has a Subtitle}
+
+\author[L. D. Corpe] % (optional, use only with lots of authors)
+{L. D.~Corpe}
+
+
+\institute[Imperial College London] % (optional, but mostly needed)
+{
+  Imperial College London\\
+  Blackett Laboratory\\
+  London}
+
+
+\date[2014] % (optional, should be abbreviation of conference name)
+{PG Initial Report Talks, 2014}
+
+\subject{Particle Physics}
+
+
+
+%\AtBeginSubsection[]
+%{
+  %\begin{frame}<beamer>{Outline}
+    %\tableofcontents[currentsection,currentsubsection]
+  %\end{frame}
+%}
+
+%%%%%DOCUMENT START%%%%%%%%%%
+%%%%%%TITLE a TOC%%%%%%%%%%
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+%%%%%%%%%%INTRODUCTION%%%%%%%%
+
+\section{Introduction}
+
+
+%--------------------SM Higgs intro-----------------
+\subsection{The SM Higgs Boson}
+%____________slide 1______________________
+\begin{frame}{The Standard Model Higgs boson}{History}
+
+\includegraphics[width=0.4\textwidth]{"Sakurai"} \quad
+\includegraphics[width=0.177\textwidth]{"Higgs"} \quad
+\mbox{\parbox[b][4em][b]{0.3\textwidth}{\tiny The authors of the ``1964 PRL symmetry breaking papers'' won the Sakurai Prize in 2010. 
+ \vspace{5px}
+ Higgs and Englert won the Nobel prize in 2013.
+  \vspace{5px}
+  Left: Kibble, Guralnik, Hagen, Englert, Brout. Right: Higgs\\ \\} }
+
+{\footnotesize The Higgs mechanism was independently formulated various theorists in 1964. Explains mass of $W^{\pm}$ and $Z$ bosons via symmetry breaking in the electroweak interaction. Crucially, gauge invariance is conserved. Main properties of SM Higgs:
+  \begin{itemize}
+\pause
+  \vfill \item 
+  Massive and observable. Now known to be $\sim 125$ GeV.
+ \pause 
+  \vfill \item
+  Couples to particles proportional to their mass.
+\pause
+ \vfill \item
+ Only one Higgs boson in SM, while other BSM theories predict more.
+
+  \end{itemize}
+  }
+\end{frame}
+%____________slide 2______________________
+
+\begin{frame}{The Standard Model Higgs boson}{Production and decay at LHC}
+\begin{itemize}
+\vfill \item 
+{\tiny $H$ couples to particles $\propto m$, so main production modes at LHC are:}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{"productions"}
+\vfill \item {\tiny a) $gg$ fusion via $t$ loop, b) Vector Boson Fusion (VBF), c) Assoc. $Z,W$ production, d) Assoc. $t\bar{t}$ production.}
+\end{center}
+\pause
+\vfill \item 
+{\tiny By the same token, it decays mostly to heavy particles:}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{"decays"}
+\vfill \item {\tiny Decay to 1) $b \bar{b}$ pair, 2) vector boson pair, 3) $\tau^+, \tau^-$, 4) two photons via $t$ loop (can also be $W$).}
+\end{center}
+\vfill \item {\tiny $t, \bar{t}$ pair kinematically forbidden. $H \rightarrow \gamma \gamma $ is rare, but one of the most sensitive channels at the LHC.}
+
+\end{itemize}
+\end{frame}
+
+%--------------------LHC, CMS , ECAL---------------------------
+
+\subsection{LHC, CMS and ECAL}
+
+%____________slide 1______________________
+\begin{frame}{LHC, CMS and the ECAL}{The Large Hadron Collider}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{"LHC"}
+\end{center}
+  \begin{itemize}
+\vfill \item {\footnotesize The LHC is a 27km circumference synchrotron at CERN, as explained by my colleagues.}
+  \end{itemize}
+\end{frame}
+%____________slide 2______________________
+\begin{frame}{LHC, CMS and the ECAL}{The Compact Muon Solenoid}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{"CMSLayout"}
+\end{center}
+  \begin{itemize}
+\vfill \item {\footnotesize Explained already by previous talks - I will focus on ECAL layer.\\}
+  \end{itemize}
+\end{frame}
+%____________slide 3______________________
+\begin{frame}{LHC, CMS and the ECAL}{The Electromagnetic Calorimeter}
+\begin{center}
+\includegraphics[width=0.65\textwidth]{"EcalView"}
+
+{\tiny A view of the inside of the ECAL Barrel.\\}
+\end{center}
+\end{frame}
+%____________slide 3______________________
+\begin{frame}{LHC, CMS and the ECAL}{The Electromagnetic Calorimeter}
+
+{\footnotesize The CMS ECAL is composed of an array of PbWO$_4$ crystals. \\ The Crystals are offset by an angle of 3$^o$ from the vertex to avoid particles going through the gaps in between.}
+ \includegraphics[width=0.5\textwidth]{"ECAL"}
+ \mbox{\parbox[b][4em][b]{0.45\textwidth}{
+ \begin{itemize}
+ \vfill \item \fcolorbox{black}{white}{\tiny 62,100 crystals in 36 supermodules  }
+ \vfill \item \fcolorbox{white}{yellow}{\tiny Supermodule containing 4 modules  }
+ \vfill \item \fcolorbox{white}{teal}{\tiny Endcaps containing 14,648 crystals }
+ \vfill \item \fcolorbox{white}{pink}{\tiny Preshower for $\pi^0$ ID.}
+ \vspace{1cm}
+
+\end{itemize}}}
+\end{frame}
+
+
+%%%%%%%%%%H TO GAMMA GAMMA %%%%%%%%
+
+\section{$H \rightarrow \gamma\gamma$}
+
+\subsection{Photon and Vertex Identification }
+
+%\begin{frame}{$H \rightarrow \gamma \gamma$ Analysis Strategy}
+%\begin{itemize}
+%\vfill \item The $H \rightarrow \gamma \gamma$ analysis relies on the fact that a small but non negligible fraction of $H$s will decay to two photons via a $t,W^{\pm}$ or $Z$ loop.
+%\pause
+%\vfill \item Although there is a large background from QCD processes and “non-prompt'' photons, the high resolution from the ECAL allows the reconstruction of a narrow peak above the background.
+%\pause
+%\vfill \item Main analysis relies heavily on boosted decision trees (BDTs)
+%\end{itemize}
+%\end{frame}
+
+
+
+\begin{frame}{Photon and Vertex Identification}{Initial event selection and mass reconstruction}
+\begin{itemize}
+\vfill \item {\footnotesize Initial trigger identifies $\gamma$s from ECAL isolation and shower shape. A loose $E_T$ cut is also made, although a tougher one is imposed later to find Higgs decay candidates.}
+\pause
+\vfill \item { \footnotesize Higgs mass reconstructed using the following formula (simple 4-momentum conservation): }
+$$ m_H=m_{\gamma\gamma}=\sqrt{2E_{\gamma1}E_{\gamma2}(1-\cos\alpha)} $$
+
+\includegraphics[width=0.45\textwidth]{"Diagram"}
+\mbox{\parbox[b][4em][b]{0.5\textwidth}
+{\pause \vfill \item \footnotesize $E_{\gamma1},E_{\gamma 2}$ dominate mass resolution if primary interaction vertex is identified. Thankfully ECAL has excellent E resolution.
+\vfill \item However, diphoton interaction vertex must be correctly identified to measure $\alpha$. \vspace{10px}}}
+%\pause \vfill \item \textbf{The better the vertex reconstruction, the better the angle resolution!} \vspace{0px}}}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Photon and Vertex Identification}{Vertex ID and Pair Conversion}
+\begin{itemize}
+\vfill \item If the diphoton vertex is reconstructed with 10mm of true position then the mass resolution is dominated by the $E_{\gamma}$ resolution.
+\pause \vfill \item A BDT is used to identify vertex using kinematic properties as inputs. Also makes use of extra information from tracker if $\gamma$ has converted to $e^+ e^-$.
+\pause \vfill \item We can tell if $\gamma$ has converted using $R_9 \equiv  \frac{E_{3x3}}{E_{SuperCluster}} < 0.94$.
+\includegraphics[width=0.4\textwidth]{"R9"} \hspace{5px}
+\mbox{\parbox[b][4em][b]{0.5\textwidth}
+{\footnotesize \vfill \item If $\gamma$ hits, most of the energy is deposited within $3x3$ array, so $E_{3x3} \simeq E_{5x5}$ so $R_9 \simeq 1$ 
+\vfill \item If $\gamma$ has converted, less energy will be focused within $3x3$, so $R_9 < 1$ \vspace{30px}  }}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Photon and Vertex Identification}{Higgs decay candidates}
+\begin{itemize}
+\vfill \item Not all diphoton events are of interest! We only want those which are Higgs decay candidates.
+ \vfill \item Higgs decay photons should be highly energetic, so impose:
+$$ E^T_{\gamma1} > \frac{m_{\gamma\gamma}}{3} \text{ and } E^T_{\gamma2} >\frac{m_{\gamma\gamma}}{4}$$
+ \vfill \item A further BDT is used to remove ``non-prompt'' photons and particles misidentified as photons, as they are of no interest.
+%\includegraphics[width=0.4\textwidth]{"R9"}
+\end{itemize}
+\end{frame}
+
+\subsection{Event Categorisation and Analysis}
+
+\begin{frame}{Event Categorisation and Analysis}
+\begin{itemize}
+\vfill \item Events are segmented into categories based on expected signal to background ratio and mass resolution using a BDT.
+\vfill \item This increases the overall sensitivity of the analysis.
+\vfill \item The background is modelled using data rather than Monte Carlo.
+\vspace{5px}
+\begin{itemize}
+\pause \vfill \item For each category, the $m_{\gamma\gamma}$ distribution is fitted. Candidate fitting functions include exponentials, power laws, Bernsteins (polynomials) and Laurent series. 
+\pause \vfill \item Fitting function chosen based on bias minimisation. Bias is negligible for all categories when Bersteins of order 3-5 (depending on category) are used.
+\end{itemize}
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Analysis}
+\begin{itemize}{ \footnotesize
+\vfill \item The mass distribution is plotted for each category and compared to the background prediction. The categories are then combined to form the global analysis.
+
+\vfill \item In 2012, this method yielded an observed local significance of $4\sigma$ at $\sim 125$ GeV. Combined with other analyses, the total local significance was $5\sigma$, allowing a discovery to be claimed by CMS (and ATLAS).}
+ \includegraphics[width=0.455\textwidth]{"Plot"}
+\includegraphics[width=0.4\textwidth]{"PValue"}
+\end{itemize}
+\end{frame}
+\section{Outlook and future work}
+
+\begin{frame}{Outlook}
+
+  \begin{itemize}
+  \vfill \item A final legacy paper using all data from run 1 is being prepared, currently under approval.
+ \pause \vfill \item In 2015, the LHC will re-start collisions, hopefully ramping up towards design value of $14$ TeV.
+\pause  \vfill \item This will allow more precise measurements of couplings, differential cross-sections and $J^P$.
+\pause  \vfill \item Any deviation from the SM could yield insight on nature or existence of BSM physics, e.g. a 2nd Higgs, or increased cross-section due to heavy BSM particles.
+\pause  \vfill \item For first time in history, we have found what we believe to be a scalar fundamental particle. Implications unclear.
+ \pause \vfill \item Although we have found the $H$, further studies are not only desirable but imperative.
+ 
+  \end{itemize}
+ 
+\end{frame}
+\begin{frame}{Questions}
+\begin{center}
+{\Large Thanks for listening! 
+
+Questions?}
+\end{center}
+\end{frame}
+
+\end{document}
+
+
