@@ -78,7 +78,7 @@
 An overview of the study of the Higgs boson via its decay to two photons at CMS is presented. A brief introduction into the history of the Standard Model and the motivation for Higgs searches is given, as well as a detailed description of the CMS experiment at CERN. The analysis of the $H \rightarrow \gamma\gamma$ decay mode is described in some detail, with reference to recent work. A discussion on the outlook and future work to be done in this decay channel is also given.}
 \end{abstract}
 
-\newpage
+
 
 \tableofcontents
 
@@ -95,7 +95,7 @@ The $H \rightarrow \gamma \gamma$ analysis played an important role in the disco
 
 
 
-\newpage
+
 
 \section{The SM and $H \rightarrow \gamma \gamma$}
 
@@ -138,7 +138,7 @@ By the same token, the SM Higgs boson decays to pairs of particles with branchin
 The Higgs boson was discovered in 2012 using data from runs at $\sqrt{s}=7$ and $8$ TeV, and was found to have a mass $m_H \sim 125$ GeV. The signal strengths of the various decay modes at the CMS and ATLAS experiments can be seen in figure 3. Despite fewer than $1\%$ of Higgs boson decays occurring via $H \rightarrow \gamma \gamma$, this channel played a crucial role in the discovery, and remains one of the two most sensitive methods of studying the Higgs boson. This is in part thanks to the excellent performance of the CMS ECAL.
 
 
-\newpage
+
 
 \section{The CMS detector}
 
@@ -161,15 +161,8 @@ The inner tracker consists of 4 layers of silicon pixel detectors close to the i
 \subsection{Other subdetectors}
 
 The ECAL is then surrounded by a sampling hadronic calorimeter composed of brass/scintillator in the body and iron/quartz-fibre in the forward regions. The muon chambers INSERT INFORMATION ipseum loren Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra dapibus lorem sed mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam sollicitudin nisi in convallis interdum. Vivamus nec libero at nunc molestie elementum a et arcu. Curabitur facilisis felis eget condimentum mattis. Fusce tellus erat, porttitor aliquet porta at, rhoncus in justo. Aenean pretium nulla vel mi molestie imperdiet. Praesent aliquet velit nec ligula congue, eu lacinia orci ultrices. Mauris commodo cursus massa, ut cursus tortor consectetur eu. Suspendisse eu dictum odio. Morbi tincidunt ultrices erat in ultrices. 
-
 \newpage
 
-
-
-
-
-
-\newpage
 
 \section{The $H \rightarrow \gamma \gamma$ analysis}
 
@@ -196,9 +189,6 @@ The background model is obtained using a data-driven technique rather than a MC 
 
 Finally, the observed invariant mass distribution is compared to that predicted by the background fit. An observed excess of events around $\sim125.0$ GeV with a local significance of $4.1 \sigma$ in the $\gamma \gamma$ decay channel signalled the existence of the Higgs boson in 2012. Combined with measurements from other decay modes, CMS anounced a measuremement of $m_H=125.3 \pm 0.4 \text{(stat.)} \pm 0.5 \text{(syst.)}$ GeV with a local observed significance of $5.0 \sigma$~\cite{HDisc}.
 
-\subsection{The globe software package}
-
-MVA and CiC?
 
 \subsection{Photon resolution studies}
 
@@ -214,11 +204,56 @@ Since the intention is to provide an account of the sensitivity of the $H \right
 
 \subsubsection{Method and Result}
 
-In order to produce the required plots, the globe MVA framework code was modified so as to produce an additional root tree, containing only the information needed for this study. The writing of this additional tree took place after all the actual analysis within the framework was complete. In order to measure the effective energy resolution of the photons, it was necessary to compare the ``true'' energy of the photons $E_{true}$(as generated in the simulation) with the ``reco'' energy of the photons $E_{reco}$ (as provided after reconstruction and application of corrections in the the globe framework). To make this comparison in a meaningful way, the generated photons and the reconstructed needed to be matched correctly. This was done using an unambiguous geometrical method: for each generated photon in an event, the value of $\Delta R = \sqrt{\Delta \eta^2 + \Delta \phi^2}$ (where $\Delta$ refers to the difference between generated and reconstructed values) was calculated for the two reconstructed photons. The reconstructed photon minimising the value of $\Delta R$ was chosen as the match for that generated photon. (DELTA R and DELTA ETA PLOTS??)
+In order to produce the required plots, the globe MVA framework code was modified so as to produce an additional root tree, containing only the information needed for this study. The writing of this additional tree took place after all the actual analysis within the framework was complete. In order to measure the effective energy resolution of the photons, it was necessary to compare the ``true'' energy of the photons $E_{true}$(as generated in the simulation) with the ``reco'' energy of the photons $E_{reco}$ (as provided after reconstruction and application of corrections in the the globe framework). To make this comparison in a meaningful way, the generated photons and the reconstructed needed to be matched correctly. This was done using an unambiguous geometrical method: for each generated photon in an event, the value of $\Delta R = \sqrt{\Delta \eta^2 + \Delta \phi^2}$ (where $\Delta $ refers to the difference between generated and reconstructed values) was calculated for the two reconstructed photons. The reconstructed photon minimising the value of $\Delta R$ was chosen as the match for that generated photon. (DELTA R and DELTA ETA PLOTS??)
 
-For each event, each individual photon was categorised first by $R_{9} <0.94$ or $R_{9} \geq 0.94$, then  by its value of $|\eta|$. The width of the $|\eta|$ categories was 0.1, apart from the region near the transition between the ECAL barrel and ECAL encap, where the data are excluded (resulting in two slightly larger categories on either side, namely $ 1.3 \leq |\eta| < 1.4442 $ and $1.566 \leq |\eta| < 1.7$), thus 23 categories. Taking into account the two $R_{9}$ options, this left 46 photon categories. For each one, a histogram of the values of $E_{reco}/E_{true}$ was created.
+For each event, each individual photon was categorised first by $R_{9} <0.94$ or $R_{9} \geq 0.94$, then  by its value of $|\eta|$. The width of the $|\eta|$ categories was 0.1, apart from the region near the transition between the ECAL barrel and ECAL encap, where the data are excluded (resulting in two slightly larger categories on either side, namely $ 1.3 \leq |\eta| < 1.4442 $ and $1.566 \leq |\eta| < 1.7$), thus 23 categories. Taking into account the two $R_{9}$ options, this left 46 photon categories. For each one, a histogram of the values of $E_{reco}/E_{true}$ was created. An algorithm is used to calcluate $\sigma_{\text{eff}}$ (defined as half the width of the smallest window containing 68.3\% of events in a distribution). This algorithm recursively scans potential windows in the histogram until the smallest mathcing the required condition is found. A different algorithm also calculates  the ``Full Width Half Maximum'' (FWHM), which is the width of the peak when measured at half of its maximum height. In this case , the algorithm fits each histogram to a combination of a Gaussian and a Crystal Ball function (AVAILABLE IN APPENDIX), then creates a very finely binned histogram of the best fit, and finds the bin with the largest number of events. Then it finds the first bin with half that number of events, and the last bin with half the number of events. For a true Gaussian distribution, $\sigma_{\text{eff}} = \sigma = \text{FWHM}/2\sqrt{2\ln2} \simeq \text{FWHM}/2.35$. In other cases, $\sigma_{\text{eff}} \geq \text{FWHM}/2.35$. Fig. 4 shows examples of these histograms. 
+
+\begin{figure}[h!]
+
+  \centering
+\includegraphics[width=0.48\textwidth]{"Hist2_mva"}
+\includegraphics[width=0.48\textwidth]{"Hist25_mva"}
+\caption{Example $E_{reco}/E_{true} $ histograms for two $|\eta|$ and $R_{9}$ categories. The vertical axis indicates the number of events if each event were counted with the weight associated to a GGH event. Overlayed on each plot is the calculated value of  $\sigma_{\text{eff}}$ and $\text{FWHM}/2.35$. For a distribution with a Gaussian peak but non-Gaussian tails, we expect $\sigma_{\text{eff}} \geq \text{FWHM}/2.35$, which is what is observed.}
+\end{figure}
+
+The values of FWHM are not used in the rest of the study, however they provide a good sense check that the distributions make sense. On the other hand, $\sigma_{\text{eff}}$ is used as the input for the main result. The values of $\sigma_{\text{eff}}$ for the distributions of  $E_{reco}/E_{true}$ are equal to $\sigma_{\text{eff}}/E$ (FIXME why??), and are used as inputs to the effective energy resolution plot. Each of the 46 $|\eta|$ and $R_{9}$ catgeories provide a value, which is then plotted versus $|\eta|$ to give the main plot (Fig.5).
+
+As epxected, the effective resolution is concistently worse for low $R_{9}$ categories than for their high $R_9$ equivalent. This is because low $R_9$ photons are likely to have undergone pair conversion, and the resulting electrons and positrons may have emitted energy via bremmstrahlung before hitting the ECAL. Furthermore, the categores where $|\eta|$ lies over a supermodule boundary (vertical dashed lines) have worse resolution than neighbouring categoreis. This is also expected, as the interfaces between teh supermodules are less hermetic than the body of teh supermodules, leading to energy lost between the gaps. Finally, the resolution in the endcaps (ie categoreis where $1.5\leq |\eta| <2.5$) is substantially worse than fhe resolution in the barrel. This is also expected (FIXME wy??).
+In conclusion, this study set out to estimate the individual photon resolution in small $\|eta|$ bins in the CMS ECAL for simulated $H \rightarrow \gamma \gamma$ events at $m_H =125$GeV, after the full and final corrections applied with the globe framwork. The result is that for high $R_9$ photons in the barrel, the effective energy resolution is of the order of $/sim 1\%$ in the barrel and $\sim 2/4\%$ in the encaps. For low $R_9$ photons, the resolution is slightly worse.
+\begin{figure}[h!]
+
+  \centering
+\includegraphics[width=0.9\textwidth]{"EffSigma_vs_eta_mva"}
+\caption{$\sigma_{\text{eff}}/E$ plotted against $|\eta|$. Horizontal dotted lines shown as guides only. Vertical dashed lines show boundaries between supermodules. The grey band indicates the interfact between the ECAL barrel and encap regions, which we do not study. Horizontal error bars indicate width of $|\eta|$ bin, while vertical error bars (visible chiefly in the high $|\eta|$, low $R_{9}$ categories), indicates the estimated uncertainty on the measurement of the resolution. }
+
+\end{figure}
+\subsubsection{Estimation of the error}
+The veritcal error bars in Fig. 5 provide an estimate of the uncertainty associated with the measurement of the resolution in each $|\eta|$ and $R_9$ category. The error for a given $|\eta|$ and $R_9$ category was assumed to be at least as large as the standard stastical error, given by $\text{Err}_{\text{stat}} = \sigma_{\text{eff}}/\sqrt{2N}$ (where $N$ is the number of photons in the category). However, additional uncertainty may have been added by the algorithm. To check this, the sample was divide into ten equivalent subsamples. For each subsample, the entire study was rerun, and the resulting ten values of $\sigma_{\text{eff}}/E$ were recorded for each of the 46 $|\eta|$ and $R_9$ categories. The RMS of these ten values was calculated in each case. If the error really were equal to $\text{Err}_{\text{stat}}$, we would expect that the subsample RMS error in each category would be $\sim \sqrt{10} \simeq 3.2$ times larger than the error for the full sample. However, when comparing the caluclated subsample RMS error to the minimum statsitical error for each category, the factor was on average 4.4 rather than 3.2, indicating that the true error is (very roughly) $~1.5$ times larger than $\text{Err}_{\text{stat}} $. As a result, the error added into Fig. 5 was $\text{Err}_{\text{stat}} \times 1.5$, thus providing a rough estimate of the uncertainty of the resolution. For most bins, the fact that $N$ is very large means that the veritcal error bars are completely invisible, however for low $R_9$, high $|\eta|$ categories, which have fewer photons, the error bars are no longer negligeable.
 
 \subsubsection{Checks}
+
+Several checks were performed during the course of the study in order to verify the consistency of the results. The main ones are summarised here. Firstly, the photon matchign mechanism was checked thoughly. The good performance of the matchign mechanism can be seen in Fig. 6.
+
+\begin{figure}[h!]
+
+  \centering
+\includegraphics[width=0.9\textwidth]{"Delta"}
+\caption{ The plot on the left (right) shows $\Delta \eta$ ($\Delta \phi$) for photons used in this study, where $\Delta X$ refers to the difference between $X_{\text{reco}}$ and $X_{\text{true}}$. The resulting distributions are very narrowly centered about 0, showing that the matchign algorithm is perfoming very well. In the rare cases where $\Delta \eta$ and $\Delta \phi$ are different from 0, this is due to poorly reconstruction of photons rather than mismatching.   }
+\end{figure}
+Secondly, the, the study was run using the CiC (REFER EARLIER FIXME) globe framework, rather than the MVA globe frmaewokr. Sicne the CiC framework was used as a crosscheck for the MVa frmaewokr in the actual lagacy anaylis, it provided and excellent opportuinjty to check consistency in this study. As can be seen in Fig. 7, the CiC version leads to slighly worse resolution in the endcaps, which is as expected since the MVA framework was designed to be more sensitive in this region.
+
+\begin{figure}[h!]
+
+  \centering
+\includegraphics[width=0.49\textwidth]{"EffSigma_vs_eta_mva"}
+\includegraphics[width=0.49\textwidth]{"EffSigma_vs_eta_cic"}
+\caption{The plot on the right (left) shows the final result when the initial data are run through the globe CiC (MVA) framework. The results are almost indetical, with the biggest differences obsevrable in the low $R_9$, high $|\eta|$ categories. This is as expected, as the MVA analysis was designed to be more sensitive, especially in this region.}
+\end{figure}
+
+A Final check was run to check whether modifying the binning in of the $E_{\text{reco}}/E_{\text{true}}$ plots had an effect on the result of the $\sigma_{\text{eff}}$ algorithm. Various bin sizes were considered, however, the change in the resulting values of $\sigma_{\text{eff}}$ were less than negligeable (at most 1.7\% in the most extreme cases).
+
+
+
 
 
 
@@ -234,7 +269,7 @@ For each event, each individual photon was categorised first by $R_{9} <0.94$ or
 
 \subsection{CMSSW\_7\_0\_X regression validation}
 
-\newpage
+
 
 \section{Future work}
 
