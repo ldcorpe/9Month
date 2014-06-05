@@ -161,7 +161,7 @@ The inner tracker consists of 4 layers of silicon pixel detectors close to the i
 \subsection{Other subdetectors}
 
 The ECAL is then surrounded by a sampling hadronic calorimeter composed of brass/scintillator in the body and iron/quartz-fibre in the forward regions. The muon chambers INSERT INFORMATION ipseum loren Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra dapibus lorem sed mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam sollicitudin nisi in convallis interdum. Vivamus nec libero at nunc molestie elementum a et arcu. Curabitur facilisis felis eget condimentum mattis. Fusce tellus erat, porttitor aliquet porta at, rhoncus in justo. Aenean pretium nulla vel mi molestie imperdiet. Praesent aliquet velit nec ligula congue, eu lacinia orci ultrices. Mauris commodo cursus massa, ut cursus tortor consectetur eu. Suspendisse eu dictum odio. Morbi tincidunt ultrices erat in ultrices. 
-\newpage
+
 
 
 \section{The $H \rightarrow \gamma \gamma$ analysis}
@@ -245,8 +245,8 @@ Secondly, the, the study was run using the CiC (REFER EARLIER FIXME) globe frame
 \begin{figure}[h!]
 
   \centering
-\includegraphics[width=0.49\textwidth]{"EffSigma_vs_eta_mva"}
-\includegraphics[width=0.49\textwidth]{"EffSigma_vs_eta_cic"}
+\includegraphics[width=0.4\textwidth]{"EffSigma_vs_eta_mva"}
+\includegraphics[width=0.4\textwidth]{"EffSigma_vs_eta_cic"}
 \caption{The plot on the right (left) shows the final result when the initial data are run through the globe CiC (MVA) framework. The results are almost indetical, with the biggest differences obsevrable in the low $R_9$, high $|\eta|$ categories. This is as expected, as the MVA analysis was designed to be more sensitive, especially in this region.}
 \end{figure}
 
@@ -256,20 +256,31 @@ A Final check was run to check whether modifying the binning in of the $E_{\text
 
 
 
-
-
 \newpage
 
+
 \section{ECAL calibration and service work}
-\subsection{Overview of the CMS Software}
+\subsection{Overview of the task}
+
+The overall collection of CMS Software is called CMSSW. \textit{``The overall collection of software, referred to as CMSSW, is built around Framework, an Event Data Model, and Services needed by the simulation, calibration and alignment, and reconstruction modules that process event data so that physicists can perform analysis.``}~\cite{CMSSW}
+
+Effectively, CMSSW provides a way to process and select events from the raw data and allow physicists in the CMS collaboration to analyze the outcome and procude physics results. One way in which CMSSW does this is in the reconstruction of particles. Of particualr interest to the $H \rightarrow \gamma \gamma$ group is the way in which photons are reconstructed within the ECAL. The latest version of CMSSW is known as CMSSW\_7\_0\_X, where the X can represent a number of different sub-versions. A key distinction between this and the version used during run I (known as CMSSW\_5\_3\_X) is indeed the way in which photons are reconstructed. In the new version, a ``Particle Flow'' (PF) (FIXME explain??) approcach has been been implemented. Using the new PF clusters, CMSSW\_7\_0\_X applies the so-called ``moustache clustering'' method, so called because of teh shape of the energy distributions woth respect to the seed crystal (effectively,the new method uses more conplex shapes that simple boxes around crystals, as used in teh preivous ietration). (FIXME picture? more explnatation needed). In this method, all ECAL objects (electrons and photons) are reconstructed with the algorithm and udnergo particle identification as a different time. This method was implemented because it is able to take advamtage of the ECAL granularity to improve conatianment of electrons and photons while rejecting pileup. Advanatges of the method also include better low-$p_T$ electron resolution, particle-based isolation... 
+
+However, although in principle the mew clustering method should provide many advnatgaes, it needs to be validated. Any significant loss in the energy resolution of ECAL objects could have a potentially disastrous effect on the $H \rightarrow \gamma \gamma$ anaylysis in particular, but in general CMS's capability to make important measurements in run II. My service work therefore is to work with the ECAL detector performance group (DPG) to help cehck the performance of CMSSW\_7\_0\_X against the perofmrance of CMMSSW\_5\_3\_X. 
 
 \subsection{The ECALELF tool}
 
-\subsection{Service work: ECALELF with CMSSW\_7\_0\_X}
+The \textbf{E}CAL \textbf{Cal}ibration with \textbf{El}ectron \textbf{F}ramework is a generic tool which uses $Z \rightarrow e^+ e^-$ events to monitor and calibrate the ECAL. ECALELF works within CMSSW to provide aligned and calibrated data upon which tests and studies can be run. In this sense, it is an ideal tool to test the new clustering method for electrons, and can be adatpted to validate teh reconstruction of photons also. The general workflow for calibration with ECALELF is to take $RECO$ data and MC  (ie, raw data which has been reconstricted using the native CMSSW version) for a given set of conditions , and apply a selection to retrieve only candidate $Z \rightarrow e^+ e^-$ events. A further selection is made via  BDT to reduce to pool of candidate events. Once this is complete a map between MC and data events based on finely segmented $\eta$ and $R_9$ categories. In general, the two electrons in a candidate event will not belong to the same category. In this case, it is difficult to know what correction factor needs to be applied to the enrgy of each electron in order to obtain the correct inbvariant mass distribution. Howeverm when both electrons in the candidate event belogn to the same $\eta$ and $R_9$ category, once can look at the MC invariant mass distribution in that category, compare it the invariant mass distribution of the candiate data events in that catgeory, and infer thet the correction to be applied to electrons (as a function of energy) in order to retireve the required distribution. In this way, $Z \rightarrow e^+ e^-$ events with both leptons in the same category allow teh calclulation of the requried correction (as a function of energy) to be applied to \textit{individual} electrons in that category. Once this has been done for all categopries, the events where the electrons/positrons belong to different categories can also be corrected (since each one will belong to a category where there requried correction for an individual electron is known). The result will be a set of corrections to apply in any $\eta$,$R_9$ scenario, thus providing the calibration. This ios known as the ``smearing method''.
+
+Apart from atcual calibration, the ECALELF tool can be used to run general studies one Ecal performance using the output data from the setp before the application of the smearing meothod. Namely, one can  theoritcally comapre the ECALELF ntuples resulting from different CMMSSW releases, since the ntuples will be in the same format.
+
+\subsection{ECALELF with CMSSW\_7\_0\_X}
+
+Although ECALELF provides an opportunity to test the performance of the new clustering method by comapring it to the previous release's ntuples, work needed to be done in order to make ECALELF work in the new CMSSW environment. Various variables had changed from one version to the other, it an update of teh software was needed. However, it oerder to run a proper conparison, a version of ECALELF which functioned within both 53X and 70X was needed. In other words, we needed to develop code which could activelyd etect which CMSSW version was beign used, and make the required subsitutions at compile time. I carried out this work and compleyted it in the first quarter of 2014.
 
 \subsection{CMSSW\_7\_0\_X regression validation}
 
-
+\newpage
 
 \section{Future work}
 

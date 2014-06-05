@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.30)  3 JUN 2014 17:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.30)  5 JUN 2014 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -718,108 +718,99 @@ File: "CMSExploded".png Graphic file (type png)
 Package pdftex.def Info: "CMSExploded".png used on input line 151.
 (pdftex.def)             Requested size: 364.19664pt x 258.7744pt.
 
-[4 <./CMSExploded.png>] [5] [6] [7]
-<"Hist2_mva".jpg, id=57, 569.0058pt x 522.753pt>
+[4 <./CMSExploded.png>] [5] [6]
+<"Hist2_mva".jpg, id=53, 569.0058pt x 522.753pt>
 File: "Hist2_mva".jpg Graphic file (type jpg)
  <use "Hist2_mva".jpg>
 Package pdftex.def Info: "Hist2_mva".jpg used on input line 214.
 (pdftex.def)             Requested size: 218.51521pt x 200.75401pt.
 
-<"Hist25_mva".jpg, id=58, 569.0058pt x 522.753pt>
+<"Hist25_mva".jpg, id=54, 569.0058pt x 522.753pt>
 File: "Hist25_mva".jpg Graphic file (type jpg)
  <use "Hist25_mva".jpg>
 Package pdftex.def Info: "Hist25_mva".jpg used on input line 215.
 (pdftex.def)             Requested size: 218.51521pt x 200.75401pt.
 
+[7 <./Hist2_mva.jpg> <./Hist25_mva.jpg>]
 <"EffSigma_vs_eta_mva".jpg, id=59, 569.0058pt x 408.0846pt>
 File: "EffSigma_vs_eta_mva".jpg Graphic file (type jpg)
 
 <use "EffSigma_vs_eta_mva".jpg>
 Package pdftex.def Info: "EffSigma_vs_eta_mva".jpg used on input line 226.
 (pdftex.def)             Requested size: 409.71689pt x 293.84558pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8 <./Hist2_mva.jpg> <./Hist25_mva.jpg>]
+ [8 <./EffSigma_vs_eta_mva.jpg>]
 <"Delta".jpg, id=63, 569.0058pt x 265.9536pt>
 File: "Delta".jpg Graphic file (type jpg)
  <use "Delta".jpg>
 Package pdftex.def Info: "Delta".jpg used on input line 240.
 (pdftex.def)             Requested size: 409.71689pt x 191.50267pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 File: "EffSigma_vs_eta_mva".jpg Graphic file (type jpg)
+
 <use "EffSigma_vs_eta_mva".jpg>
 Package pdftex.def Info: "EffSigma_vs_eta_mva".jpg used on input line 248.
-(pdftex.def)             Requested size: 223.0721pt x 159.98051pt.
+(pdftex.def)             Requested size: 182.09485pt x 130.59596pt.
 
 <"EffSigma_vs_eta_cic".jpg, id=64, 569.0058pt x 408.0846pt>
 File: "EffSigma_vs_eta_cic".jpg Graphic file (type jpg)
 
 <use "EffSigma_vs_eta_cic".jpg>
 Package pdftex.def Info: "EffSigma_vs_eta_cic".jpg used on input line 249.
-(pdftex.def)             Requested size: 223.0721pt x 159.98051pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9 <./EffSigma_vs_eta_mva.jpg>] [10 <./Delta.jpg> <./EffSigma_vs_eta_cic.jpg>]
-(./9_month_transfer_report.bbl [11]
-Underfull \hbox (badness 1466) in paragraph at lines 179--182
+(pdftex.def)             Requested size: 182.09485pt x 130.59596pt.
+ [9 <./Delta.jpg> <./EffSigma_vs_eta_cic.jpg>]
+[10] [11] [12] (./9_month_transfer_report.bbl [13]
+Underfull \hbox (badness 1466) in paragraph at lines 162--165
 []\OT1/cmr/m/n/10 S. Dittmaier et al.  Hand-book of LHC Higgs Cross Sec-tions: 
 1. In-clu-sive Ob-serv-ables.
  []
 
 
-Underfull \hbox (badness 4316) in paragraph at lines 190--196
+Underfull \hbox (badness 4316) in paragraph at lines 173--179
 []\OT1/cmr/m/n/10 S. Heine-meyer, C. Mar-i-otti, G. Pas-sarino, et al.  Hand-bo
 ok of LHC Higgs Cross
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 190--196
+Underfull \hbox (badness 3098) in paragraph at lines 173--179
 \OT1/cmr/m/n/10 Sec-tions: 3. Higgs Prop-er-ties.  (arXiv:1307.1347. CERN-2013-
 004), 2013.  Com-ments:
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 190--196
+Underfull \hbox (badness 2376) in paragraph at lines 173--179
 \OT1/cmr/m/n/10 404 pages, 139 fig-ures, to be sub-mit-ted to CERN Re-port. Wor
 k-ing Group web page:
  []
 
-[12]) [13] (./9_month_transfer_report.aux) ) 
+[14]) [15] (./9_month_transfer_report.aux) ) 
 Here is how much of TeX's memory you used:
- 6674 strings out of 493315
- 99074 string characters out of 6137904
- 174392 words of memory out of 5000000
- 10012 multiletter control sequences out of 15000+600000
+ 6676 strings out of 493315
+ 99109 string characters out of 6137904
+ 174396 words of memory out of 5000000
+ 10014 multiletter control sequences out of 15000+600000
  12616 words of font info for 45 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,9n,43p,2180b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,43p,2213b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2013/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2013/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2013/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmss10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmss12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti10.pfb>
-Output written on 9_month_transfer_report.pdf (13 pages, 2407156 bytes).
+/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2013/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2013/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmss10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmss12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmti10.pfb>
+Output written on 9_month_transfer_report.pdf (15 pages, 2423982 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 137 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

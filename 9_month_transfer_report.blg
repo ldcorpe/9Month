@@ -6,52 +6,52 @@ Database file #1: mybib.bib
 Warning--empty journal in DM
 Warning--there's a number but no volume in DM
 Warning--there's a number but no volume in Hierarchy
-Warning--empty journal in CMSTDR
 Warning--empty journal in H_XS1
 Warning--there's a number but no volume in H_XS1
 Warning--empty journal in H_XS2
 Warning--there's a number but no volume in H_XS2
 Warning--empty journal in H_XS3
 Warning--there's a number but no volume in H_XS3
-You've used 39 entries,
+Warning--empty journal in CMSTDR
+You've used 40 entries,
             1791 wiz_defined-function locations,
-            703 strings with 8803 characters,
-and the built_in function-call counts, 8545 in all, are:
-= -- 783
-> -- 324
+            707 strings with 8944 characters,
+and the built_in function-call counts, 8759 in all, are:
+= -- 803
+> -- 338
 < -- 0
-+ -- 124
-- -- 85
-* -- 600
-:= -- 1394
-add.period$ -- 118
-call.type$ -- 39
++ -- 129
+- -- 89
+* -- 611
+:= -- 1432
+add.period$ -- 123
+call.type$ -- 40
 change.case$ -- 39
 chr.to.int$ -- 0
-cite$ -- 49
-duplicate$ -- 344
-empty$ -- 852
-format.name$ -- 85
-if$ -- 1871
+cite$ -- 50
+duplicate$ -- 354
+empty$ -- 871
+format.name$ -- 89
+if$ -- 1921
 int.to.chr$ -- 0
-int.to.str$ -- 39
-missing$ -- 39
-newline$ -- 199
-num.names$ -- 39
-pop$ -- 57
+int.to.str$ -- 40
+missing$ -- 41
+newline$ -- 205
+num.names$ -- 40
+pop$ -- 60
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 133
+skip$ -- 135
 stack$ -- 0
 substring$ -- 739
-swap$ -- 34
+swap$ -- 35
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 10
-while$ -- 81
-width$ -- 41
-write$ -- 426
+while$ -- 82
+width$ -- 42
+write$ -- 440
 (There were 10 warnings)

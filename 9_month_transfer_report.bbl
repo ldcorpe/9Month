@@ -158,23 +158,6 @@ U.~Sarkar.
 \newblock {Particle and astroparticle physics}.
 \newblock {\em Taylor and Francis}, 2008.
 
-\bibitem{CMSTDR}
-G.~L. Bayatian et~al.
-\newblock {CMS Physics: Technical Design Report Volume 1: Detector Performance
-  and Software}.
-\newblock 2006.
-
-\bibitem{CMSDesign}
-S.~Chatrchyan et~al.
-\newblock {The CMS experiment at the CERN LHC}.
-\newblock {\em JINST}, 3:S08004, 2008.
-
-\bibitem{ECAL2012}
-Federico De~Guio.
-\newblock {Performance of the CMS electromagnetic calorimeter and its role in
-  the hunt for the Higgs boson in the two-photon channel}.
-\newblock {\em J.Phys.Conf.Ser.}, 455:012028, 2013.
-
 \bibitem{H_XS1}
 S.~Dittmaier et~al.
 \newblock {Handbook of LHC Higgs Cross Sections: 1. Inclusive Observables}.
@@ -193,6 +176,23 @@ S.~Heinemeyer, C.~Mariotti, G.~Passarino, et~al.
 \newblock Comments: 404 pages, 139 figures, to be submitted to CERN Report.
   Working Group web page:
   https://twiki.cern.ch/twiki/bin/view/LHCPhysics/CrossSections.
+
+\bibitem{CMSTDR}
+G.~L. Bayatian et~al.
+\newblock {CMS Physics: Technical Design Report Volume 1: Detector Performance
+  and Software}.
+\newblock 2006.
+
+\bibitem{CMSDesign}
+S.~Chatrchyan et~al.
+\newblock {The CMS experiment at the CERN LHC}.
+\newblock {\em JINST}, 3:S08004, 2008.
+
+\bibitem{ECAL2012}
+Federico De~Guio.
+\newblock {Performance of the CMS electromagnetic calorimeter and its role in
+  the hunt for the Higgs boson in the two-photon channel}.
+\newblock {\em J.Phys.Conf.Ser.}, 455:012028, 2013.
 
 \bibitem{Seez}
 C.~J. Seez et~al.
@@ -218,5 +218,12 @@ S.~Chatrchyan et~al.
 \newblock {Observation of a new boson with mass near 125 GeV in pp collisions
   at $\sqrt{s}$ = 7 and 8 TeV}.
 \newblock {\em JHEP}, 06:081, 2013.
+
+\bibitem{CMSSW}
+G.~L. Bayatian, S.~Chatrchyan, G.~Hmayakyan, et~al.
+\newblock {\em {CMS Physics: Technical Design Report Volume 1: Detector
+  Performance and Software}}.
+\newblock Technical Design Report CMS. CERN, Geneva, 2006.
+\newblock There is an error on cover due to a technical problem for some items.
 
 \end{thebibliography}
