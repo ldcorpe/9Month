@@ -74,7 +74,7 @@
 
 \renewcommand{\abstractname}{Abstract}
 \begin{abstract}
-{\large
+{
 An overview of the study of the Higgs boson via its decay to two photons at CMS is presented. A brief introduction into the history of the Standard Model and the motivation for Higgs searches is given, as well as a detailed description of the CMS experiment at CERN. The analysis of the $H \rightarrow \gamma\gamma$ decay mode is described in some detail, with reference to recent work. A discussion on the outlook and future work to be done in this decay channel is also given.}
 \end{abstract}
 
@@ -86,12 +86,17 @@ An overview of the study of the Higgs boson via its decay to two photons at CMS 
 %\begin{multicols}{2}
 \section{Introduction}
 
--Introduction to CERN and the LHC.
--Overview of my PhD: purpose of this report
--Will present my work on CMSSW validation and Hgg photon energy resolution.
--
+The $H \rightarrow \gamma \gamma$ analysis played an important role in the discovery of the Higgs boson in 2012 (CITE FIXME), and has recently published an analysis using all of the data from run I (known as the ``legacy analysis''). This analysis has demonstrated the sensitivity of this decay mode: an observation of a Higgs boson signal with over $5 \sigma$ certainty allowed a standalone discovery to be claimed CITE LEGACY (FIXME - will be published?). My Ph.D. will involve working within this group, and helping run further studies on the Higgs boson's properties. 
 
-The $H \rightarrow \gamma \gamma$ analysis played an important role in the discovery of the Higgs boson, and has recently published an analysis using all of the data from run I (known as the ``lagacy analysis''). This legacy analysis has demonstrated the sensitivity of this decay mode: an observation of the Higgs boson signal with over $5 \sigma$ allowed a standalone discovery to be claimed CITE LEGACY. My Ph.D. will involve working within this group. In run II, the LHC will ramp up the center of mass energy $ \sqrt{s}$ to $13TeV$ and evenutally $14TeV$. This increase, coupled with a rise in the luminosity of the beam (CHECKME), will allow even more data to be taken, and should usher in the era of precision Higgs physics. The tradeoff to pay, however, is that further strain will be put on the trigger, reconstruction and event processing frameworks, both during data acquisition and after. In order to make the most of the opportunities offered by run II, much work needs to be done in these domains to ensure that the CMS collaboration is ready for the switch on on 2015. One example of where such work is required is in the calibration of the ECAL. The $H \rightarrow \gamma \gamma$ analysis relied heavily on the excellent performance of the ECAL in run I to achieve its results. The analysis also required software to convert this performance into resolution. In run II, new constraints mean that the method used to reconstruct electrons and photons whithin the ECAL have changed (INSERT Mustache method??). This report will present work I have done in the validation of this update in the software, as well as a review of the resolution achieved by the $H \rightarrow \gamma \gamma$ specific software (`known as $h2gGlobe$) in simulated data in the legagcy analysis.
+In run II, the LHC will ramp up the centre of mass energy of collisions $\sqrt{s}$ to 13TeV and eventually to 14TeV. This increase, coupled with a rise in the luminosity of the beam (FIXME check!) should usher in the era of precision Higgs physics. The tradeoff to pay, however, is that further strain will be put on the trigger, reconstruction and event processing frameworks, both during data acquisition and after. For example, the number of additional (uninteresting) interactions within a bunch crossing, known as pileup, will increase, thus causing problems for triggering, track reconstruction and energy resolution. In order to make the most of the opportunities offered by run II, much work needs to be done to ensure that the CMS collaboration is ready to deal with these challenges when the LHC switches back on in March 2015, less than a year from now.
+
+One example of where such work is required is in the calibration of the electromagnetic calorimeter (ECAL) subdetector. Because the $H \rightarrow \gamma \gamma$ analysis deals with photons, intrinsically electromagnetic objects, its sensitivity relies heavily on the performance of the ECAL. In run I, the excellent sensitivity of the subdetector allowed the analysis to play a  leading role in the discovery of the Higgs boson and the subsequent analysis of its properties. Naturally, in order to make further and more precise measurements in run II, the ECAL's performance must be improved, or at least maintained, despite the challenges of the $\sqrt{s} = 13$TeV environment.
+
+To cope with these changes, the CMS collaboration has taken various steps. One of the key changes affecting the ECAL is an update of the CMS software, which reconstructs particles from the raw data. A holistic ``particle flow'' method is being implemented, allowing information from various subdetectors to be used in a holistic way. Specifically, this affects the reconstruction of electrons and photons within the tracker and ECAL: the way in which energy deposits are clustered with the array of ECAL crystals is being changed to allow more complicated shapes. This new reconstruction method has the advantage of being able to mitigate the effects of pileup, but represents a fundament shift in the treatement of electromagnetic objects. Although in principle this innovation should lead energy resolutions at least as good as those enjoyed by the ECAL in run I, it needs to be throughly tested and validated to ensure good performance in run II. Helping to validate this new clustering method is an aspect of the service work which I have pledged to complete, and intitial results will be presented.
+
+Another important task, this time within the $H \rightarrow \gamma \gamma$ group specifically, is to publish a final analysis of the sensitivity achieved by the group's efforts during run I. In this way, it will be possible to learn from the experience of run I, and benchmark any potential improvements in the group-specific software and analysis tools. I was involved in one aspect of this work, namely the measurement of the individual photon energy resolution afforded by the $H \rightarrow \gamma \gamma$ software, \texttt{h2gglobe}. 
+
+ This report is designed to communicate the research I have undertaken during the first nine months of my Ph.D. I present here the historical context of particle physics leading up to the modern day, an outline of Higgs physics at the LHC, and overview of the CMS detector as well as detailed account of my work and findings.
 
 
 
@@ -256,7 +261,7 @@ A Final check was run to check whether modifying the binning in of the $E_{\text
 
 
 
-\newpage
+
 
 
 \section{ECAL calibration and service work}
@@ -274,13 +279,167 @@ The \textbf{E}CAL \textbf{Cal}ibration with \textbf{El}ectron \textbf{F}ramework
 
 Apart from atcual calibration, the ECALELF tool can be used to run general studies one Ecal performance using the output data from the setp before the application of the smearing meothod. Namely, one can  theoritcally comapre the ECALELF ntuples resulting from different CMMSSW releases, since the ntuples will be in the same format.
 
-\subsection{ECALELF with CMSSW\_7\_0\_X}
 
 Although ECALELF provides an opportunity to test the performance of the new clustering method by comapring it to the previous release's ntuples, work needed to be done in order to make ECALELF work in the new CMSSW environment. Various variables had changed from one version to the other, it an update of teh software was needed. However, it oerder to run a proper conparison, a version of ECALELF which functioned within both 53X and 70X was needed. In other words, we needed to develop code which could activelyd etect which CMSSW version was beign used, and make the required subsitutions at compile time. I carried out this work and compleyted it in the first quarter of 2014.
 
-\subsection{CMSSW\_7\_0\_X regression validation}
+\subsection{CMSSW\_7\_0\_X and CMSSW\_5\_3\_X electron matching}
 
-\newpage
+As mentioned previously, the output of ECAELEf provides a good starting point to compare the performances of CMSSW\_7\_0\_X and CMSSW\_5\_3\_X in reconstructing ECAL objects. Although it deals with $Z\rightarrow e^+ e^-$ events, the calibration can also be applied to photons by reconstructins electrons asn photons, and using photons from the elctron showers. The advnmatge of using ECALELF ntuples is also that the output from both reconstructed datasets is in an identical fromat once passed through the machinery.
+
+Ideally, both MC and Data from both CMSSW versions would be available, to run the ECALELF tool fully, and work out the best set of corrections to be applied in each case. A re-reconstruction of the full 2012 Run I dataset using the 70X framework was completed in april. However, at the present time, the MC for 70X is not yet available, so prelimianry studies are limited to comparing data in 53X and data in 70X. The objective will be to run a deeper validation once all the required samples become available.
+
+In the meantime, since the data samples processed with 70X and 53X represente the same udnerlyong raw event samples, there is an opprotunity to compare some basic quantities electron-by-electron. The idea is to match electrons in both samples, and thereby to be able to distributions of the fratcioanl changes and differences between the qauntoities in eahc of the two frameworks. 
+
+(FIXME INSERT TABLE WITH SAMPLE NAMES)
+
+The first step, howeverm was to amend ECALELF to procude such a map. In teh ususal use case, ECALEF is designed to take as input one MC and one data sample. The tool therefore had to be modified to accept two data inputs. PArt of my work was to write the algorithm which would match the electrons in one sample with the elctrons in the other. The difficulty is that electrons within events might not be reconstructed in the same order, so for each entry in the first sample, all of the entries in the scond sample neeeded to be scanned for candidates. Given the large number of electrons in any of the run I samples, a consideration was to ensure that running such a program did not take an unreasonable amount of time. To speed up the process, the fact that runNumber and eventNumber of corresponding electrons in eahc sample should match was employed. Another trick was to store a list of all allowed candiate entries in a vector, and then to remove an already-matched entry in case of a match, so that the enxt ietration did not need to scan over events which had already been assigned. Originally, a simple entry-by-entry rejection of entries which did not have a matching eventNumber and runNumber was used, however this version of the programme took $>10$hv to process one of the subsamples. A modificationw as introcuued, which used a new user-defined class compirsing of \texttt{eventNumber} and \texttt{runNumber}  and  a \texttt{std::multimap} class (which replaced the \texttt{vector} in the previous version). The \texttt{std::multimap} class is useful because it allows elements to be mapped to a ``key''. The ``key'' can be used to access the elemts of the texttt{std::multimap}, and especially usefylly, if mutiple entries have the same ``key'', teh class can return a range which can be iterated over. In our case, the new class comprising of ordered \texttt{eventNumber} and \texttt{runNumber} pairs was used as the key for the  \texttt{std::multimap} of candidate entries, allowing the iteration over relevant entries only, rather than iteration over all entries with case-by-case rejection of entries with the worng \texttt{eventNumber} and \texttt{runNumber}. With this new method, the matching of one subsample took around $10$min, and found macthes for $\sim 80\%$ of electrons. (FIXME provide explanation as to why the other 20\% didn't get matched). Teh programme was also able to tell if the order of electrons within an entry was switched, and record this information for use later. The information is stored in a new \texttt{TTree} which stores, for every entry in one tree, whhat the corresponding entry in teh second tree is, and whetehr the order of electrons has been reversed. If no match is found, the entry in teh second \texttt{TTree} is recorded as $-1$.
+
+\subsection{Initial validation work}
+
+With the two data samples and the disctionary \texttt{TTree} linking them, it was possible to begin comparing quantities from one framework to another. Sme of teh basic qunaitites which I was asked to comapre for the two were: the reconstructed electron Energy, the electron $R_9$, the reconbstructed electron $\eta,\phi$ coordinates, the  $E/p$, the fraction of energy emitted in bremmstrahlung and the invariant mass of the $Z$ boson peak.
+
+\subsubsection{Energy}
+\begin{figure}[h!]
+        \centering
+        \begin{subfigure}[b]{0.4\textwidth}
+                \includegraphics[width=\textwidth]{Plots/rawEnergySC_EB}
+                \caption{A gull}
+                \label{fig:gull}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.4\textwidth}
+                \includegraphics[width=\textwidth]{Plots/rawEnergySC_EE}
+                \caption{A tiger}
+                \label{fig:tiger}
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.4\textwidth}
+                \includegraphics[width=\textwidth]{Plots/corrEnergySC_EB}
+                \caption{A mouse}
+                \label{fig:mouse}
+        \end{subfigure}
+         \begin{subfigure}[b]{0.4\textwidth}
+                \includegraphics[width=\textwidth]{Plots/corrEnergySC_EE}
+                \caption{A mouse}
+                \label{fig:mouse}
+        \end{subfigure}
+        \caption{Pictures of animals}\label{fig:animals}
+\end{figure}
+
+The reconstruction of the energy of ECAL objects is clearly of paramount interest in this study. Fig. 8 shows the fractional energy difference $(E_{70X}-E_{53X})/E_{53X}$ for two different estimations of energy: the raw energy (Fig. 8.a) and 8.b)), which is simply the sum of the enrgies in the crystals forming the cluster, and the corrected energy (Fig. 8.c) and 8.d)), which is the ``best estimate'' using the most sophisticated regression available for each model. In the latter case, the corrected energy for 53X is the ``best'' option available, while the corrected energy for 70X is simply an initial attempt at correction, which is likely to imrpove greatly once the the sample is calibrated using the MC. The figures are split between ECAL endcaps (EE) and barell (EB). The figures indicate that the average chnage between the corrected energies in the EB is of the order of $\sim 0.12\%$, and in the EE of the order of $\sim0.3\%$. However, this is only a preliminary result and needs to be further examined. For instance, it needs to be understood whether teh ``corrected' energies'' used actually provide a fair comaprison, as this is far from being the best option for 70X in particular.
+
+\subsubsection{$E/p$}
+\begin{figure}[h!]
+        \centering
+        \begin{subfigure}[b]{0.4\textwidth}
+                \includegraphics[width=\textwidth]{Plots/EbyPdist}
+                \caption{A gull}
+                \label{fig:gull}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.4\textwidth}
+                \includegraphics[width=\textwidth]{Plots/EbyP}
+                \caption{A tiger}
+                \label{fig:tiger}
+        \end{subfigure}
+  
+        \caption{Pictures of animals}\label{fig:animals}
+\end{figure}
+
+The quanittiy $E/p$ is important to check because it is used as a direct input into one of the calibration modules. Fig. 9.a) shows the distributions of $E/p$ for all eclectrons in teh sample for each framework: the red histogram represents the distrbution in the 53X framework, while the blue histrogram represents the distribution in the 70X framweok. Only electrons which were matched in both samples were used for these plots. Fig 9.b) represents the differnce between these two quanitities. FIXME why is this importnat?
+
+
+
+\subsubsection{$R_9$}
+\begin{figure}[h!]
+        \centering
+        \begin{subfigure}[b]{0.4\textwidth}
+                \includegraphics[width=\textwidth]{Plots/R9dist}
+                \caption{A gull}
+                \label{fig:gull}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.4\textwidth}
+                \includegraphics[width=\textwidth]{Plots/R9}
+                \caption{A tiger}
+                \label{fig:tiger}
+        \end{subfigure}
+       
+        \caption{Pictures of animals}\label{fig:animals}
+\end{figure}
+
+For electrons, the interpretation of $R_9$ is different to that for photons. In this case, it indicates whether an electron is likely to have emitted a large fraction of its energy through bremmshtalung or not. electrons with $R_9>0.94$ are likely to have showered little, and are known as ``gold'' electrons. On the other hadn, electrons with $R_9\leq 0.94$ are known as ``bad'' electrons, as they will have little more of theyr energy before hitting the detector. In this cas, they are more difficult to reconstruct. Fig. 9.a) shows the distribution of the $R_9$ of electrons in the data samples. The red line refers to electrons reconstrcuted in 53X, while the blue line shows the distributions of electrons reconstructed in 70X. Only electrons which had a match from one sample to the other were included. The distributions match up well, apart from the peak, where the 70X distribution is not as high, and around 0.5, where the 70X distribution shows a bump. These features needs to be investigated, in order to determine what teh cause is. Fig. 9.b) shows the distibution of the difference in $R_9$ (ie $(R_9)_{70X} -(R_9)_{53X}$). This forms a tight peak around 0, indicative that the two versions are generally assigning the same value of $R_9$ to the electrons.
+
+\subsubsection{Bremmstrahlung fraction}
+\begin{figure}[h!]
+        \centering
+        \begin{subfigure}[b]{0.4\textwidth}
+                \includegraphics[width=\textwidth]{Plots/fbrem}
+                \caption{A gull}
+                \label{fig:gull}
+        \end{subfigure}%
+
+        \caption{Pictures of animals}\label{fig:animals}
+\end{figure}
+A related object is the bremmstrahlung fraction $f_{\text{brem}}$, defined $(p_{\text{in}} -p_{\text{out}})/p_{\text{in}}$ (where $p$ is the elctron 4-momentum and the subscirpts ``in'' and ``out'' refer to whetehr the moentum is measured as the electron leaves or enters the tracker (FIXME check!!)). In theory, this quantity should not chnage between 70X and 53X, and indeed Fig. 10 shows that the ratio of the $f_{\text{brem}}$ in 53X and 70X is consistent with 1 across all of $\eta$.
+
+\subsubsection{$\eta,\phi$ coordinates}
+\begin{figure}[h!]
+        \centering
+        \begin{subfigure}[b]{0.22\textwidth}
+                \includegraphics[width=\textwidth]{Plots/eta}
+                \caption{A gull}
+                \label{fig:gull}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.22\textwidth}
+                \includegraphics[width=\textwidth]{Plots/phi}
+                \caption{A tiger}
+                \label{fig:tiger}
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.22\textwidth}
+                \includegraphics[width=\textwidth]{Plots/etaSC}
+                \caption{A mouse}
+                \label{fig:mouse}
+        \end{subfigure}
+         \begin{subfigure}[b]{0.22\textwidth}
+                \includegraphics[width=\textwidth]{Plots/phiSC}
+                \caption{A mouse}
+                \label{fig:mouse}
+        \end{subfigure}
+        \caption{Pictures of animals}\label{fig:animals}
+\end{figure}
+
+The position where the electrons hit the ECAL (known as the supercluster position $\eta_{\text{SC}},\phi_{\text{SC}}$) fshould not be largely affected by the change in framewok, and neither should the coordinates of teh electron tracks (in this case, knwon as $\eta,\phi$  ( the difference between the two is that $\eta_{\text{SC}},\phi_{\text{SC}}$ are measured from the center of the detetcor, while $\eta,\phi$ start at the interaction vertex, and thus are shifted in the $z$-direction). Fig. 12 shows the distributions of the chnage in the value of individual electros' reconstructed $\eta_{\text{SC}},\phi_{\text{SC}},\eta \text{ and } \phi$ respectively. As expected, the distribtuions form extremely narrow peaks around zero. This idcates that indeed, the values of the coordinates remain largely unaffected. The values of $\eta_{\text{SC}},\phi_{\text{SC}}$ are more affected than  $\eta,\phi$ , but this makes sense, since $\eta_{\text{SC}},\phi_{\text{SC}}$  are teh coordinates of the most energetic crystal in the cluster, and thus would be more affected by a chnage in clustering algorithm.
+
+
+\subsubsection{$Z\rightarrow e^+ e^-$ invariant mass }
+\begin{figure}[h!]
+        \centering
+        \begin{subfigure}[b]{0.8\textwidth}
+                \includegraphics[width=\textwidth]{Plots/Zee_corr}
+                \caption{A gull}
+                \label{fig:gull}
+        \end{subfigure}%
+      
+        \caption{Pictures of animals}\label{fig:animals}
+\end{figure}
+
+Finally, the invariant mass distributions of various categories of $Z \rightarrow e^+e^-$ system are shown. There are four categoreis considered here: a) both resulting electrons have $R_9 >0.94$ and are both in the EE, b) both with $R_9>0.94$ and in the EB, c) both with $R_9 \leq 0.94$ and in EE and d) c) both with $R_9 \leq 0.94$ and in EB. The red lines indicate the distribtuons obtained when considering electrons in the 53X framewroks, while the blue lines represent electrons from the 70X version. Only matched electrons are included in this plot. The Invariant mass is caluclated using the corrected energy of the electrons - the best available for both 70X and 53X. The plots show good agreement in the two EB catgeories, where the two peaks overalp well, apart from the height of the peak. There is however a visible discrepancy in the EE, the the peaks appear shifted with respect to one another. Futrther investogation is needed to undertsand the differences observed.
+
+\subsection{Next Steps}
+
+This section has shown results from the preliminary steps of validation of the regression in the 70X fraework. At the moment, the comaprisons are being made using data reconstructed in both 53X and 70X, but for full validation, matchign MC sampels are needed also. Although some variables appear to match (namely the $\eta_{\text{SC}},\phi_{\text{SC}},\eta \text{ and }\phi$), more studies are needed to probe differences obsevred between energy-based variables. The MC for the 70X sample is due to become available shortly, so we will eb able to run the ECALELF tool in its entirety, and thus provide a better correction for the 70X energy. This new correction should allow a more fair comaprison to be made between 53X and 70X. I am working with the ECAL detector performance group to pursue this work.
+
+
+
 
 \section{Future work}
 
