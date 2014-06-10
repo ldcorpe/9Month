@@ -1,30 +1,29 @@
 \contentsline {section}{\numberline {1}Introduction}{2}
-\contentsline {section}{\numberline {2}The SM and $H \rightarrow \gamma \gamma $}{2}
-\contentsline {subsection}{\numberline {2.1}The Standard Model}{2}
+\contentsline {section}{\numberline {2}The SM and $H \rightarrow \gamma \gamma $}{3}
+\contentsline {subsection}{\numberline {2.1}The Standard Model}{3}
 \contentsline {subsection}{\numberline {2.2}$H \rightarrow \gamma \gamma $}{3}
 \contentsline {section}{\numberline {3}The CMS detector}{4}
-\contentsline {subsection}{\numberline {3.1}Overview}{4}
-\contentsline {subsection}{\numberline {3.2}The tracker and the Electromagnetic Calorimeter}{4}
-\contentsline {subsection}{\numberline {3.3}Other subdetectors}{5}
-\contentsline {section}{\numberline {4}The $H \rightarrow \gamma \gamma $ analysis}{5}
-\contentsline {subsection}{\numberline {4.1}Overview of the legacy analysis}{5}
-\contentsline {subsection}{\numberline {4.2}Photon resolution studies}{7}
-\contentsline {subsubsection}{\numberline {4.2.1}Motivation}{7}
-\contentsline {subsubsection}{\numberline {4.2.2}Method and Result}{7}
-\contentsline {subsubsection}{\numberline {4.2.3}Estimation of the error}{8}
-\contentsline {subsubsection}{\numberline {4.2.4}Checks}{9}
-\contentsline {section}{\numberline {5}ECAL calibration and service work}{9}
-\contentsline {subsection}{\numberline {5.1}Overview of the task}{9}
-\contentsline {subsection}{\numberline {5.2}The ECALELF tool}{11}
-\contentsline {subsection}{\numberline {5.3}CMSSW\_7\_0\_X and CMSSW\_5\_3\_X electron matching}{11}
-\contentsline {subsection}{\numberline {5.4}Initial validation work}{12}
-\contentsline {subsubsection}{\numberline {5.4.1}Energy}{12}
-\contentsline {subsubsection}{\numberline {5.4.2}$E/p$}{12}
-\contentsline {subsubsection}{\numberline {5.4.3}$R_9$}{13}
-\contentsline {subsubsection}{\numberline {5.4.4}Bremmstrahlung fraction}{14}
-\contentsline {subsubsection}{\numberline {5.4.5}$\eta ,\phi $ coordinates}{15}
-\contentsline {subsubsection}{\numberline {5.4.6}$Z\rightarrow e^+ e^-$ invariant mass }{15}
-\contentsline {subsection}{\numberline {5.5}Next Steps}{15}
-\contentsline {section}{\numberline {6}Future work}{15}
-\contentsline {section}{\numberline {7}Conclusion}{16}
-\contentsline {section}{References}{17}
+\contentsline {subsection}{\numberline {3.1}Overview of the LHC and CMS}{4}
+\contentsline {subsection}{\numberline {3.2}The electromagnetic calorimeter (ECAL)}{5}
+\contentsline {subsection}{\numberline {3.3}Other subdetectors}{6}
+\contentsline {section}{\numberline {4}The $H \rightarrow \gamma \gamma $ analysis}{7}
+\contentsline {subsection}{\numberline {4.1}Overview of the legacy analysis}{7}
+\contentsline {subsection}{\numberline {4.2}Photon resolution studies}{8}
+\contentsline {subsubsection}{\numberline {4.2.1}Motivation}{8}
+\contentsline {subsubsection}{\numberline {4.2.2}Method and Result}{8}
+\contentsline {subsubsection}{\numberline {4.2.3}Estimation of the error}{10}
+\contentsline {subsubsection}{\numberline {4.2.4}Checks}{11}
+\contentsline {section}{\numberline {5}ECAL clustering validation service work}{12}
+\contentsline {subsection}{\numberline {5.1}Overview of the task}{12}
+\contentsline {subsection}{\numberline {5.2}The ECALELF tool}{12}
+\contentsline {subsection}{\numberline {5.3}\texttt {CMSSW\_7\_0\_X} and \texttt {CMSSW\_5\_3\_X} electron matching}{13}
+\contentsline {subsection}{\numberline {5.4}Initial validation work}{14}
+\contentsline {subsubsection}{\numberline {5.4.1}Energy}{14}
+\contentsline {subsubsection}{\numberline {5.4.2}$E/p$}{14}
+\contentsline {subsubsection}{\numberline {5.4.3}$R_9$}{14}
+\contentsline {subsubsection}{\numberline {5.4.4}Bremmstrahlung fraction}{16}
+\contentsline {subsubsection}{\numberline {5.4.5}$\eta ,\phi $ coordinates}{16}
+\contentsline {subsubsection}{\numberline {5.4.6}$Z\rightarrow e^+ e^-$ invariant mass }{17}
+\contentsline {subsection}{\numberline {5.5}Next Steps}{18}
+\contentsline {section}{\numberline {6}Conclusion}{18}
+\contentsline {section}{References}{18}

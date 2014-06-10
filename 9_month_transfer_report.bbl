@@ -183,6 +183,10 @@ G.~L. Bayatian et~al.
   and Software}.
 \newblock 2006.
 
+\bibitem{cmsEcal}
+{\em {The CMS electromagnetic calorimeter project: Technical Design Report}}.
+\newblock Technical Design Report CMS. CERN, Geneva, 1997.
+
 \bibitem{CMSDesign}
 S.~Chatrchyan et~al.
 \newblock {The CMS experiment at the CERN LHC}.
@@ -194,10 +198,30 @@ Federico De~Guio.
   the hunt for the Higgs boson in the two-photon channel}.
 \newblock {\em J.Phys.Conf.Ser.}, 455:012028, 2013.
 
+\bibitem{cmsTrk}
+V~Karimäki, M~Mannelli, P~Siegrist, H~Breuker, A~Caner, R~Castaldi,
+  K~Freudenreich, G~Hall, R~Horisberger, M~Huhtinen, and A~Cattai.
+\newblock {\em {The CMS tracker system project: Technical Design Report}}.
+\newblock Technical Design Report CMS. CERN, Geneva, 1997.
+
+\bibitem{cmsHcal}
+{\em {The CMS hadron calorimeter project: Technical Design Report}}.
+\newblock Technical Design Report CMS. CERN, Geneva, 1997.
+
+\bibitem{cmsMuon}
+{\em {The CMS muon project: Technical Design Report}}.
+\newblock Technical Design Report CMS. CERN, Geneva, 1997.
+
 \bibitem{Seez}
 C.~J. Seez et~al.
 \newblock {Photon decay modes of the intermediate mass Higgs}.
 \newblock {\em Conf. Proc.}, C901004:474--487, 1990.
+
+\bibitem{HDisc}
+S.~Chatrchyan et~al.
+\newblock {Observation of a new boson with mass near 125 GeV in pp collisions
+  at $\sqrt{s}$ = 7 and 8 TeV}.
+\newblock {\em JHEP}, 06:081, 2013.
 
 \bibitem{BDT}
 Byron~P. Roe, Hai-Jun Yang, Ji~Zhu, Yong Liu, Ion Stancu, and Gordon McGregor.
@@ -213,17 +237,22 @@ S~Chatrchyan et~al.
   in $pp$ collisions at $\sqrt{s}=7$ TeV}.
 \newblock {\em Phys. Lett.}, B710:403--425, 2012.
 
-\bibitem{HDisc}
-S.~Chatrchyan et~al.
-\newblock {Observation of a new boson with mass near 125 GeV in pp collisions
-  at $\sqrt{s}$ = 7 and 8 TeV}.
-\newblock {\em JHEP}, 06:081, 2013.
-
 \bibitem{CMSSW}
 G.~L. Bayatian, S.~Chatrchyan, G.~Hmayakyan, et~al.
 \newblock {\em {CMS Physics: Technical Design Report Volume 1: Detector
   Performance and Software}}.
 \newblock Technical Design Report CMS. CERN, Geneva, 2006.
-\newblock There is an error on cover due to a technical problem for some items.
+
+\bibitem{ecalShower}
+M.~Anderson et~al.
+\newblock {A Review of clustering algoritms and energy corrections in the
+  Electromagnetic Calorimeter}.
+\newblock {\em CERN}, CMS Internal Note, 2010/008.
+
+\bibitem{particleFlow}
+CMS Collaboration.
+\newblock {Particle–Flow Event Reconstruction in CMS and Performance for
+  Jets, Taus, and MET}.
+\newblock {\em CERN}, CMS Physics Analysis Summary, PFT-09-001.
 
 \end{thebibliography}

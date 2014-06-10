@@ -86,17 +86,17 @@ An overview of the study of the Higgs boson via its decay to two photons at CMS 
 %\begin{multicols}{2}
 \section{Introduction}
 
-The $H \rightarrow \gamma \gamma$ analysis played an important role in the discovery of the Higgs boson in 2012 (CITE FIXME), and has recently published an analysis using all of the data from run I (known as the ``legacy analysis''). This analysis has demonstrated the sensitivity of this decay mode: an observation of a Higgs boson signal with over $5 \sigma$ certainty allowed a standalone discovery to be claimed CITE LEGACY (FIXME - will be published?). My Ph.D. will involve working within this group, and helping run further studies on the Higgs boson's properties. 
+The $H \rightarrow \gamma \gamma$ analysis played an important role in the discovery of the Higgs boson in 2012 (CITE FIXME), and has recently published an analysis using all of the data from run I (known as the ``legacy analysis''). This analysis has demonstrated the sensitivity of this decay mode: an observation of a Higgs boson signal with over $5 \sigma$ certainty allowed a standalone discovery to be claimed CITE LEGACY (FIXME - will be published?). My Ph.D. will involve working within this group, and helping run further studies on the Higgs boson's properties when the LHC starts running again in March 2015. Although the exact strategy for the future analysis is yet to be determined, some potential work coud include: precise measurement of the differential cross-sections associated with $H \rightarrow \gamma \gamma$ decays, a study of the cross-sections of Higgs production mechanisms resulting in decays to two photons, and a focus on the $H \rightarrow \gamma \gamma$ decay with associated $b$ quark production... (FIXME check)
 
 In run II, the LHC will ramp up the centre of mass energy of collisions $\sqrt{s}$ to 13TeV and eventually to 14TeV. This increase, coupled with a rise in the luminosity of the beam (FIXME check!) should usher in the era of precision Higgs physics. The tradeoff to pay, however, is that further strain will be put on the trigger, reconstruction and event processing frameworks, both during data acquisition and after. For example, the number of additional (uninteresting) interactions within a bunch crossing, known as pileup, will increase, thus causing problems for triggering, track reconstruction and energy resolution. In order to make the most of the opportunities offered by run II, much work needs to be done to ensure that the CMS collaboration is ready to deal with these challenges when the LHC switches back on in March 2015, less than a year from now.
 
 One example of where such work is required is in the calibration of the electromagnetic calorimeter (ECAL) subdetector. Because the $H \rightarrow \gamma \gamma$ analysis deals with photons, intrinsically electromagnetic objects, its sensitivity relies heavily on the performance of the ECAL. In run I, the excellent sensitivity of the subdetector allowed the analysis to play a  leading role in the discovery of the Higgs boson and the subsequent analysis of its properties. Naturally, in order to make further and more precise measurements in run II, the ECAL's performance must be improved, or at least maintained, despite the challenges of the $\sqrt{s} = 13$TeV environment.
 
-To cope with these changes, the CMS collaboration has taken various steps. One of the key changes affecting the ECAL is an update of the CMS software, which reconstructs particles from the raw data. A holistic ``particle flow'' method is being implemented, allowing information from various subdetectors to be used in a holistic way. Specifically, this affects the reconstruction of electrons and photons within the tracker and ECAL: the way in which energy deposits are clustered with the array of ECAL crystals is being changed to allow more complicated shapes. This new reconstruction method has the advantage of being able to mitigate the effects of pileup, but represents a fundament shift in the treatement of electromagnetic objects. Although in principle this innovation should lead energy resolutions at least as good as those enjoyed by the ECAL in run I, it needs to be throughly tested and validated to ensure good performance in run II. Helping to validate this new clustering method is an aspect of the service work which I have pledged to complete, and intitial results will be presented.
+To cope with these changes, the CMS collaboration has taken various steps. One of the key changes affecting the ECAL is an update of the CMS software, which reconstructs particles from the raw data. A holistic ``particle flow'' method is being implemented, allowing information from various subdetectors to be used in a holistic way. Specifically, this affects the reconstruction of electrons and photons within the tracker and ECAL: in short, the way in which energy deposits are clustered within the array of ECAL crystals is being modified to allow more complicated shapes. This new reconstruction method has the advantage of being able to mitigate the effects of pileup, but represents a fundament shift in the treatement of electromagnetic objects. Although in principle this innovation should lead to energy resolutions at least as good as those enjoyed by the ECAL in run I, it needs to be throughly tested and validated to ensure good performance in run II. Helping to validate this new clustering method is an aspect of the service work which I have pledged to complete in order to become an author in CMS collaboration papers.
 
-Another important task, this time within the $H \rightarrow \gamma \gamma$ group specifically, is to publish a final analysis of the sensitivity achieved by the group's efforts during run I. In this way, it will be possible to learn from the experience of run I, and benchmark any potential improvements in the group-specific software and analysis tools. I was involved in one aspect of this work, namely the measurement of the individual photon energy resolution afforded by the $H \rightarrow \gamma \gamma$ software, \texttt{h2gglobe}. 
+Another important task, this time within the $H \rightarrow \gamma \gamma$ group specifically, is to publish a final analysis of the sensitivity achieved by the group's efforts during run I. In this way, it will be possible to learn from the experience of run I, and benchmark any potential improvements in the group-specific software and analysis tools (indeed, the software is being redesigned in order to cope with the group's changing membership and physics objectives). I was involved in one aspect of this work, namely the measurement of the individual photon energy resolutions afforded by the $H \rightarrow \gamma \gamma$ software, \texttt{h2gglobe}. The plots I produced are to be included in an upcoming paper on the topic of photon reconstruction in run I (CITE arcxiv at least FIXME). 
 
- This report is designed to communicate the research I have undertaken during the first nine months of my Ph.D. I present here the historical context of particle physics leading up to the modern day, an outline of Higgs physics at the LHC, and overview of the CMS detector as well as detailed account of my work and findings.
+ This document is designed to communicate the research I have undertaken during the first nine months of my Ph.D. As such, I will present an overview of the work and findings from my efforts within the $H \rightarrow \gamma \gamma$ group and the ECAL detector performance group (DPG).I will also provide context to these results by giving a brief summary of developements in particle physics leading up to the modern day, an outline of Higgs physics at the LHC, and overview of the CMS detector.
 
 
 
@@ -114,66 +114,106 @@ Although the SM has been very successful as a theory, it falls short of being a 
 Even in the Higgs sector, more work remains to be done. Precision measurements of the properties of this particle are needed: does it behave like the SM predicts? Is there only one such particle? Detailed studies are required to ascertain couplings, the differential cross section, width and other attributes of this Higgs particle. Deviations from the expected values of such properties could provide valuable insight into the nature or indeed existence of BSM physics.
 
 \subsection{$H \rightarrow \gamma \gamma$}
-According to SM, the Higgs boson's coupling with particles is proportional to their mass. As such, its production modes in the environment of the LHC are dominated by interactions involving the heavier particles of the SM. Typically, the Higgs boson is produced by one of the following mechanisms, as illustrated in figure 2: a) gluon-gluon fusion, via a loop of top quarks, b) vector boson fusion (so-called “VBF"), with associated quark production, c) associated vector boson production (also known as “Higgsstrahlung") and d) top quark fusion with associated top quark production.
+According to SM, the Higgs boson's coupling with particles is proportional to their mass. As such, its production modes in the environment of the LHC are dominated by interactions involving the heavier particles of the SM. Typically, the Higgs boson is produced by one of the following mechanisms (Fig. \ref{higgs_prod}):
+
 \begin{figure}[h!]
 
-
-  \includegraphics[width=0.9\textwidth]{"test"}
-  \caption{Higgs production mechanisms at the LHC.}
+  \centering
+      \begin{subfigure}[b]{0.22\textwidth}
+\includegraphics[width=\textwidth]{"HiggsProduction/ggH"}
+\caption{}
+\end{subfigure}
+    \begin{subfigure}[b]{0.22\textwidth}
+\includegraphics[width=\textwidth]{"HiggsProduction/vbf"}
+\caption{}
+\end{subfigure}
+    \begin{subfigure}[b]{0.22\textwidth}
+\includegraphics[width=\textwidth]{"HiggsProduction/wzH"}
+\caption{}
+\end{subfigure}
+    \begin{subfigure}[b]{0.22\textwidth}
+\includegraphics[width=\textwidth]{"HiggsProduction/ttH"}
+\caption{}
+\end{subfigure}
+\caption{Higgs production modes at the LHC: (a) gluon-gluon fusion, via a loop of top quarks, (b) vector boson fusion (VBF), with associated quark production, (c) associated vector boson production (also known as “Higgsstrahlung") and (d) top quark fusion with associated top quark production.}
+\label{higgs_prod}
 \end{figure}
+
 
 By the same token, the SM Higgs boson decays to pairs of particles with branching ratios proportional to the square of their mass. The production of a pair of $t$ quarks is not kinematically allowed because their mass is high, so the most likely decay modes are $H \rightarrow ZZ \text{, } W^{\pm}W^{\mp}$, $ b\bar{b}$ and $ \tau^+ \tau^-$. In addition, a small fraction of decays of the Higgs boson ($<1\%$) can occur via a loop diagram to a pair of high-energy photons. The branching fractions and cross sections of these production and decay modes are available in the Handbook of LHC Higgs Cross Sections~\cite{H_XS1,H_XS2}.
 
 
 \begin{figure}[h!]
-
-  \centering
-%\begin{subfigure}[b]{0.52\textwidth}  
-%\includegraphics[width=\textwidth]{"Higgs_XS"} 
-%\caption{Higgs production cross sections} 
-%\end{subfigure}
-%\begin{subfigure}[b]{0.4\textwidth}  
-  %\includegraphics[width=\textwidth]{"Higgs_BR"}  
-%\caption{Higgs decay branching ratios}
-%\end{subfigure}
+\centering
 \includegraphics[width=\textwidth]{"SignalStrength"}
-\caption{The signal strengths of the Higgs boson observation by decay mode and in combination at ATLAS (left) and CMS (right). The results are consistent with the observation of a particle of $m_H \sim 125$ GeV~\cite{H_XS3}.}
+\caption{Signal strengths of the Higgs boson observations by decay mode and in combination at ATLAS (left) and CMS (right), consistent with the observation of a particle of $m_H \sim 125$ GeV~\cite{H_XS3}.}
+\label{sig_strength}
 \end{figure}
 
-The Higgs boson was discovered in 2012 using data from runs at $\sqrt{s}=7$ and $8$ TeV, and was found to have a mass $m_H \sim 125$ GeV. The signal strengths of the various decay modes at the CMS and ATLAS experiments can be seen in figure 3. Despite fewer than $1\%$ of Higgs boson decays occurring via $H \rightarrow \gamma \gamma$, this channel played a crucial role in the discovery, and remains one of the two most sensitive methods of studying the Higgs boson. This is in part thanks to the excellent performance of the CMS ECAL.
-
+The Higgs boson was discovered in 2012 using data from runs at $\sqrt{s}=7$ and $8$ TeV, and was found to have a mass $m_H \sim 125$ GeV. The signal strengths of the various decay modes at the CMS and ATLAS experiments can be seen in Fig. \ref{sig_strength}. Despite fewer than $1\%$ of Higgs boson decays occurring via $H \rightarrow \gamma \gamma$, this channel played a crucial role in the discovery, and remains one of the two most sensitive methods of studying the Higgs boson. This is in part thanks to the excellent performance of the CMS ECAL.
 
 
 
 \section{The CMS detector}
 
-\subsection{Overview}
-The LHC is a synchrotron that was built in the tunnel which previously contained the Large Electron Positron (LEP) collider at CERN, near Geneva. It has a circumference of 27km and was designed to collide beams of protons (or lead ions) head on. In its latest run, it achieved a centre of mass energy of $\sqrt{s}=8$ TeV. The LHC shut down for a planned upgrade period in 2012, and is due to restart collisions in March 2015. At this stage, it should be able to deliver a centre of mass energy close to its design value of $\sqrt{s}=14$ TeV. 
-As mentioned previously, the LHC is equipped with two multi-purpose detectors, CMS and ATLAS, which simultaneously discovered the Higgs boson using the data from run I. This report will focus on the CMS detector. The overall layout can be seen in the figure 1 below~\cite{CMSTDR}.
+\subsection{Overview of the LHC and CMS}
+The LHC is a synchrotron that was built in the tunnel which previously contained the Large Electron Positron (LEP) collider at CERN, near Geneva. It has a circumference of 27km and was designed to collide beams of protons (or lead ions) head on. In its latest run, it achieved a centre of mass energy of $\sqrt{s}=8$ TeV. The LHC shut down for a planned upgrade period in 2012, and is due to restart collisions in March 2015. At this stage, it should be able to deliver a centre of mass energy close to $\sqrt{s}=13$ TeV, before ramping up to its design value of $14$ TeV. 
+As mentioned previously, the LHC is equipped with two multi-purpose detectors, CMS and ATLAS, which simultaneously discovered the Higgs boson using the data from run I. This report will focus on the CMS detector, the overall layout of which can be seen in Fig. \ref{cms} below~\cite{CMSTDR}.
+
 \begin{figure}[h]
-
   \centering
-  \includegraphics[width=0.8\textwidth]{"CMSExploded"}
+  \includegraphics[width=0.85\textwidth]{"CMSExploded"}
   \caption{The CMS detector perspective view.}
+  \label{cms}
 \end{figure}
-CMS is a layered detector over 21m long and 14m in diameter, weighing over 12,500 tons. It consists of a superconducting solenoid magnet 13m long and 5.9m in diameter, generating a 3.8T magnetic field. On the outside of this, 4 layers of iron act as a return yoke, and house muon detector chambers (drift tubes in the barrel region and cathode strip chambers in the end cap region). The high magnetic field allows for good energy resolution in the compact space of the detector. The calorimeters and inner tracker are housed within the solenoid. 
+CMS, which stands for Compact Muon Solenoid, is located approximately 100m underground at point 5 of the LHC, near the french village of Cessy. It is a layered detector over 21m long and 14m in diameter, weighing over 12,500 tons. It consists of a superconducting solenoid magnet 13m long and 5.9m in diameter, generating a 3.8T magnetic field, which is embedded within the various subdetectors. The high magnetic field allows for good energy resolution in the compact space of the detector. CMS is composed of a cylindrical barrel region around the solenoid, and two endcaps on either side. Four layers of iron act as a return yoke for the magnet and house muon detector chambers (drift tubes in the barrel region and cathode strip chambers in the end cap region). The calorimeters (electromagnetic and hadronic) and inner tracker are housed within the solenoid. 
 
-\subsection{The tracker and the Electromagnetic Calorimeter}
 
-The tracker and the electromagnetic calorimeter are the two subdetectors which the $H \rightarrow \gamma \gamma$ uses most (and indeed, almost exclusively). This report will therefore deal with them in a more detailed manner than it will for the other subdetectors.
-The inner tracker consists of 4 layers of silicon pixel detectors close to the interaction region, surrounded by 10 layers of silicon micro-strip detectors. (INSERT MORE TRACKER INFO) These allow reconstruction of tracks and secondary vertices in the high track multiplicity environment of the LHC. The electromagnetic calorimeter (ECAL) is made up of an array of 61,200 lead PbWO$_4$ (lead tungstate) crystals in the barrel section and 14,648 crystals in the end caps~\cite{CMSTDR}. This is a central feature of the CMS detector as it allows for excellent energy resolution of incoming photons. The resolution of the ECAL is modelled with the equation \begin{equation} \left( \frac{\sigma}{E}\right) ^2= \left( \frac{S}{\sqrt{E}} \right)^2 + \left( \frac{N}{E} \right)^2 + C^2\end{equation} where $S$ represents the stochastic term, $N$ represents the noise terms and $C$ represents a constant term~\cite{CMSDesign}. The design values of these parameters are approximately $S=2.8\%$ GeV$^\frac{1}{2}$, $ N= 0.12$ GeV and $C=0.3 \%$. The performance of the ECAL matched these design values during the 2012 run~\cite{ECAL2012}. INSERT FIGURE of ecal performance?
+The CMS detector uses a right-handed coordinate system whereby the $x$-axis points towards the centre of the LHC ring, the $y$-axis points upwards, and the $z$-axis points in the direction of the counter-clockwise beam. A coordinate system more convenient to the geometry of the detector is $(\eta,\phi,z)$, where $\eta = -\ln [ \tan(\frac{\theta}{2})]$ is the pseudorapidity (where $\theta$ is the polar angle relative to the beam axis) and $\phi$ is the angle relative to the $y$-axis in the $(x,y)$ plane.
+
+\subsection{The electromagnetic calorimeter (ECAL)}
+
+The ECAL is the subdetector which the $H \rightarrow \gamma \gamma$ uses most (and indeed, almost exclusively), and is also the subject of my servicework. This report will therefore deal with it in a more detailed manner than it will for the other subdetectors.This information from this section is taken from ~\cite{CMSTDR} and~\cite{cmsEcal}.
+
+The ECAL is made up of an array of 61,200 lead PbWO$_4$ (lead tungstate) crystals in the barrel section and 14,648 crystals in the end caps, arranged one crystal deep. PbWO$_4$ was chosen because it has a short radiation length (the mean distance over which an electron loses all but $\frac{1}{e}$ of its energy to bremmstrahlung) of 0.89cm, a small Molière radius (the radius of a cylinder containing on average 90\% of a shower's energy) of 2.19cm and because it is a fast scintillator. This is a central feature of the CMS detector as it allows for excellent energy resolution of incoming photons. 
+
+The crystal front faces are 22mm $\times$ 22mm sqaures, corresponding to approximately $\delta \eta \times \delta \phi = 0.0174 \times 0.0174$, roughly matching the Molière radius. The individual crystals thickness is approximately 26 radiation lengths, to ensure that the electromagnetic showers are fully contained within the ECAL. The array of crystals extends to $|\eta| =3$, but precision measurements are only made up to $|\eta| =2.5$. There are also transition regions between the ECAL barrel and endcaps around $|\eta| =1.5$ where data is not taken. The arrangement of the crystals in the ECAL can be seen on Fig. \ref{ecal}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{"EcalEBEE"}
+  \caption{Schematic cross section of one quadrant of the ECAL, showing the arrangement of crystals in the ECAL Barrel (EB) and Encaps (EE)~\cite{cmsEcal}. The shower detetcor (SE) is also visible, as is the hadron calorimeter barrel (HB) and the tracker (TK).}
+  \label{ecal}
+\end{figure}
+
+
+The crystals are attached to photodiodes, which read out the amount of light, and thus the amount of energy, deposited within by the showers. The resolution of the ECAL is modelled with the equation \begin{equation} \left( \frac{\sigma}{E}\right) ^2= \left( \frac{S}{\sqrt{E}} \right)^2 + \left( \frac{N}{E} \right)^2 + C^2\end{equation} where $S$ represents the stochastic term, $N$ represents the noise terms and $C$ represents a constant term~\cite{CMSDesign}. The design values of these parameters are approximately $S=2.8\%$ GeV$^\frac{1}{2}$, $ N= 0.12$ GeV and $C=0.3 \%$. The performance of the ECAL matched these design values during the 2012 run~\cite{ECAL2012}. 
+
+%\begin{figure}[h]
+ % \centering
+  %\includegraphics[width=0.6\textwidth]{"EcalPlot"}
+ % \caption{The different contributions to the ECAL energy resolution The blue line represents the sum of the stochastic term (red line), the noise term (pink line) and the constant term plus corrected for shower containment (violet line).~\cite{cmsEcal}}
+%  \label{ecalplot}
+%\end{figure}
+
+The ECAL is split into the barrel (EB) and the endcaps (EE), which have notably different structures and performance. The EB provides coverage in the region $|\eta| < 1.479$, while the EE provides coverage for $1.556 < |\eta| < 2.5$. The crystals in the EB are grouped into 36 supermodules, each subtending an angle of $20^o$ in $\phi$. The crystals are arranged so that they do not point directly at the mean position of the primary interacton vertex, but instead are positioned with a $3^o$ offset in both $\theta$ and $\phi$. This is done to help avoid particles being lost in the gaps between the crystals. The EE is composed of two ``D''-shaped sections, built up of ``supercrystals'' (units of 36 standard crystals). The position of the endcaps causes them to endure higher levels of radiation than the barrel region do, and therefore the EE must be made with more radiation-hard materials. This factor, along with a high flux of particles and worse clustering algorithms, means that the EE has notably worse reaolution that the EB. 
+
+The ECAL is also mounted with preshower detectors (SE) at $1.54 <|\eta| < 2.61$, the main purpose of which is to distinguish between $\pi^0$ and $\gamma$ particles. The SE is composed of two planes of Pb, of 2 and 1 radiation lengths respectively, with high granularity silicon detector strips after each. The SE is used in cases when pions from jets undergo $\pi^0\rightarrow \gamma \gamma$, where both photons strike the same crystal. Although the EE might interpret this as one highly energetic photon, the high granularity of the silicon strips in the SE allow two tracks to be identified. The energy deposited in the SE is measured, and an approrpiate correction is made to the energy measured in the ECAL crystals.
 
 \subsection{Other subdetectors}
 
-The ECAL is then surrounded by a sampling hadronic calorimeter composed of brass/scintillator in the body and iron/quartz-fibre in the forward regions. The muon chambers INSERT INFORMATION ipseum loren Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra dapibus lorem sed mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam sollicitudin nisi in convallis interdum. Vivamus nec libero at nunc molestie elementum a et arcu. Curabitur facilisis felis eget condimentum mattis. Fusce tellus erat, porttitor aliquet porta at, rhoncus in justo. Aenean pretium nulla vel mi molestie imperdiet. Praesent aliquet velit nec ligula congue, eu lacinia orci ultrices. Mauris commodo cursus massa, ut cursus tortor consectetur eu. Suspendisse eu dictum odio. Morbi tincidunt ultrices erat in ultrices. 
+The closest subdetector to the beam crossing point is the inner tracker~\cite{cmsTrk}, which is used to accurately measure the momenta of charged particles, and thus reconstruct the positions of primary  and secondary interaction vertices. The inner tracker consists of a barrel section (3 cylindrical layers of silicon pixel detectors close to the interaction region, surrounded by 10 layers of silicon micro-strip detectors), and encaps (two discs of silicon pixel detectors and 12 discs of silicon micro-strip detectors). Momenta of charged particles can be measured accurately for $|\eta|\leq 1.6$ (where particles intersect about 13 planes), and to a lesser extent for $|\eta| <2.5$ (where particles intersect at least 8 planes), by measuring the curvature of tracks as they bend in the strong magnetic field. The tracker is encased within the ECAL.
 
+The hadronic calorimeter (HCAL) surrounds the ECAL. This subdetector is used to measure the directions and energies of quarks, gluons in the form of jets and estimate the directions and energies of neutrinos by lookign at the famount of missing transverse energy. The CMS HCAL is a sampling calorimeter, consisting of active material between absorber plates. The active material is a plastic scintillator read out by  wavelength-shifting plastic fibers. The absorber plates are made of a copper alloy (copper is chosen as it is an non-magnetic material, and thus will be be affected by the strong magnetic field within the solenoid). The HCAL provides coverage up to $|\eta| < 3$. In order to accurately measure missing energy, the HCAL must be as hermetic as possible. For this reason, an additional ``forward'' calorimeter is appended, which gives coverage up to $\eta| <5$. This uses active quartz fibers within a copper abserober matrix.~\cite{cmsHcal}. The HCAL is ancased within the solenoid.
+
+Finally, the solenoid is surrounded by the outermost subdetector, the muon system, which also functions as a return yoke. Again, this subdetetcor is segmented into a cylindrical barrel region and two endcaps. The in barrel, the muon tracking is provided by four layers of drift tubes, interspersed with the iron return sections. This section of the muon system has coverage to $|\eta| <1.3$. In the endcaps, the muon tracking is composed of four layers of cathode strip chambers.~\cite{cmsMuon}
 
 
 \section{The $H \rightarrow \gamma \gamma$ analysis}
 
 \subsection{Overview of the legacy analysis}
 
-The $H \rightarrow \gamma \gamma$ analysis relies on the fact that there is a small but non-negligible branching fraction of Higgs bosons which decay to two highly energetic photons via loops of particles, generally virtual top quarks or $W^{\pm}$ vector bosons. Although around the mass $m_H \sim 125$ GeV there is a large irreducible QCD background, the excellent diphoton energy resolution ($\sim 1 \%$) of the CMS ECAL allows the reconstruction of a narrow peak above the background. The resolution available via this decay channel meant that it was identified early on as “one of the most promising channels in the search for a SM Higgs boson in the low mass range"~\cite{Seez}. The following description is based on the analysis of the $\sqrt{s}=7$ and $8$ TeV data samples~cite{HDisc}.
+The $H \rightarrow \gamma \gamma$ analysis relies on the fact that there is a small but non-negligible branching fraction of Higgs bosons which decay to two highly energetic photons via loops of particles, generally virtual top quarks or $W^{\pm}$ vector bosons. Although around the mass $m_H \sim 125$ GeV there is a large irreducible QCD background, the excellent diphoton energy resolution ($\sim 1 \%$) of the CMS ECAL allows the reconstruction of a narrow peak above the background. The resolution available via this decay channel meant that it was identified early on as “one of the most promising channels in the search for a SM Higgs boson in the low mass range"~\cite{Seez}. The following description is based on the ``mass-factorised multivariate analysis'' (refered to within the group as  the MVA) of the $\sqrt{s}=7$ and $8$ TeV data samples~\cite{HDisc}. 
 
 %Once candidate photon pairs are isolated, they are classed into mutually exclusive categories with different signal to background ratios. This allows the overall sensitivity of the analysis to be improved. These categories are distinguished by the properties of the reconstructed photons, and whether two jets were also recorded, corresponding to the VBF Higgs production mode. 
 The analysis depends heavily on boosted decision trees (BDTs) to identify and classify events. A BDT is an algorithm which categorises items based on multiple input variables~\cite{BDT}. Different weights are applied depending on whether an item passes or fails cuts based on these input variables. The weights are summed at the end and the final value is used to determine which category the item falls in. The algorithm is trained (i.e. the aforementioned weights and cut thresholds are determined) with simulations or data with similar properties. %A day-to-day example of such an algorithm would be an email spam filter, where the items are to be classified as genuine or spam. The input variables would be, for example, frequency of exclamation marks or dollar signs, quality of spelling, use of the recipient's name. The output might be a value from 0 to 1 representing the probability that the email is spam, and above a certain value, the email would be directed to the relevant folder.
@@ -194,230 +234,241 @@ The background model is obtained using a data-driven technique rather than a MC 
 
 Finally, the observed invariant mass distribution is compared to that predicted by the background fit. An observed excess of events around $\sim125.0$ GeV with a local significance of $4.1 \sigma$ in the $\gamma \gamma$ decay channel signalled the existence of the Higgs boson in 2012. Combined with measurements from other decay modes, CMS anounced a measuremement of $m_H=125.3 \pm 0.4 \text{(stat.)} \pm 0.5 \text{(syst.)}$ GeV with a local observed significance of $5.0 \sigma$~\cite{HDisc}.
 
+Another, slightly less sensitive method, known as the ``cuts in catgeories'' or CiC method, was used as a cross-check to the MVA method. The CiC method differs from the MVA in the number of categories: the former segments events broadly into just four categories in $R_9$ and $|\eta|$.
 
 \subsection{Photon resolution studies}
 
 \subsubsection{Motivation}
 
-An important task after the publication of the legacy analysis is to learn lessons from the perofmrance of the previous run. This allows better preparation for run II. As such, a paper is being prepared to mark the performance of the $H \rightarrow \gamma\gamma$ software during the later part of the first run. One aspect of this was to run a study to look at the resolution of photon energies as reconstructed using the globe software package. I was tasked with repapring this plot.
+An important task after the publication of the legacy analysis is to learn lessons from the performance during run I, so that any future improvements can be benchmarked. As such, a paper is being prepared to mark the performance of the $H \rightarrow \gamma\gamma$ analysis during the later part of the first run. One aspect of this was to run a study to look at the resolution of photon energies as reconstructed using the $H \rightarrow \gamma\gamma$ software package, known as \texttt{h2gglobe}. I was tasked with preparing this plot.
 
-The study consisted of looking at the reconstruction of Higgs boson decay photons in simulated collision at 8TeV, assuming $m_H = 125GeV$. The resulting plot was intended to give the effective energy resolution $\sigma_{\text{eff}}/E$ for individual photons, given in small $|\eta|$ bins.
-Monte Carlo samples for the $8TeV$ LHC condidtions were used in this study. More precisely, a sample of simulated $H \rightarrow \gamma \gamma$ events corresponding to each Higgs production mode (Vector Boson Fusion , Glugon-Gluon Fusion, Associated Vector Boson Production and Associated Top Quark Production), weighted by cross section, were used as the dataset for the study.
-Since the intention is to provide an account of the sensitivity of the $H \rightarrow \gamma\gamma$ analysis, the MC samples were passed through the globe MVA framework, and therefore were processed as they would have been in the legacy analysis, with full smearing and correcttions.
+The study consisted of looking at the reconstruction of Higgs boson decay photons in simulated collision at 8TeV, assuming $m_H = 125GeV$. The resulting plot was intended to give the effective energy resolution $\sigma_{\text{eff}}/E$ for individual photons in the ECAL, segmented into small $|\eta|$ bins.
+Monte Carlo samples for the $8$TeV LHC conditions were used in this study. More precisely, a sample of simulated $H \rightarrow \gamma \gamma$ events corresponding to each Higgs production mode (VBF, gluon-gluon fusion, associated $Z/W^{\pm}$ production and associated top quark production), weighted by cross section, were used as the dataset for the study.
+Since the intention was to provide an account of the sensitivity of the $H \rightarrow \gamma\gamma$ analysis, the MC samples were passed through the globe MVA framework, and therefore were processed as they would have been in the legacy analysis, with full smearing and corrections.
 
 
 
 \subsubsection{Method and Result}
 
-In order to produce the required plots, the globe MVA framework code was modified so as to produce an additional root tree, containing only the information needed for this study. The writing of this additional tree took place after all the actual analysis within the framework was complete. In order to measure the effective energy resolution of the photons, it was necessary to compare the ``true'' energy of the photons $E_{true}$(as generated in the simulation) with the ``reco'' energy of the photons $E_{reco}$ (as provided after reconstruction and application of corrections in the the globe framework). To make this comparison in a meaningful way, the generated photons and the reconstructed needed to be matched correctly. This was done using an unambiguous geometrical method: for each generated photon in an event, the value of $\Delta R = \sqrt{\Delta \eta^2 + \Delta \phi^2}$ (where $\Delta $ refers to the difference between generated and reconstructed values) was calculated for the two reconstructed photons. The reconstructed photon minimising the value of $\Delta R$ was chosen as the match for that generated photon. (DELTA R and DELTA ETA PLOTS??)
+In order to produce the required plots, the \texttt{h2gglobe} MVA framework code was modified so as to produce an additional ROOT \texttt{TTree} (FIXME citation), containing only the information needed for this study. The writing of this additional \texttt{TTree} took place after all the actual analysis within the framework was complete, so the results incorporate all the required corrections.
 
-For each event, each individual photon was categorised first by $R_{9} <0.94$ or $R_{9} \geq 0.94$, then  by its value of $|\eta|$. The width of the $|\eta|$ categories was 0.1, apart from the region near the transition between the ECAL barrel and ECAL encap, where the data are excluded (resulting in two slightly larger categories on either side, namely $ 1.3 \leq |\eta| < 1.4442 $ and $1.566 \leq |\eta| < 1.7$), thus 23 categories. Taking into account the two $R_{9}$ options, this left 46 photon categories. For each one, a histogram of the values of $E_{reco}/E_{true}$ was created. An algorithm is used to calcluate $\sigma_{\text{eff}}$ (defined as half the width of the smallest window containing 68.3\% of events in a distribution). This algorithm recursively scans potential windows in the histogram until the smallest mathcing the required condition is found. A different algorithm also calculates  the ``Full Width Half Maximum'' (FWHM), which is the width of the peak when measured at half of its maximum height. In this case , the algorithm fits each histogram to a combination of a Gaussian and a Crystal Ball function (AVAILABLE IN APPENDIX), then creates a very finely binned histogram of the best fit, and finds the bin with the largest number of events. Then it finds the first bin with half that number of events, and the last bin with half the number of events. For a true Gaussian distribution, $\sigma_{\text{eff}} = \sigma = \text{FWHM}/2\sqrt{2\ln2} \simeq \text{FWHM}/2.35$. In other cases, $\sigma_{\text{eff}} \geq \text{FWHM}/2.35$. Fig. 4 shows examples of these histograms. 
+In order to measure the effective energy resolution, it was necessary to compare the \textit{true} energy of the photons $E_{true}$ (as generated in the simulation) with the \textit{reconstructed} energy of the photons $E_{reco}$ (as provided after reconstruction and application of corrections in the the \texttt{h2gglobe} framework). To make this comparison in a meaningful way, the generated and reconstructed photons needed to be matched correctly. This was done using an unambiguous geometrical method: for each generated photon in an event, the value of $\Delta R = \sqrt{\Delta \eta^2 + \Delta \phi^2}$ (where $\Delta $ refers to the difference between generated and reconstructed values of the quantity) was calculated for the two reconstructed photons. The reconstructed photon minimising the value of $\Delta R$ was chosen as the match for that generated photon.
+
+For each event, both photons were individually categorised first by $R_{9} <0.94$ or $R_{9} \geq 0.94$, then by their $|\eta|$ position within the detector. The width of the $|\eta|$ categories was 0.1, apart from the region near the transition between the ECAL barrel and ECAL encap, where the data are excluded (resulting in two slightly larger categories on either side, namely $ 1.3 \leq |\eta| < 1.4442 $ and $1.566 \leq |\eta| < 1.7$), thus 23 categories. Taking into account the two $R_{9}$ options, this left 46 photon categories. For each one, a histogram of the values of $E_{reco}/E_{true}$ was created. An algorithm was used to calcluate $\sigma_{\text{eff}}$ (defined as half the width of the smallest window containing 68.3\% of events in a distribution). This algorithm recursively scanned potential windows in the histogram until the smallest one matching the required condition was found. A different algorithm also calculated the ``Full Width Half Maximum'' (FWHM), which is the width of the peak when measured at half of its maximum height. In this case, the algorithm fitted each histogram to a combination of a Gaussian and a Crystal Ball (FIXME citation) function, then created a very finely binned histogram of the best fit. The bin with the largest number of events was identified, and then the distance betwen the first bin with half that number of events, and the last bin with half the number of events was returned. For a true Gaussian distribution, $\sigma_{\text{eff}} = \sigma = \text{FWHM}/2\sqrt{2\ln2} \simeq \text{FWHM}/2.35$. In other cases, $\sigma_{\text{eff}} \geq \text{FWHM}/2.35$. Fig. \ref{EtrueEreco} shows examples of these histograms. 
 
 \begin{figure}[h!]
 
   \centering
 \includegraphics[width=0.48\textwidth]{"Hist2_mva"}
 \includegraphics[width=0.48\textwidth]{"Hist25_mva"}
-\caption{Example $E_{reco}/E_{true} $ histograms for two $|\eta|$ and $R_{9}$ categories. The vertical axis indicates the number of events if each event were counted with the weight associated to a GGH event. Overlayed on each plot is the calculated value of  $\sigma_{\text{eff}}$ and $\text{FWHM}/2.35$. For a distribution with a Gaussian peak but non-Gaussian tails, we expect $\sigma_{\text{eff}} \geq \text{FWHM}/2.35$, which is what is observed.}
+\caption{Example $E_{reco}/E_{true} $ histograms for two $|\eta|$ and $R_{9}$ categories. The vertical axis indicates the number of events per bin if each event were counted with the weight of a gluon-gluon fusion event. Overlayed on each plot is the calculated value of  $\sigma_{\text{eff}}$ and $\text{FWHM}/2.35$. For a distribution with a Gaussian peak but non-Gaussian tails, we expect $\sigma_{\text{eff}} \geq \text{FWHM}/2.35$, which is what is observed.}
+\label{EtrueEreco}
 \end{figure}
 
-The values of FWHM are not used in the rest of the study, however they provide a good sense check that the distributions make sense. On the other hand, $\sigma_{\text{eff}}$ is used as the input for the main result. The values of $\sigma_{\text{eff}}$ for the distributions of  $E_{reco}/E_{true}$ are equal to $\sigma_{\text{eff}}/E$ (FIXME why??), and are used as inputs to the effective energy resolution plot. Each of the 46 $|\eta|$ and $R_{9}$ catgeories provide a value, which is then plotted versus $|\eta|$ to give the main plot (Fig.5).
+The values of FWHM were not used in the rest of the study, however they provided a good sense check that the distributions made sense. On the other hand, $\sigma_{\text{eff}}$ was used as the input for the main result. The values of $\sigma_{\text{eff}}$ for the distributions of $E_{reco}/E_{true}$ are equal to $\sigma_{\text{eff}}/E$ (FIXME why??), and were used as inputs to the effective energy resolution plot. Each of the 46 $|\eta|$ and $R_{9}$ catgeories provided a value, which was then plotted versus $|\eta|$ to give the main plot (Fig. \ref{mainPlot}).
 
-As epxected, the effective resolution is concistently worse for low $R_{9}$ categories than for their high $R_9$ equivalent. This is because low $R_9$ photons are likely to have undergone pair conversion, and the resulting electrons and positrons may have emitted energy via bremmstrahlung before hitting the ECAL. Furthermore, the categores where $|\eta|$ lies over a supermodule boundary (vertical dashed lines) have worse resolution than neighbouring categoreis. This is also expected, as the interfaces between teh supermodules are less hermetic than the body of teh supermodules, leading to energy lost between the gaps. Finally, the resolution in the endcaps (ie categoreis where $1.5\leq |\eta| <2.5$) is substantially worse than fhe resolution in the barrel. This is also expected (FIXME wy??).
-In conclusion, this study set out to estimate the individual photon resolution in small $\|eta|$ bins in the CMS ECAL for simulated $H \rightarrow \gamma \gamma$ events at $m_H =125$GeV, after the full and final corrections applied with the globe framwork. The result is that for high $R_9$ photons in the barrel, the effective energy resolution is of the order of $/sim 1\%$ in the barrel and $\sim 2/4\%$ in the encaps. For low $R_9$ photons, the resolution is slightly worse.
+As expected, the effective resolution is concistently worse for low $R_{9}$ categories than for their high $R_9$ equivalent. This is because low $R_9$ photons are more likely to have undergone pair conversion, and the resulting electrons and positrons may have emitted energy via bremmstrahlung before hitting the ECAL. Furthermore, the categories where $|\eta|$ lies over a supermodule boundary (vertical dashed lines) have worse resolution than neighbouring categories. This is also expected, as the interfaces between the supermodules are less hermetic than the faces of the supermodules, leading to energy lost between the gaps. Finally, the resolution in the endcaps (ie categories where $1.5\leq |\eta| <2.5$) is substantially worse than the resolution in the barrel, as expected.
+
+To sum up, this study set out to estimate the individual photon resolution in small $|\eta|$ bins in the CMS ECAL for simulated $H \rightarrow \gamma \gamma$ events at $m_H =125$GeV, after the full and final corrections of the \texttt{h2gglobe} MVA framework had been applied. The result is that for high $R_9$ photons, the effective energy resolution is of the order of $\sim 1\%$ in the barrel and $\sim 2.5\%$ in the encaps. For low $R_9$ photons, the resolution is slightly worse.
+
 \begin{figure}[h!]
-
-  \centering
+\centering
 \includegraphics[width=0.9\textwidth]{"EffSigma_vs_eta_mva"}
-\caption{$\sigma_{\text{eff}}/E$ plotted against $|\eta|$. Horizontal dotted lines shown as guides only. Vertical dashed lines show boundaries between supermodules. The grey band indicates the interfact between the ECAL barrel and encap regions, which we do not study. Horizontal error bars indicate width of $|\eta|$ bin, while vertical error bars (visible chiefly in the high $|\eta|$, low $R_{9}$ categories), indicates the estimated uncertainty on the measurement of the resolution. }
-
+\caption{$\sigma_{\text{eff}}/E$ plotted in 23 $|\eta|$ bins and two $R_9$ categories. The horizontal dotted lines are shown as guides only. The Vertical dashed lines show boundaries between supermodules. The grey band indicates the interface between the ECAL barrel and encap regions, which is not studied. The horizontal error bars indicate the width of the $|\eta|$ bin, while the vertical error bars (visible chiefly in the high $|\eta|$, low $R_{9}$ categories), indicate the estimated uncertainty on the measurement of the resolution.}
+\label{mainPlot}
 \end{figure}
+
 \subsubsection{Estimation of the error}
-The veritcal error bars in Fig. 5 provide an estimate of the uncertainty associated with the measurement of the resolution in each $|\eta|$ and $R_9$ category. The error for a given $|\eta|$ and $R_9$ category was assumed to be at least as large as the standard stastical error, given by $\text{Err}_{\text{stat}} = \sigma_{\text{eff}}/\sqrt{2N}$ (where $N$ is the number of photons in the category). However, additional uncertainty may have been added by the algorithm. To check this, the sample was divide into ten equivalent subsamples. For each subsample, the entire study was rerun, and the resulting ten values of $\sigma_{\text{eff}}/E$ were recorded for each of the 46 $|\eta|$ and $R_9$ categories. The RMS of these ten values was calculated in each case. If the error really were equal to $\text{Err}_{\text{stat}}$, we would expect that the subsample RMS error in each category would be $\sim \sqrt{10} \simeq 3.2$ times larger than the error for the full sample. However, when comparing the caluclated subsample RMS error to the minimum statsitical error for each category, the factor was on average 4.4 rather than 3.2, indicating that the true error is (very roughly) $~1.5$ times larger than $\text{Err}_{\text{stat}} $. As a result, the error added into Fig. 5 was $\text{Err}_{\text{stat}} \times 1.5$, thus providing a rough estimate of the uncertainty of the resolution. For most bins, the fact that $N$ is very large means that the veritcal error bars are completely invisible, however for low $R_9$, high $|\eta|$ categories, which have fewer photons, the error bars are no longer negligeable.
+The veritcal error bars in Fig. \ref{mainPlot} provide an estimate of the uncertainty associated with the measurement of the resolution in each $|\eta|$ and $R_9$ category. The error for a given category was assumed to be at least as large as the standard stastical error, given by $\text{Err}_{\text{stat}} = \sigma_{\text{eff}}/\sqrt{2N}$ (where $N$ is the number of photons in the category). However, additional systematic uncertainty may have been added by the algorithm used to calculate $\sigma_{\text{eff}}$. To check this, the sample was divided into ten equivalent subsamples. For each subsample, the entire study was rerun, and the resulting ten values of $\sigma_{\text{eff}}/E$ were recorded for each of the 46 $|\eta|$ and $R_9$ categories. The RMS error of these ten values was calculated in each case. If the actual error really were equal to $\text{Err}_{\text{stat}}$, we would expect that the subsample RMS error in each category would be $\sim \sqrt{10} \simeq 3.2$ times larger than the error for the full sample. However, when comparing the caluclated subsample RMS error to the minimum statsitical error for each category, the factor was on average 4.4 rather than 3.2, indicating that the true error is (very roughly) $~1.5$ times larger than $\text{Err}_{\text{stat}} $. As a result, the error added into Fig. \ref{mainPlot} was $\text{Err}_{\text{stat}} \times 1.5$, thus providing a rough estimate of the uncertainty of the resolution. For most bins, the fact that $N$ is very large means that the vertical error bars are completely invisible, however for low $R_9$, high $|\eta|$ categories, which have fewer photons, the error bars are no longer negligeable.
 
 \subsubsection{Checks}
 
-Several checks were performed during the course of the study in order to verify the consistency of the results. The main ones are summarised here. Firstly, the photon matchign mechanism was checked thoughly. The good performance of the matchign mechanism can be seen in Fig. 6.
+Several checks were performed during the course of the study in order to verify the consistency of the results. The main ones are summarised here. Firstly, the photon matching mechanism was checked thoughly. The good performance of the mechanism can be seen in Fig. \ref{deltaPlots}.
 
 \begin{figure}[h!]
-
-  \centering
+ \centering
 \includegraphics[width=0.9\textwidth]{"Delta"}
-\caption{ The plot on the left (right) shows $\Delta \eta$ ($\Delta \phi$) for photons used in this study, where $\Delta X$ refers to the difference between $X_{\text{reco}}$ and $X_{\text{true}}$. The resulting distributions are very narrowly centered about 0, showing that the matchign algorithm is perfoming very well. In the rare cases where $\Delta \eta$ and $\Delta \phi$ are different from 0, this is due to poorly reconstruction of photons rather than mismatching.   }
+\caption{ The plot on the left (right) shows $\Delta \eta$ ($\Delta \phi$) for photons used in this study, where $\Delta X$ refers to the difference between $X_{\text{reco}}$ and $X_{\text{true}}$. The resulting distributions are very narrowly centered about 0, showing that the matchign algorithm is perfoming very well. In the rare cases where $\Delta \eta$ and $\Delta \phi$ are different from 0, this is due to poor reconstruction of photons rather than mismatching.}
+\label{deltaPlots}
 \end{figure}
-Secondly, the, the study was run using the CiC (REFER EARLIER FIXME) globe framework, rather than the MVA globe frmaewokr. Sicne the CiC framework was used as a crosscheck for the MVa frmaewokr in the actual lagacy anaylis, it provided and excellent opportuinjty to check consistency in this study. As can be seen in Fig. 7, the CiC version leads to slighly worse resolution in the endcaps, which is as expected since the MVA framework was designed to be more sensitive in this region.
+Secondly, the study was also run using the CiC \texttt{h2gglobe} framework. Since the CiC framework was used as a crosscheck for the MVA framework in the actual legacy analysis, it provided and excellent opportunitty to check consistency in this study. As can be seen in Fig. \ref{cicPlot}, the CiC version leads to slighly worse resolution in the endcaps for low $R_9$, which is as expected since the MVA framework was designed to be more sensitive in this region.
 
 \begin{figure}[h!]
-
   \centering
-\includegraphics[width=0.4\textwidth]{"EffSigma_vs_eta_mva"}
-\includegraphics[width=0.4\textwidth]{"EffSigma_vs_eta_cic"}
-\caption{The plot on the right (left) shows the final result when the initial data are run through the globe CiC (MVA) framework. The results are almost indetical, with the biggest differences obsevrable in the low $R_9$, high $|\eta|$ categories. This is as expected, as the MVA analysis was designed to be more sensitive, especially in this region.}
+  \begin{subfigure}{0.49\textwidth}
+\includegraphics[width=\textwidth]{"EffSigma_vs_eta_mva"}
+\caption{$\frac{\sigma_\text{eff}}{E}$ vs $|\eta|$ for the MVA framework}
+\end{subfigure}
+  \begin{subfigure}{0.49\textwidth}
+  
+\includegraphics[width=\textwidth]{"EffSigma_vs_eta_cic"}
+\caption{$\frac{\sigma_\text{eff}}{E}$ vs $|\eta|$ for the CiC framework}
+\end{subfigure}
+\caption{(a) shows the final result when the initial data are run through the \texttt{h2gglobe} MVA framework, while (b) shows the same plot when the CiC framework is used . The results are almost indetical, with the biggest differences obsvervable in the low $R_9$, high $|\eta|$ categories. This is as expected, as the MVA analysis was designed to be more sensitive, especially in this region.}
+\label{cicPlot}
 \end{figure}
 
-A Final check was run to check whether modifying the binning in of the $E_{\text{reco}}/E_{\text{true}}$ plots had an effect on the result of the $\sigma_{\text{eff}}$ algorithm. Various bin sizes were considered, however, the change in the resulting values of $\sigma_{\text{eff}}$ were less than negligeable (at most 1.7\% in the most extreme cases).
+A Final check was run to check whether modifying the binning in of the $E_{\text{reco}}/E_{\text{true}}$ plots had an effect on the result of the $\sigma_{\text{eff}}$ algorithm. Various bin sizes were considered, however, the change in the resulting values of $\sigma_{\text{eff}}$ were negligeable.
 
-
-
-
-
-
-
-
-\section{ECAL calibration and service work}
+\section{ECAL clustering validation service work}
 \subsection{Overview of the task}
 
-The overall collection of CMS Software is called CMSSW. \textit{``The overall collection of software, referred to as CMSSW, is built around Framework, an Event Data Model, and Services needed by the simulation, calibration and alignment, and reconstruction modules that process event data so that physicists can perform analysis.``}~\cite{CMSSW}
+The CMS Software is called \texttt{CMSSW}, and is defined as follows. \textit{``The overall collection of software, referred to as \texttt{CMSSW,} is built around Framework, an Event Data Model, and Services needed by the simulation, calibration and alignment, and reconstruction modules that process event data so that physicists can perform analysis.``}~\cite{CMSSW}
 
-Effectively, CMSSW provides a way to process and select events from the raw data and allow physicists in the CMS collaboration to analyze the outcome and procude physics results. One way in which CMSSW does this is in the reconstruction of particles. Of particualr interest to the $H \rightarrow \gamma \gamma$ group is the way in which photons are reconstructed within the ECAL. The latest version of CMSSW is known as CMSSW\_7\_0\_X, where the X can represent a number of different sub-versions. A key distinction between this and the version used during run I (known as CMSSW\_5\_3\_X) is indeed the way in which photons are reconstructed. In the new version, a ``Particle Flow'' (PF) (FIXME explain??) approcach has been been implemented. Using the new PF clusters, CMSSW\_7\_0\_X applies the so-called ``moustache clustering'' method, so called because of teh shape of the energy distributions woth respect to the seed crystal (effectively,the new method uses more conplex shapes that simple boxes around crystals, as used in teh preivous ietration). (FIXME picture? more explnatation needed). In this method, all ECAL objects (electrons and photons) are reconstructed with the algorithm and udnergo particle identification as a different time. This method was implemented because it is able to take advamtage of the ECAL granularity to improve conatianment of electrons and photons while rejecting pileup. Advanatges of the method also include better low-$p_T$ electron resolution, particle-based isolation... 
+Effectively, \texttt{CMSSW} provides a way to process and select events from raw data and allows physicists in the CMS collaboration to run analyses and produce physics results. One way in which \texttt{CMSSW} does this is in the reconstruction of particles. Of particular interest to the $H \rightarrow \gamma \gamma$ group is the way in which particles are reconstructed within the ECAL. The latest version of \texttt{CMSSW} is known as \texttt{CMSSW\_7\_0\_X} (we shall refer to it as \texttt{70X} for short), where the \texttt{X} can represent a number of different sub-versions. A key distinction between this and the version used during run I, \texttt{CMSSW\_5\_3\_X} (referred to as \texttt{53X} for short), is indeed the way in which photons and electrons are reconstructed. 
 
-However, although in principle the mew clustering method should provide many advnatgaes, it needs to be validated. Any significant loss in the energy resolution of ECAL objects could have a potentially disastrous effect on the $H \rightarrow \gamma \gamma$ anaylysis in particular, but in general CMS's capability to make important measurements in run II. My service work therefore is to work with the ECAL detector performance group (DPG) to help cehck the performance of CMSSW\_7\_0\_X against the perofmrance of CMMSSW\_5\_3\_X. 
+The ECAL measures energy of impacting particles by estimating the amount of energy deposited by electromagnetic showers within its crystals. However, since the crystals are roughly the size of Molière radius of PbWO$_4$ (which contains 90\% of the shower), it is clear that some of the energy from a single shower will be spread over a number of neighbouring crystals. Therefore, to get the best measurement of energy, neighbouring crystals are ``clustered'' together~\cite{ecalShower}. There are two main strategies for clustering: The cluster is either a fixed matrix around the local maximum  (useful when showers have much higher energy than the ``noise'' in the detector) or a dynamic shape, where energy deposits around the maximum are summed until a noise floor threshold or a different cluster is found. 
+
+On the one hand, \texttt{53X} ,broadly speaking, uses a fixed matrix approach, where the cluster is 5x5 crystals  $\eta$ and$\phi$. However, tracks of electrons from events or pair converting photons will bend in $\phi$ under the influence of the 3.8T magnetic field. As they bend, they may radiate photons through bremmstrahlung. So, a particle may produce energy deposits which spread out in the $\phi$ direction. In order to properly reconstruct the energy of such electrons of pair-converted photons, \texttt{53X} uses a dynamic extension in $\phi$ to pick up sub-clusters.
+
+\texttt{70X}, on the other hand, has implemented a holistic ``particle flow'' (PF) ~\cite{particleFlow} approach to reconstructing events throughout the the whole detector. To do this, even small deposits from other objects needs to be reconstructed, so that they can be used to construct overarching PF jets and calculate missing transverse energy. As part of this, a dynamic shape clustering method has been implemented, which uses information from neighbouring crystals to identify the shape of a cluster, then a performs a regression to estimate the energy of the shower. In this method, all ECAL objects (electrons and photons) are reconstructed with the same algorithm and undergo particle identification at a different time. This method was implemented because it is able to take advantage of the ECAL granularity to improve containment of electrons and photons while rejecting pileup (a key challenge in the environment of run II) by using a noise floor threshold.
+
+However, although in principle the new clustering method should provide some benefits, especially for low transverse momentum objects, it needs to be validated. Any significant loss in the energy resolution of ECAL objects could have a potentially disastrous effect on the $H \rightarrow \gamma \gamma$ analysis in particular, but in general on CMS's capability to make important measurements in run II. My service work therefore is to work with the ECAL detector performance group (DPG) to help check the performance of new clustering method in \texttt{70X} versus \texttt{53X}. 
 
 \subsection{The ECALELF tool}
 
-The \textbf{E}CAL \textbf{Cal}ibration with \textbf{El}ectron \textbf{F}ramework is a generic tool which uses $Z \rightarrow e^+ e^-$ events to monitor and calibrate the ECAL. ECALELF works within CMSSW to provide aligned and calibrated data upon which tests and studies can be run. In this sense, it is an ideal tool to test the new clustering method for electrons, and can be adatpted to validate teh reconstruction of photons also. The general workflow for calibration with ECALELF is to take $RECO$ data and MC  (ie, raw data which has been reconstricted using the native CMSSW version) for a given set of conditions , and apply a selection to retrieve only candidate $Z \rightarrow e^+ e^-$ events. A further selection is made via  BDT to reduce to pool of candidate events. Once this is complete a map between MC and data events based on finely segmented $\eta$ and $R_9$ categories. In general, the two electrons in a candidate event will not belong to the same category. In this case, it is difficult to know what correction factor needs to be applied to the enrgy of each electron in order to obtain the correct inbvariant mass distribution. Howeverm when both electrons in the candidate event belogn to the same $\eta$ and $R_9$ category, once can look at the MC invariant mass distribution in that category, compare it the invariant mass distribution of the candiate data events in that catgeory, and infer thet the correction to be applied to electrons (as a function of energy) in order to retireve the required distribution. In this way, $Z \rightarrow e^+ e^-$ events with both leptons in the same category allow teh calclulation of the requried correction (as a function of energy) to be applied to \textit{individual} electrons in that category. Once this has been done for all categopries, the events where the electrons/positrons belong to different categories can also be corrected (since each one will belong to a category where there requried correction for an individual electron is known). The result will be a set of corrections to apply in any $\eta$,$R_9$ scenario, thus providing the calibration. This ios known as the ``smearing method''.
+The \textbf{E}CAL \textbf{Cal}ibration with \textbf{El}ectron \textbf{F}ramework (\texttt{ECALELF}) is a generic tool which uses $Z \rightarrow e^+ e^-$ events to monitor and calibrate the ECAL (CITE twiki FIXME). \texttt{ECALELF} works within \texttt{CMSSW} to provide aligned and calibrated data upon which tests and studies can be run. In this sense, it is an ideal tool to validate the new clustering method for electrons, and can be adapted to validate the clustering of photons also. The general workflow for calibration with \texttt{ECALELF} is to take \texttt{RECO} data and MC (ie, raw data which has been reconstructed using the native \texttt{CMSSW} version), and apply a selection to retrieve only candidate $Z \rightarrow e^+ e^-$ events. A further selection is made via BDT to reduce to pool of candidate events. Once this is complete, a map is made between MC and data events based on finely segmented $\eta$ and $R_9$ categories for each electron (note that the definition of $R_9$ for electrons is the same as that for photons. $R_9 < 0.94$ is indicative of an electron which has lost a lot of energy through bremmstrahlung, while $R_9 \geq 0.94$ indicates it has lost only a small fraction of energy). The calibration can then be made, as described below.
 
-Apart from atcual calibration, the ECALELF tool can be used to run general studies one Ecal performance using the output data from the setp before the application of the smearing meothod. Namely, one can  theoritcally comapre the ECALELF ntuples resulting from different CMMSSW releases, since the ntuples will be in the same format.
+The objective of the calibration is to provide an energy-dependent correction to apply to individual electrons in each category, in order to make the invariant mass distribution from the data match the distribution from the MC. However, in general, the two electrons in a candidate $Z \rightarrow e^+ e^-$ event will not belong to the same category. In this case, it is difficult to know what correction factor needs to be applied to the energy of each electron in order to obtain the correct invariant mass distribution. However when both electrons in the candidate event belong to the same $\eta$ and $R_9$ category, the correction as a function of energy for both electrons can be assumed to be the same. One can therefore look at the MC invariant mass distribution in that category, compare it the invariant mass distribution of the corresponding candidate events in data, and infer the energy-dependent correction to be applied to electrons in the category in order to retrieve the required distribution. In this way, $Z \rightarrow e^+ e^-$ events with both leptons in the same category allow the calculation of the required correction to be applied to \textit{individual} electrons in that category (and crucially, regardless of the category of the other lepton in the corresponding event). Once this procedure has been followed for all categories, the events where the electrons belong to different categories can also be corrected (since each one will belong to a category where the required correction for an individual electron is known). The result will be a set of corrections to apply in any $\eta$,$R_9$ scenario, thus providing the calibration. This is known as the ``smearing method''.
+
+Apart from actual calibration, the \texttt{ECALELF} tool can be used to run general studies one ECAL performance using the output data from the step before the application of the smearing method. Namely, one can theoretically compare the \texttt{ECALELF} \texttt{ROOT} \texttt{ntuples} (FIXME cite) resulting from different \texttt{CMSSW} releases, since the \texttt{ntuples} will be in the same format.
+
+Although \texttt{ECALELF} provides an opportunity to test the performance of the new clustering method, work needed to be done in order to make the software work in the new \texttt{70X} environment. Various variables had changed from one version to the other, so an update was needed. In order to run a proper comparison, a version of \texttt{ECALELF} which functioned within both \texttt{53X} and \texttt{70X} was needed. In other words, we needed to develop code which could actively detect which \texttt{CMSSW} version was begin used, and make the required substitutions at compile time. I carried out this work and completed it in the first quarter of 2014. The rest of this chapter shows the initial results of the validation.
+
+\subsection{\texttt{CMSSW\_7\_0\_X} and \texttt{CMSSW\_5\_3\_X} electron matching}
+
+As mentioned previously, the output of \texttt{ECALELF} provides a good starting point to compare the performances of \texttt{70X} and \texttt{53X} in reconstructing ECAL objects. Although it deals with $Z\rightarrow e^+ e^-$ events, the calibration can also be applied to photons by reconstructing them electrons, or using photons from the electron showers. The advantage of using \texttt{ECALELF ntuples} is also that the output from both reconstructed datasets is in an identical format.
+
+Ideally, both MC and data from both \texttt{CMSSW} versions would be available, to run the \texttt{ECALELF} tool fully, and work out the best set of corrections to be applied in each case. A re-reconstruction of the full 2012 run I dataset using the \texttt{70X} framework was completed in April 2014. However, at the present time, the MC for \texttt{70X} is not yet available, so preliminary studies are limited to comparing data in \texttt{53X} and data in \texttt{70X}. The objective will be to run a deeper validation once all the required samples become available.
+
+In the meantime, since the data samples processed with \texttt{70X} and \texttt{53X} represented the same underlying raw events, there was an opportunity to compare some basic quantities electron by electron. The idea was to match electrons between samples, and thereby to be able to plot distributions of the fractional changes and differences between the quantities in each of the two frameworks. The obvious way of finding matches was to use a geometrical method, requiring the moduli of $\Delta \eta$ and $\Delta \phi$  (with $\Delta X = X_\texttt{70X} -X_\texttt{53X}$) to both simultaneously be less than some threshold, which was chosen to be 0.05. In addition, such a property was required to hold for \textbf{both} electrons in the $Z\rightarrow e^+ e^-$ event, when comparing to a candidate event in the alternative framework. Only then could a match be declared.
 
 
-Although ECALELF provides an opportunity to test the performance of the new clustering method by comapring it to the previous release's ntuples, work needed to be done in order to make ECALELF work in the new CMSSW environment. Various variables had changed from one version to the other, it an update of teh software was needed. However, it oerder to run a proper conparison, a version of ECALELF which functioned within both 53X and 70X was needed. In other words, we needed to develop code which could activelyd etect which CMSSW version was beign used, and make the required subsitutions at compile time. I carried out this work and compleyted it in the first quarter of 2014.
-
-\subsection{CMSSW\_7\_0\_X and CMSSW\_5\_3\_X electron matching}
-
-As mentioned previously, the output of ECAELEf provides a good starting point to compare the performances of CMSSW\_7\_0\_X and CMSSW\_5\_3\_X in reconstructing ECAL objects. Although it deals with $Z\rightarrow e^+ e^-$ events, the calibration can also be applied to photons by reconstructins electrons asn photons, and using photons from the elctron showers. The advnmatge of using ECALELF ntuples is also that the output from both reconstructed datasets is in an identical fromat once passed through the machinery.
-
-Ideally, both MC and Data from both CMSSW versions would be available, to run the ECALELF tool fully, and work out the best set of corrections to be applied in each case. A re-reconstruction of the full 2012 Run I dataset using the 70X framework was completed in april. However, at the present time, the MC for 70X is not yet available, so prelimianry studies are limited to comparing data in 53X and data in 70X. The objective will be to run a deeper validation once all the required samples become available.
-
-In the meantime, since the data samples processed with 70X and 53X represente the same udnerlyong raw event samples, there is an opprotunity to compare some basic quantities electron-by-electron. The idea is to match electrons in both samples, and thereby to be able to distributions of the fratcioanl changes and differences between the qauntoities in eahc of the two frameworks. 
-
-(FIXME INSERT TABLE WITH SAMPLE NAMES)
-
-The first step, howeverm was to amend ECALELF to procude such a map. In teh ususal use case, ECALEF is designed to take as input one MC and one data sample. The tool therefore had to be modified to accept two data inputs. PArt of my work was to write the algorithm which would match the electrons in one sample with the elctrons in the other. The difficulty is that electrons within events might not be reconstructed in the same order, so for each entry in the first sample, all of the entries in the scond sample neeeded to be scanned for candidates. Given the large number of electrons in any of the run I samples, a consideration was to ensure that running such a program did not take an unreasonable amount of time. To speed up the process, the fact that runNumber and eventNumber of corresponding electrons in eahc sample should match was employed. Another trick was to store a list of all allowed candiate entries in a vector, and then to remove an already-matched entry in case of a match, so that the enxt ietration did not need to scan over events which had already been assigned. Originally, a simple entry-by-entry rejection of entries which did not have a matching eventNumber and runNumber was used, however this version of the programme took $>10$hv to process one of the subsamples. A modificationw as introcuued, which used a new user-defined class compirsing of \texttt{eventNumber} and \texttt{runNumber}  and  a \texttt{std::multimap} class (which replaced the \texttt{vector} in the previous version). The \texttt{std::multimap} class is useful because it allows elements to be mapped to a ``key''. The ``key'' can be used to access the elemts of the texttt{std::multimap}, and especially usefylly, if mutiple entries have the same ``key'', teh class can return a range which can be iterated over. In our case, the new class comprising of ordered \texttt{eventNumber} and \texttt{runNumber} pairs was used as the key for the  \texttt{std::multimap} of candidate entries, allowing the iteration over relevant entries only, rather than iteration over all entries with case-by-case rejection of entries with the worng \texttt{eventNumber} and \texttt{runNumber}. With this new method, the matching of one subsample took around $10$min, and found macthes for $\sim 80\%$ of electrons. (FIXME provide explanation as to why the other 20\% didn't get matched). Teh programme was also able to tell if the order of electrons within an entry was switched, and record this information for use later. The information is stored in a new \texttt{TTree} which stores, for every entry in one tree, whhat the corresponding entry in teh second tree is, and whetehr the order of electrons has been reversed. If no match is found, the entry in teh second \texttt{TTree} is recorded as $-1$.
+The first step, however was to amend \texttt{ECALELF} to produce such a map. Part of my work was to write the algorithm which would match the electrons in one sample with the electrons in the other. The difficulty was that electrons might not be reconstructed in the same order depending on the framework: so for each entry in the first sample, all of the entries in the second sample needed to be scanned for candidates. Given the large number of electrons in any of the run I samples, a consideration was to ensure that running such a program did not take an unreasonable amount of time. To speed up the process, the fact that the \texttt{runNumber} and \texttt{eventNumber} of corresponding electrons in each sample should match was employed. Another trick was to store a list of all allowed candidate entries in a \texttt{std::vector}, and then to remove candidates entries in case of a match. That way, the next iteration would not need to scan over events which had already been assigned. Originally, a simple entry-by-entry rejection of candidates which did not have a matching \texttt{eventNumber} and \texttt{runNumber} was used, however this version of the programme took $>10$h to process one of the subsamples. A modification as introduced, which used a new user-defined class comprising of \texttt{eventNumber} and \texttt{runNumber} and a \texttt{std::multimap} class (which replaced the \texttt{vector} in the previous version). The \texttt{std::multimap} class is useful because it allows elements to be mapped to a ``key''. If multiple entries have the same key, the class can return a range of entries which can be iterated over. In our case, the new class comprising of ordered \texttt{eventNumber} and \texttt{runNumber} pairs was used as the key for the  \texttt{std::multimap} of candidate entries, allowing the iteration over relevant entries only, rather than iteration over all entries with case-by-case rejection of those with the wrong \texttt{eventNumber} and \texttt{runNumber}. With this new method, the matching of one subsample took around $10$min, and found matches for $\sim 80\%$ of electrons. (FIXME provide explanation as to why the other 20\% didn't get matched). The programme was also able to tell if the order of electrons within an entry was switched, and record this information for use later. The information was recorded in a new \texttt{TTree}: for every entry in one tree, the number of the corresponding entry in the second tree, and whether the order of electrons within a pair had been reversed. If no match was found, the matching entry in the second \texttt{TTree} was recorded as $-1$.
 
 \subsection{Initial validation work}
 
-With the two data samples and the disctionary \texttt{TTree} linking them, it was possible to begin comparing quantities from one framework to another. Sme of teh basic qunaitites which I was asked to comapre for the two were: the reconstructed electron Energy, the electron $R_9$, the reconbstructed electron $\eta,\phi$ coordinates, the  $E/p$, the fraction of energy emitted in bremmstrahlung and the invariant mass of the $Z$ boson peak.
+With the two data samples and the dictionary \texttt{TTree} linking them, it was possible to begin comparing quantities from one framework to another. Some of the basic quantities which I was asked to compare for the two were: the reconstructed electron Energy, the electron $R_9$, the reconstructed electron track and supercluster $\eta,\phi$ coordinates, the ratio $E/p$, the fraction of energy emitted in bremmstrahlung and the invariant mass distribution of the $Z \rightarrow e^+ e^-$ system.
 
 \subsubsection{Energy}
 \begin{figure}[h!]
         \centering
         \begin{subfigure}[b]{0.4\textwidth}
                 \includegraphics[width=\textwidth]{Plots/rawEnergySC_EB}
-                \caption{A gull}
-                \label{fig:gull}
+                \caption{\textbf{Raw} energy change (EB electrons).}
+                \label{rawEB}
+                
         \end{subfigure}%
         ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \begin{subfigure}[b]{0.4\textwidth}
                 \includegraphics[width=\textwidth]{Plots/rawEnergySC_EE}
-                \caption{A tiger}
-                \label{fig:tiger}
+                \caption{\textbf{Raw} energy change (EW electrons).}
+                \label{rawEE}
+            
         \end{subfigure}
         ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \begin{subfigure}[b]{0.4\textwidth}
                 \includegraphics[width=\textwidth]{Plots/corrEnergySC_EB}
-                \caption{A mouse}
-                \label{fig:mouse}
+                \caption{\textbf{Corrected} energy change (EB electrons).}
+                \label{corrEB}
+               
         \end{subfigure}
          \begin{subfigure}[b]{0.4\textwidth}
                 \includegraphics[width=\textwidth]{Plots/corrEnergySC_EE}
-                \caption{A mouse}
-                \label{fig:mouse}
+                \caption{\textbf{Corrected} energy change (EW electrons).}
+                \label{corrEE}
+              
         \end{subfigure}
-        \caption{Pictures of animals}\label{fig:animals}
+        \caption{Fractional energy difference $\frac{E_\texttt{70X} -E_\texttt{53X}}{E_\texttt{53X}}$ for electrons in the ECAL barrel (EB) and endcaps (EE) for two versions of reconstructed energy (raw supercluster energy, and corrected supercluster energy).}
+        \label{energyValidation}
 \end{figure}
 
-The reconstruction of the energy of ECAL objects is clearly of paramount interest in this study. Fig. 8 shows the fractional energy difference $(E_{70X}-E_{53X})/E_{53X}$ for two different estimations of energy: the raw energy (Fig. 8.a) and 8.b)), which is simply the sum of the enrgies in the crystals forming the cluster, and the corrected energy (Fig. 8.c) and 8.d)), which is the ``best estimate'' using the most sophisticated regression available for each model. In the latter case, the corrected energy for 53X is the ``best'' option available, while the corrected energy for 70X is simply an initial attempt at correction, which is likely to imrpove greatly once the the sample is calibrated using the MC. The figures are split between ECAL endcaps (EE) and barell (EB). The figures indicate that the average chnage between the corrected energies in the EB is of the order of $\sim 0.12\%$, and in the EE of the order of $\sim0.3\%$. However, this is only a preliminary result and needs to be further examined. For instance, it needs to be understood whether teh ``corrected' energies'' used actually provide a fair comaprison, as this is far from being the best option for 70X in particular.
+The reconstruction of the energy of ECAL objects is clearly of paramount interest in this study. Fig. \ref{energyValidation} shows the fractional energy difference $(E_\texttt{70X}-E_\texttt{53X})/E_\texttt{53X}$ for two different estimations of energy: the raw energy (Fig. \ref{rawEB} and \ref{rawEE}), which is simply the sum of the enrages in the crystals forming the supercluster, and the corrected energy (Fig. \ref{corrEB} and \ref{corrEE}), which is the ``best estimate'' using the most sophisticated regression available for each model. In the latter case, the corrected energy for \texttt{53X} is the ``best'' option available, while the corrected energy for \texttt{70X} is simply an initial attempt at correction, which is likely to improve greatly once the the sample is calibrated using the MC. The figures indicate that the average change between the corrected energies in the EB is of the order of $\sim 0.12\%$, and in the EE of the order of $\sim0.3\%$. However, this is only a preliminary result and needs to be further examined. For instance, it needs to be understood whether the ``corrected' energies'' used actually provide a fair comparison, as this is far from being the best possible estimate for \texttt{70X}.
 
 \subsubsection{$E/p$}
 \begin{figure}[h!]
         \centering
         \begin{subfigure}[b]{0.4\textwidth}
                 \includegraphics[width=\textwidth]{Plots/EbyPdist}
-                \caption{A gull}
-                \label{fig:gull}
-        \end{subfigure}%
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
-          %(or a blank line to force the subfigure onto a new line)
+                \caption{Distributions of the ratio $\frac{E}{p}$ for \texttt{53X} and \texttt{70X}.}
+                \label{EpDist}
+        \end{subfigure}
         \begin{subfigure}[b]{0.4\textwidth}
                 \includegraphics[width=\textwidth]{Plots/EbyP}
-                \caption{A tiger}
-                \label{fig:tiger}
+                \caption{The distribution of $\frac{E}{p}_\texttt{70X} -\frac{E}{p}_\texttt{53X}$.}
+                \label{EpDiff}
         \end{subfigure}
-  
-        \caption{Pictures of animals}\label{fig:animals}
+  \label{EpValidation}
+        \caption{$\frac{E}{p}$ is calculated using the corrected energy.}
 \end{figure}
 
-The quanittiy $E/p$ is important to check because it is used as a direct input into one of the calibration modules. Fig. 9.a) shows the distributions of $E/p$ for all eclectrons in teh sample for each framework: the red histogram represents the distrbution in the 53X framework, while the blue histrogram represents the distribution in the 70X framweok. Only electrons which were matched in both samples were used for these plots. Fig 9.b) represents the differnce between these two quanitities. FIXME why is this importnat?
-
-
+The quantity $E/p$ is important to check because it is used as a direct input into one of the calibration modules. Fig. \ref{EpDist} shows the distributions of $E/p$ for all electrons in the sample for each framework: the red histogram represents the distribution in the \texttt{53X} framework, while the blue histogram represents the distribution in the \texttt{70X} framework. Only electrons which were matched in both samples were used for these plots. Fig. \ref{EpDiff} represents the difference between these two quantities. FIXME why is this important?
 
 \subsubsection{$R_9$}
 \begin{figure}[h!]
         \centering
         \begin{subfigure}[b]{0.4\textwidth}
                 \includegraphics[width=\textwidth]{Plots/R9dist}
-                \caption{A gull}
-                \label{fig:gull}
+                \caption{$R_9$ Distributions in \texttt{53X} (red) and \texttt{70X} (blue).}
+                \label{r9Dist}
         \end{subfigure}%
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
-          %(or a blank line to force the subfigure onto a new line)
         \begin{subfigure}[b]{0.4\textwidth}
                 \includegraphics[width=\textwidth]{Plots/R9}
-                \caption{A tiger}
-                \label{fig:tiger}
+                \caption{The distribution of the difference in $R_9$.}
+                \label{r9Diff}
         \end{subfigure}
        
-        \caption{Pictures of animals}\label{fig:animals}
+        \caption{$R_9$ validation plots.}\label{r9Validation}
 \end{figure}
 
-For electrons, the interpretation of $R_9$ is different to that for photons. In this case, it indicates whether an electron is likely to have emitted a large fraction of its energy through bremmshtalung or not. electrons with $R_9>0.94$ are likely to have showered little, and are known as ``gold'' electrons. On the other hadn, electrons with $R_9\leq 0.94$ are known as ``bad'' electrons, as they will have little more of theyr energy before hitting the detector. In this cas, they are more difficult to reconstruct. Fig. 9.a) shows the distribution of the $R_9$ of electrons in the data samples. The red line refers to electrons reconstrcuted in 53X, while the blue line shows the distributions of electrons reconstructed in 70X. Only electrons which had a match from one sample to the other were included. The distributions match up well, apart from the peak, where the 70X distribution is not as high, and around 0.5, where the 70X distribution shows a bump. These features needs to be investigated, in order to determine what teh cause is. Fig. 9.b) shows the distibution of the difference in $R_9$ (ie $(R_9)_{70X} -(R_9)_{53X}$). This forms a tight peak around 0, indicative that the two versions are generally assigning the same value of $R_9$ to the electrons.
+For electrons, the interpretation of $R_9$ is different to that for photons. In this case, it indicates whether an electron is likely to have emitted a large fraction of its energy through bremmshtalung or not. electrons with $R_9>0.94$ are likely to have lost little. On the other hand, electrons with $R_9\leq 0.94$ will have little more of their energy before hitting the detector. In this case, they are more difficult to reconstruct. Fig. \ref{r9Dist} shows the distribution of the $R_9$ of electrons in the data samples. The red line refers to electrons reconstructed in \texttt{53X}, while the blue line shows the distributions of electrons reconstructed in \texttt{70X}. Only electrons which had a match from one sample to the other were included. The distributions match up well, apart from the peak, where the \texttt{70X} distribution is not as high, and around 0.5, where the \texttt{70X} distribution shows a bump. These features needs to be investigated further. Fig. \ref{r9Diff} shows the distribution of the difference in $R_9$ (ie $(R_9)_{70X} -(R_9)_{53X}$). This forms a tight peak around 0, indicative that the two versions are generally assigning the same value of $R_9$ to the electrons.
 
 \subsubsection{Bremmstrahlung fraction}
 \begin{figure}[h!]
         \centering
         \begin{subfigure}[b]{0.4\textwidth}
                 \includegraphics[width=\textwidth]{Plots/fbrem}
-                \caption{A gull}
-                \label{fig:gull}
+
+             
         \end{subfigure}%
 
-        \caption{Pictures of animals}\label{fig:animals}
+        \caption{Ratio of bremmstrahlung fractions versus $\eta$.}\label{fbremValidation}
 \end{figure}
-A related object is the bremmstrahlung fraction $f_{\text{brem}}$, defined $(p_{\text{in}} -p_{\text{out}})/p_{\text{in}}$ (where $p$ is the elctron 4-momentum and the subscirpts ``in'' and ``out'' refer to whetehr the moentum is measured as the electron leaves or enters the tracker (FIXME check!!)). In theory, this quantity should not chnage between 70X and 53X, and indeed Fig. 10 shows that the ratio of the $f_{\text{brem}}$ in 53X and 70X is consistent with 1 across all of $\eta$.
+A related object is the bremmstrahlung fraction $f_{\text{brem}}$, defined $(p_{\text{in}} -p_{\text{out}})/p_{\text{in}}$ (where $p$ is the electron 4-momentum and the subscripts ``in'' and ``out'' refer to whether the momentum is measured as the electron leaves or enters the tracker (FIXME check!!)). In theory, this quantity should not change between \texttt{70X} and \texttt{53X}, and indeed Fig. \ref{fbremValidation} shows that the ratio of the $f_{\text{brem}}$ in \texttt{53X} and \texttt{70X} is consistent with 1 across all of $\eta$.
 
 \subsubsection{$\eta,\phi$ coordinates}
 \begin{figure}[h!]
         \centering
         \begin{subfigure}[b]{0.22\textwidth}
                 \includegraphics[width=\textwidth]{Plots/eta}
-                \caption{A gull}
-                \label{fig:gull}
+                \caption{$\eta$ of track direction.}
+               
         \end{subfigure}%
         ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \begin{subfigure}[b]{0.22\textwidth}
                 \includegraphics[width=\textwidth]{Plots/phi}
-                \caption{A tiger}
-                \label{fig:tiger}
+                \caption{$\phi$ of track direction.}
+            
         \end{subfigure}
         ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \begin{subfigure}[b]{0.22\textwidth}
                 \includegraphics[width=\textwidth]{Plots/etaSC}
-                \caption{A mouse}
-                \label{fig:mouse}
+                \caption{$\eta$ of SC center.}
+            
         \end{subfigure}
          \begin{subfigure}[b]{0.22\textwidth}
                 \includegraphics[width=\textwidth]{Plots/phiSC}
-                \caption{A mouse}
-                \label{fig:mouse}
+                \caption{$\phi$ of SC center.}
+             
         \end{subfigure}
-        \caption{Pictures of animals}\label{fig:animals}
+        \caption{The distributions of $\Delta\eta,\Delta\phi$ for tracks and superclusters.}\label{fig:posValidation}
 \end{figure}
 
-The position where the electrons hit the ECAL (known as the supercluster position $\eta_{\text{SC}},\phi_{\text{SC}}$) fshould not be largely affected by the change in framewok, and neither should the coordinates of teh electron tracks (in this case, knwon as $\eta,\phi$  ( the difference between the two is that $\eta_{\text{SC}},\phi_{\text{SC}}$ are measured from the center of the detetcor, while $\eta,\phi$ start at the interaction vertex, and thus are shifted in the $z$-direction). Fig. 12 shows the distributions of the chnage in the value of individual electros' reconstructed $\eta_{\text{SC}},\phi_{\text{SC}},\eta \text{ and } \phi$ respectively. As expected, the distribtuions form extremely narrow peaks around zero. This idcates that indeed, the values of the coordinates remain largely unaffected. The values of $\eta_{\text{SC}},\phi_{\text{SC}}$ are more affected than  $\eta,\phi$ , but this makes sense, since $\eta_{\text{SC}},\phi_{\text{SC}}$  are teh coordinates of the most energetic crystal in the cluster, and thus would be more affected by a chnage in clustering algorithm.
+The position where the electrons hit the ECAL (known as the supercluster position $\eta_{\text{SC}},\phi_{\text{SC}}$) should not be largely affected by the change in framework, and neither should the coordinates of the electron tracks (in this case, known as $\eta,\phi$  (the difference between the two is that $\eta_{\text{SC}},\phi_{\text{SC}}$ are measured from the centre of the detector, while $\eta,\phi$ start at the interaction vertex, and thus are shifted in the $z$-direction). Fig. \ref{posValidation} shows the distributions of the change in the value of $\eta_{\text{SC}},\phi_{\text{SC}},\eta \text{ and } \phi$. As expected, the distributions form extremely narrow peaks around zero. This indicates that indeed, the values of the coordinates remain largely unaffected. The values of $\eta_{\text{SC}},\phi_{\text{SC}}$ are more affected than $\eta,\phi$ , but this makes sense, since $\eta_{\text{SC}},\phi_{\text{SC}}$ are the coordinates of the most energetic crystal in the cluster, and thus would be more affected by a change in clustering algorithm.
 
 
 \subsubsection{$Z\rightarrow e^+ e^-$ invariant mass }
@@ -425,29 +476,21 @@ The position where the electrons hit the ECAL (known as the supercluster positio
         \centering
         \begin{subfigure}[b]{0.8\textwidth}
                 \includegraphics[width=\textwidth]{Plots/Zee_corr}
-                \caption{A gull}
-                \label{fig:gull}
-        \end{subfigure}%
-      
-        \caption{Pictures of animals}\label{fig:animals}
+        \end{subfigure}
+        \caption{Invariant mass distribtuions of $Z\rightarrow e^+e^-$ systems when both electrons are in the same $|\eta|,R_9$ category. The red histogram indicates \texttt{53X} while the blue histogram indicates \texttt{70X}.}\label{ZeeValidation}
 \end{figure}
 
-Finally, the invariant mass distributions of various categories of $Z \rightarrow e^+e^-$ system are shown. There are four categoreis considered here: a) both resulting electrons have $R_9 >0.94$ and are both in the EE, b) both with $R_9>0.94$ and in the EB, c) both with $R_9 \leq 0.94$ and in EE and d) c) both with $R_9 \leq 0.94$ and in EB. The red lines indicate the distribtuons obtained when considering electrons in the 53X framewroks, while the blue lines represent electrons from the 70X version. Only matched electrons are included in this plot. The Invariant mass is caluclated using the corrected energy of the electrons - the best available for both 70X and 53X. The plots show good agreement in the two EB catgeories, where the two peaks overalp well, apart from the height of the peak. There is however a visible discrepancy in the EE, the the peaks appear shifted with respect to one another. Futrther investogation is needed to undertsand the differences observed.
+Finally, the invariant mass distributions of various categories of $Z \rightarrow e^+e^-$ system are shown. There are four categories considered here: a) both resulting electrons have $R_9 >0.94$ and are both in the EE, b) both with $R_9>0.94$ and in the EB, c) both with $R_9 \leq 0.94$ and in EE and d) c) both with $R_9 \leq 0.94$ and in EB. The red lines indicate the distributions obtained when considering electrons in the \texttt{53X} frameworks, while the blue lines represent electrons from the \texttt{70X} version. Only matched electrons are included in this plot. The Invariant mass is calculated using the corrected energy of the electrons - the best available for both \texttt{70X} and \texttt{53X}. The plots show good agreement in the two EB categories, where the two peaks overlap well, apart from the height of the peak. There is however a visible discrepancy in the EE, the the peaks appear shifted with respect to one another. Further investigation is needed to understand the differences observed.
 
 \subsection{Next Steps}
 
-This section has shown results from the preliminary steps of validation of the regression in the 70X fraework. At the moment, the comaprisons are being made using data reconstructed in both 53X and 70X, but for full validation, matchign MC sampels are needed also. Although some variables appear to match (namely the $\eta_{\text{SC}},\phi_{\text{SC}},\eta \text{ and }\phi$), more studies are needed to probe differences obsevred between energy-based variables. The MC for the 70X sample is due to become available shortly, so we will eb able to run the ECALELF tool in its entirety, and thus provide a better correction for the 70X energy. This new correction should allow a more fair comaprison to be made between 53X and 70X. I am working with the ECAL detector performance group to pursue this work.
+This section has shown results from the preliminary steps of validation of the regression in the \texttt{70X} framework. At the moment, the comparisons are being made using data reconstructed in both \texttt{53X} and \texttt{70X}, but for full validation, matching MC samples are needed also. Although some variables appear to match (namely the $\eta_{\text{SC}},\phi_{\text{SC}},\eta \text{ and }\phi$), more studies are needed to probe differences observed between energy-based variables. The MC for the \texttt{70X} sample is due to become available shortly, so we will be able to run the \texttt{ECALELF} tool in its entirety, and thus provide a better correction for the \texttt{70X} energy. This new correction should allow a fairer comparison to be made. I am working with the ECAL DPG to pursue this work.
 
 
-
-
-\section{Future work}
-
-The $H \rightarrow \gamma \gamma$ working group are in the process of finalising the legacy analysis for the $\sqrt{s}=7$ and $8$ TeV data samples from run I. This will include a mass measurement for the Higgs boson based on a similar analysis to the one described above. An analysis of the spin properties of this particle, which I was involved in, will also be included. This publication will reflect the final word on the older data samples from the perspective of the CMS $H \rightarrow \gamma \gamma$ analysis. The LHC should begin colliding again in 2015, and new data will then become available. Various new measurements will need to be made to further understand the properties of the Higgs boson. Further data will be able to shed light on the existence of a potential second Higgs boson (multiple such bosons are predicted in various BSM frameworks), and will allow precision measurements of differential cross sections, couplings and spin/parity. Deviations from the expected properties of the SM Higgs boson could signal the potential existence of BSM physics.  $H\rightarrow \gamma \gamma$ will remain one of the most sensitive channels with which to analyse the properties of the Higgs during run II.
-On a more personal note, my work within the CMS experiement will intially be centred around the ECAL, preparing for calibration in run II. The way that photons are reconstructed is being modified, and I will help determine what the effect of this change will be on the sensitivity of the $H \rightarrow \gamma \gamma$ analysis. As 2015 approaches, I will become involved in planning and implementing the next round of analysis, to help further pin down the properties of the Higgs boson.
 
 \section{Conclusion}
-
+The $H \rightarrow \gamma \gamma$ working group are in the process of finalising the legacy analysis for the $\sqrt{s}=7$ and $8$ TeV data samples from run I. This will include a mass measurement for the Higgs boson based on a similar analysis to the one described above. An analysis of the spin properties of this particle, which I was involved in, will also be included. This publication will reflect the final word on the older data samples from the perspective of the CMS $H \rightarrow \gamma \gamma$ analysis. The LHC should begin colliding again in 2015, and new data will then become available. Various new measurements will need to be made to further understand the properties of the Higgs boson. Further data will be able to shed light on the existence of a potential second Higgs boson (multiple such bosons are predicted in various BSM frameworks), and will allow precision measurements of differential cross sections, couplings and spin/parity. Deviations from the expected properties of the SM Higgs boson could signal the potential existence of BSM physics.  $H\rightarrow \gamma \gamma$ will remain one of the most sensitive channels with which to analyse the properties of the Higgs during run II.
+On a more personal note, my work within the CMS experiement will intially be centred around the ECAL, preparing for calibration in run II. The way that photons are reconstructed is being modified, and I will help determine what the effect of this change will be on the sensitivity of the $H \rightarrow \gamma \gamma$ analysis. As 2015 approaches, I will become involved in planning and implementing the next round of analysis, to help further pin down the properties of the Higgs boson.
 To conclude, it is clear that even though we have now discovered the elusive Higgs boson, many questions remain unanswered. In 2015, some BSM theories which might help to answer these questions will be tested. If nothing is found in direct searches, the precision analysis of the properties of the Higgs boson will be one of key avenues with which to search for deviations from the SM. As such, further understanding of the Higgs boson's properties are not only desirable, but indeed imperative if we are to understand more about the fundamental  structure of the universe.
 
 
