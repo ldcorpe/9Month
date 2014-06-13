@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {3}The CMS detector}{4}
 \contentsline {subsection}{\numberline {3.1}Overview of the LHC and CMS}{4}
 \contentsline {subsection}{\numberline {3.2}The electromagnetic calorimeter (ECAL)}{5}
-\contentsline {subsection}{\numberline {3.3}Other subdetectors}{6}
+\contentsline {subsection}{\numberline {3.3}Other sub-detectors}{6}
 \contentsline {section}{\numberline {4}The $H \rightarrow \gamma \gamma $ analysis}{7}
 \contentsline {subsection}{\numberline {4.1}Overview of the legacy analysis}{7}
 \contentsline {subsection}{\numberline {4.2}Photon resolution studies}{8}
@@ -25,5 +25,5 @@
 \contentsline {subsubsection}{\numberline {5.4.5}$\eta ,\phi $ coordinates}{16}
 \contentsline {subsubsection}{\numberline {5.4.6}$Z\rightarrow e^+ e^-$ invariant mass }{17}
 \contentsline {subsection}{\numberline {5.5}Next Steps}{18}
-\contentsline {section}{\numberline {6}Conclusion}{18}
+\contentsline {section}{\numberline {6}Summary and conclusion}{18}
 \contentsline {section}{References}{18}

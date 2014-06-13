@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.30)  10 JUN 2014 15:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.30)  13 JUN 2014 09:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -354,6 +354,10 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count103
 \c@subtable=\count104
 )
+(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count105
 \lst@gtempboxa=\box51
@@ -496,7 +500,7 @@ LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count124
 \c@MaxMatrixCols=\count125
-\dotsspace@=\muskip10
+\dotsspace@=\muskip11
 \c@parentequation=\count126
 \dspbrk@lvl=\count127
 \tag@help=\toks25
@@ -583,18 +587,18 @@ Package tocloft Info: The document has section divisions on input line 44.
 (./9_month_transfer_report.aux)
 \openout1 = `9_month_transfer_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -699,156 +703,156 @@ e
  [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<"HiggsProduction/ggH".pdf, id=22, 159.59625pt x 116.435pt>
+<"HiggsProduction/ggH".pdf, id=23, 159.59625pt x 116.435pt>
 File: "HiggsProduction/ggH".pdf Graphic file (type pdf)
 
 <use "HiggsProduction/ggH".pdf>
-Package pdftex.def Info: "HiggsProduction/ggH".pdf used on input line 123.
+Package pdftex.def Info: "HiggsProduction/ggH".pdf used on input line 125.
 (pdftex.def)             Requested size: 100.15425pt x 73.06839pt.
 
-<"HiggsProduction/vbf".pdf, id=23, 159.59625pt x 124.465pt>
+<"HiggsProduction/vbf".pdf, id=24, 159.59625pt x 124.465pt>
 File: "HiggsProduction/vbf".pdf Graphic file (type pdf)
 
 <use "HiggsProduction/vbf".pdf>
-Package pdftex.def Info: "HiggsProduction/vbf".pdf used on input line 127.
+Package pdftex.def Info: "HiggsProduction/vbf".pdf used on input line 129.
 (pdftex.def)             Requested size: 100.15425pt x 78.10759pt.
 
-<"HiggsProduction/wzH".pdf, id=24, 144.54pt x 116.435pt>
+<"HiggsProduction/wzH".pdf, id=25, 144.54pt x 116.435pt>
 File: "HiggsProduction/wzH".pdf Graphic file (type pdf)
 
 <use "HiggsProduction/wzH".pdf>
-Package pdftex.def Info: "HiggsProduction/wzH".pdf used on input line 131.
+Package pdftex.def Info: "HiggsProduction/wzH".pdf used on input line 133.
 (pdftex.def)             Requested size: 100.15425pt x 80.67957pt.
 
-<"HiggsProduction/ttH".pdf, id=25, 159.59625pt x 137.51375pt>
+<"HiggsProduction/ttH".pdf, id=26, 159.59625pt x 137.51375pt>
 File: "HiggsProduction/ttH".pdf Graphic file (type pdf)
 
 <use "HiggsProduction/ttH".pdf>
-Package pdftex.def Info: "HiggsProduction/ttH".pdf used on input line 135.
+Package pdftex.def Info: "HiggsProduction/ttH".pdf used on input line 137.
 (pdftex.def)             Requested size: 100.15425pt x 86.2963pt.
  [3 <./HiggsProduction/ggH.pdf> <./HiggsProduction/vbf.pdf> <./HiggsProduction/
 wzH.pdf> <./HiggsProduction/ttH.pdf>]
-<"SignalStrength".png, id=63, 606.265pt x 280.04625pt>
+<"SignalStrength".png, id=64, 606.265pt x 280.04625pt>
 File: "SignalStrength".png Graphic file (type png)
 
 <use "SignalStrength".png>
-Package pdftex.def Info: "SignalStrength".png used on input line 148.
+Package pdftex.def Info: "SignalStrength".png used on input line 150.
 (pdftex.def)             Requested size: 455.24408pt x 210.29054pt.
 
-<"CMSExploded".png, id=64, 1075.01625pt x 763.85374pt>
+<"CMSExploded".png, id=65, 1075.01625pt x 763.85374pt>
 File: "CMSExploded".png Graphic file (type png)
  <use "CMSExploded".png>
-Package pdftex.def Info: "CMSExploded".png used on input line 165.
+Package pdftex.def Info: "CMSExploded".png used on input line 167.
 (pdftex.def)             Requested size: 386.96024pt x 274.95216pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4 <./SignalStrength.png>] <"EcalEBEE".png, id=68, 778.91pt x 403.5075pt>
+[4 <./SignalStrength.png>] <"EcalEBEE".png, id=69, 778.91pt x 403.5075pt>
 File: "EcalEBEE".png Graphic file (type png)
 
 <use "EcalEBEE".png>
-Package pdftex.def Info: "EcalEBEE".png used on input line 184.
+Package pdftex.def Info: "EcalEBEE".png used on input line 186.
 (pdftex.def)             Requested size: 364.19664pt x 188.66342pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <./CMSExploded.png>] [6 <./EcalEBEE.png>] [7] [8]
-<"Hist2_mva".jpg, id=86, 569.0058pt x 522.753pt>
+<"Hist2_mva".jpg, id=87, 569.0058pt x 522.753pt>
 File: "Hist2_mva".jpg Graphic file (type jpg)
  <use "Hist2_mva".jpg>
-Package pdftex.def Info: "Hist2_mva".jpg used on input line 262.
+Package pdftex.def Info: "Hist2_mva".jpg used on input line 264.
 (pdftex.def)             Requested size: 218.51521pt x 200.75401pt.
 
-<"Hist25_mva".jpg, id=87, 569.0058pt x 522.753pt>
+<"Hist25_mva".jpg, id=88, 569.0058pt x 522.753pt>
 File: "Hist25_mva".jpg Graphic file (type jpg)
  <use "Hist25_mva".jpg>
-Package pdftex.def Info: "Hist25_mva".jpg used on input line 263.
+Package pdftex.def Info: "Hist25_mva".jpg used on input line 265.
 (pdftex.def)             Requested size: 218.51521pt x 200.75401pt.
 
 [9 <./Hist2_mva.jpg> <./Hist25_mva.jpg>]
-<"EffSigma_vs_eta_mva".jpg, id=91, 569.0058pt x 408.0846pt>
+<"EffSigma_vs_eta_mva".jpg, id=92, 569.0058pt x 408.0846pt>
 File: "EffSigma_vs_eta_mva".jpg Graphic file (type jpg)
 
 <use "EffSigma_vs_eta_mva".jpg>
-Package pdftex.def Info: "EffSigma_vs_eta_mva".jpg used on input line 276.
+Package pdftex.def Info: "EffSigma_vs_eta_mva".jpg used on input line 278.
 (pdftex.def)             Requested size: 409.71689pt x 293.84558pt.
  [10 <./EffSigma_vs_eta_mva.jpg>]
-<"Delta".jpg, id=95, 569.0058pt x 265.9536pt>
+<"Delta".jpg, id=96, 569.0058pt x 265.9536pt>
 File: "Delta".jpg Graphic file (type jpg)
  <use "Delta".jpg>
-Package pdftex.def Info: "Delta".jpg used on input line 290.
+Package pdftex.def Info: "Delta".jpg used on input line 292.
 (pdftex.def)             Requested size: 409.71689pt x 191.50267pt.
 File: "EffSigma_vs_eta_mva".jpg Graphic file (type jpg)
 
 <use "EffSigma_vs_eta_mva".jpg>
-Package pdftex.def Info: "EffSigma_vs_eta_mva".jpg used on input line 299.
+Package pdftex.def Info: "EffSigma_vs_eta_mva".jpg used on input line 301.
 (pdftex.def)             Requested size: 223.0721pt x 159.98051pt.
 
-<"EffSigma_vs_eta_cic".jpg, id=96, 569.0058pt x 408.0846pt>
+<"EffSigma_vs_eta_cic".jpg, id=97, 569.0058pt x 408.0846pt>
 File: "EffSigma_vs_eta_cic".jpg Graphic file (type jpg)
 
 <use "EffSigma_vs_eta_cic".jpg>
-Package pdftex.def Info: "EffSigma_vs_eta_cic".jpg used on input line 304.
+Package pdftex.def Info: "EffSigma_vs_eta_cic".jpg used on input line 306.
 (pdftex.def)             Requested size: 223.0721pt x 159.98051pt.
  [11 <./Delta.jpg> <./EffSigma_vs_eta_cic.jpg>]
-[12] [13] <Plots/rawEnergySC_EB.jpg, id=114, 569.0058pt x 545.8794pt>
+[12] [13] <Plots/rawEnergySC_EB.jpg, id=115, 569.0058pt x 545.8794pt>
 File: Plots/rawEnergySC_EB.jpg Graphic file (type jpg)
 
 <use Plots/rawEnergySC_EB.jpg>
-Package pdftex.def Info: Plots/rawEnergySC_EB.jpg used on input line 357.
+Package pdftex.def Info: Plots/rawEnergySC_EB.jpg used on input line 359.
 (pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
 
-<Plots/rawEnergySC_EE.jpg, id=115, 569.0058pt x 545.8794pt>
+<Plots/rawEnergySC_EE.jpg, id=116, 569.0058pt x 545.8794pt>
 File: Plots/rawEnergySC_EE.jpg Graphic file (type jpg)
 
 <use Plots/rawEnergySC_EE.jpg>
-Package pdftex.def Info: Plots/rawEnergySC_EE.jpg used on input line 365.
+Package pdftex.def Info: Plots/rawEnergySC_EE.jpg used on input line 367.
 (pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
 
-<Plots/corrEnergySC_EB.jpg, id=116, 569.0058pt x 545.8794pt>
+<Plots/corrEnergySC_EB.jpg, id=117, 569.0058pt x 545.8794pt>
 File: Plots/corrEnergySC_EB.jpg Graphic file (type jpg)
 
 <use Plots/corrEnergySC_EB.jpg>
-Package pdftex.def Info: Plots/corrEnergySC_EB.jpg used on input line 373.
+Package pdftex.def Info: Plots/corrEnergySC_EB.jpg used on input line 375.
 (pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
 
-<Plots/corrEnergySC_EE.jpg, id=117, 569.0058pt x 545.8794pt>
+<Plots/corrEnergySC_EE.jpg, id=118, 569.0058pt x 545.8794pt>
 File: Plots/corrEnergySC_EE.jpg Graphic file (type jpg)
 
 <use Plots/corrEnergySC_EE.jpg>
-Package pdftex.def Info: Plots/corrEnergySC_EE.jpg used on input line 379.
+Package pdftex.def Info: Plots/corrEnergySC_EE.jpg used on input line 381.
 (pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Plots/EbyPdist.jpg, id=118, 569.0058pt x 545.8794pt>
+<Plots/EbyPdist.jpg, id=119, 569.0058pt x 545.8794pt>
 File: Plots/EbyPdist.jpg Graphic file (type jpg)
  <use Plots/EbyPdist.jpg>
-Package pdftex.def Info: Plots/EbyPdist.jpg used on input line 394.
+Package pdftex.def Info: Plots/EbyPdist.jpg used on input line 396.
 (pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
 
-<Plots/EbyP.jpg, id=119, 569.0058pt x 545.8794pt>
+<Plots/EbyP.jpg, id=120, 569.0058pt x 545.8794pt>
 File: Plots/EbyP.jpg Graphic file (type jpg)
  <use Plots/EbyP.jpg>
-Package pdftex.def Info: Plots/EbyP.jpg used on input line 399.
+Package pdftex.def Info: Plots/EbyP.jpg used on input line 401.
 (pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Plots/R9dist.jpg, id=120, 569.0058pt x 545.8794pt>
+<Plots/R9dist.jpg, id=121, 569.0058pt x 545.8794pt>
 File: Plots/R9dist.jpg Graphic file (type jpg)
  <use Plots/R9dist.jpg>
-Package pdftex.def Info: Plots/R9dist.jpg used on input line 413.
+Package pdftex.def Info: Plots/R9dist.jpg used on input line 415.
 (pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
 
-<Plots/R9.jpg, id=121, 569.0058pt x 545.8794pt>
+<Plots/R9.jpg, id=122, 569.0058pt x 545.8794pt>
 File: Plots/R9.jpg Graphic file (type jpg)
  <use Plots/R9.jpg>
-Package pdftex.def Info: Plots/R9.jpg used on input line 418.
+Package pdftex.def Info: Plots/R9.jpg used on input line 420.
 (pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
 
 
@@ -856,89 +860,71 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [14] [15 <./Plots/rawEnergySC_EB.jpg> <./Plots/rawEnergySC_EE.jpg> <./Plots/cor
 rEnergySC_EB.jpg> <./Plots/corrEnergySC_EE.jpg> <./Plots/EbyPdist.jpg> <./Plots
-/EbyP.jpg>] <Plots/fbrem.jpg, id=129, 569.0058pt x 545.8794pt>
+/EbyP.jpg>] <Plots/fbrem.jpg, id=130, 569.0058pt x 545.8794pt>
 File: Plots/fbrem.jpg Graphic file (type jpg)
 
 <use Plots/fbrem.jpg>
-Package pdftex.def Info: Plots/fbrem.jpg used on input line 432.
+Package pdftex.def Info: Plots/fbrem.jpg used on input line 434.
 (pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
- <Plots/eta.jpg, id=130, 569.0058pt x 545.8794pt>
+ <Plots/eta.jpg, id=131, 569.0058pt x 545.8794pt>
 File: Plots/eta.jpg Graphic file (type jpg)
 
 <use Plots/eta.jpg>
-Package pdftex.def Info: Plots/eta.jpg used on input line 445.
+Package pdftex.def Info: Plots/eta.jpg used on input line 447.
 (pdftex.def)             Requested size: 100.15425pt x 96.08006pt.
- <Plots/phi.jpg, id=131, 569.0058pt x 545.8794pt>
+ <Plots/phi.jpg, id=132, 569.0058pt x 545.8794pt>
 File: Plots/phi.jpg Graphic file (type jpg)
 
 <use Plots/phi.jpg>
-Package pdftex.def Info: Plots/phi.jpg used on input line 452.
+Package pdftex.def Info: Plots/phi.jpg used on input line 454.
 (pdftex.def)             Requested size: 100.15425pt x 96.08006pt.
- <Plots/etaSC.jpg, id=132, 569.0058pt x 545.8794pt>
+ <Plots/etaSC.jpg, id=133, 569.0058pt x 545.8794pt>
 File: Plots/etaSC.jpg Graphic file (type jpg)
 
 <use Plots/etaSC.jpg>
-Package pdftex.def Info: Plots/etaSC.jpg used on input line 459.
+Package pdftex.def Info: Plots/etaSC.jpg used on input line 461.
 (pdftex.def)             Requested size: 100.15425pt x 96.08006pt.
- <Plots/phiSC.jpg, id=133, 569.0058pt x 545.8794pt>
+ <Plots/phiSC.jpg, id=134, 569.0058pt x 545.8794pt>
 File: Plots/phiSC.jpg Graphic file (type jpg)
 
 <use Plots/phiSC.jpg>
-Package pdftex.def Info: Plots/phiSC.jpg used on input line 464.
+Package pdftex.def Info: Plots/phiSC.jpg used on input line 466.
 (pdftex.def)             Requested size: 100.15425pt x 96.08006pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `posValidation' on page 16 undefined on input line 471
+LaTeX Warning: Reference `posValidation' on page 16 undefined on input line 473
 .
 
 [16 <./Plots/R9dist.jpg> <./Plots/R9.jpg> <./Plots/fbrem.jpg>]
-<Plots/Zee_corr.jpg, id=138, 569.0058pt x 545.8794pt>
+<Plots/Zee_corr.jpg, id=139, 569.0058pt x 545.8794pt>
 File: Plots/Zee_corr.jpg Graphic file (type jpg)
  <use Plots/Zee_corr.jpg>
-Package pdftex.def Info: Plots/Zee_corr.jpg used on input line 478.
+Package pdftex.def Info: Plots/Zee_corr.jpg used on input line 480.
 (pdftex.def)             Requested size: 364.19664pt x 349.39493pt.
 
 [17 <./Plots/eta.jpg> <./Plots/phi.jpg> <./Plots/etaSC.jpg> <./Plots/phiSC.jpg>
- <./Plots/Zee_corr.jpg>] (./9_month_transfer_report.bbl [18] [19]
+ <./Plots/Zee_corr.jpg>] (./9_month_transfer_report.bbl [18]
 Underfull \hbox (badness 1466) in paragraph at lines 162--165
 []\OT1/cmr/m/n/10 S. Dittmaier et al.  Hand-book of LHC Higgs Cross Sec-tions: 
 1. In-clu-sive Ob-serv-ables.
  []
 
-
-Underfull \hbox (badness 4316) in paragraph at lines 173--179
-[]\OT1/cmr/m/n/10 S. Heine-meyer, C. Mar-i-otti, G. Pas-sarino, et al.  Hand-bo
-ok of LHC Higgs Cross
- []
-
-
-Underfull \hbox (badness 3098) in paragraph at lines 173--179
-\OT1/cmr/m/n/10 Sec-tions: 3. Higgs Prop-er-ties.  (arXiv:1307.1347. CERN-2013-
-004), 2013.  Com-ments:
- []
-
-
-Underfull \hbox (badness 2376) in paragraph at lines 173--179
-\OT1/cmr/m/n/10 404 pages, 139 fig-ures, to be sub-mit-ted to CERN Re-port. Wor
-k-ing Group web page:
- []
-
-) [20] (./9_month_transfer_report.aux)
+[19] [20]) [21] (./9_month_transfer_report.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6836 strings out of 493315
- 102008 string characters out of 6137904
- 177735 words of memory out of 5000000
- 10148 multiletter control sequences out of 15000+600000
- 14940 words of font info for 56 fonts, out of 8000000 for 9000
+ 6926 strings out of 493315
+ 103203 string characters out of 6137904
+ 179922 words of memory out of 5000000
+ 10233 multiletter control sequences out of 15000+600000
+ 15107 words of font info for 57 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,10n,43p,2684b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,43p,2858b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
@@ -967,11 +953,12 @@ type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmtt8.pfb>
-Output written on 9_month_transfer_report.pdf (20 pages, 4376226 bytes).
+/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmtt9.pfb>
+Output written on 9_month_transfer_report.pdf (21 pages, 4392321 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
+ 247 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

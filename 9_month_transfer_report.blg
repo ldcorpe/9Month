@@ -13,45 +13,48 @@ Warning--there's a number but no volume in H_XS2
 Warning--empty journal in H_XS3
 Warning--there's a number but no volume in H_XS3
 Warning--empty journal in CMSTDR
-You've used 40 entries,
+Warning--empty author and editor in cmsEcal
+Warning--empty author and editor in cmsHcal
+Warning--empty author and editor in cmsMuon
+You've used 53 entries,
             1791 wiz_defined-function locations,
-            707 strings with 8944 characters,
-and the built_in function-call counts, 8759 in all, are:
-= -- 803
-> -- 338
-< -- 0
-+ -- 129
-- -- 89
-* -- 611
-:= -- 1432
-add.period$ -- 123
-call.type$ -- 40
-change.case$ -- 39
+            755 strings with 10149 characters,
+and the built_in function-call counts, 10589 in all, are:
+= -- 948
+> -- 416
+< -- 1
++ -- 162
+- -- 109
+* -- 683
+:= -- 1690
+add.period$ -- 154
+call.type$ -- 53
+change.case$ -- 44
 chr.to.int$ -- 0
-cite$ -- 50
-duplicate$ -- 354
-empty$ -- 871
-format.name$ -- 89
-if$ -- 1921
+cite$ -- 66
+duplicate$ -- 455
+empty$ -- 1108
+format.name$ -- 109
+if$ -- 2364
 int.to.chr$ -- 0
-int.to.str$ -- 40
-missing$ -- 41
-newline$ -- 205
-num.names$ -- 40
-pop$ -- 60
+int.to.str$ -- 53
+missing$ -- 49
+newline$ -- 258
+num.names$ -- 46
+pop$ -- 119
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 135
+skip$ -- 204
 stack$ -- 0
 substring$ -- 739
-swap$ -- 35
-text.length$ -- 0
+swap$ -- 50
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 10
-while$ -- 82
-width$ -- 42
-write$ -- 440
-(There were 10 warnings)
+warning$ -- 13
+while$ -- 88
+width$ -- 55
+write$ -- 551
+(There were 13 warnings)

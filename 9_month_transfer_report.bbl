@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{CMSHDisc}
+S.~Chatrchyan et~al.
+\newblock {Observation of a new boson at a mass of 125 GeV with the CMS
+  experiment at the LHC}.
+\newblock {\em Phys. Lett.}, B716:30--61, 2012.
+
 \bibitem{RichterPsi}
 J.~E. Augustin et~al.
 \newblock {Discovery of a Narrow Resonance in $e^+ e^-$ Annihilation}.
@@ -112,12 +118,6 @@ K.~Kodama et~al.
 \newblock {Observation of tau neutrino interactions}.
 \newblock {\em Phys. Lett.}, B504:218--224, 2001.
 
-\bibitem{CMSHDisc}
-S.~Chatrchyan et~al.
-\newblock {Observation of a new boson at a mass of 125 GeV with the CMS
-  experiment at the LHC}.
-\newblock {\em Phys. Lett.}, B716:30--61, 2012.
-
 \bibitem{ATLASHDisc}
 G.~Aad et~al.
 \newblock {Observation of a new particle in the search for the Standard Model
@@ -173,9 +173,6 @@ S.~Dittmaier et~al.
 S.~Heinemeyer, C.~Mariotti, G.~Passarino, et~al.
 \newblock {Handbook of LHC Higgs Cross Sections: 3. Higgs Properties}.
 \newblock (arXiv:1307.1347. CERN-2013-004), 2013.
-\newblock Comments: 404 pages, 139 figures, to be submitted to CERN Report.
-  Working Group web page:
-  https://twiki.cern.ch/twiki/bin/view/LHCPhysics/CrossSections.
 
 \bibitem{CMSTDR}
 G.~L. Bayatian et~al.
@@ -237,6 +234,27 @@ S~Chatrchyan et~al.
   in $pp$ collisions at $\sqrt{s}=7$ TeV}.
 \newblock {\em Phys. Lett.}, B710:403--425, 2012.
 
+\bibitem{bernstein}
+\url{http://en.wikipedia.org/wiki/Bernstein_polynomial}.
+
+\bibitem{globe}
+P.~Musella et~al.
+\newblock h2gglobe twiki page.
+\newblock \url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/Higgs2GAnalyzer}.
+
+\bibitem{root}
+R.~Brun and F.~Rademakers.
+\newblock Root - an object oriented data analysis framework.
+\newblock In {\em Proceedings AIHENP'96 Workshop, Lausanne}, volume 389 (1997)
+  81-86, September 1996.
+\newblock See also http://root.cern.ch/.
+
+\bibitem{TTree}
+\url{http://root.cern.ch/root/html/TTree.html}.
+
+\bibitem{crystalball}
+\url{http://en.wikipedia.org/wiki/Crystal_Ball_function}.
+
 \bibitem{CMSSW}
 G.~L. Bayatian, S.~Chatrchyan, G.~Hmayakyan, et~al.
 \newblock {\em {CMS Physics: Technical Design Report Volume 1: Detector
@@ -254,5 +272,13 @@ CMS Collaboration.
 \newblock {Particle–Flow Event Reconstruction in CMS and Performance for
   Jets, Taus, and MET}.
 \newblock {\em CERN}, CMS Physics Analysis Summary, PFT-09-001.
+
+\bibitem{ecalelf}
+S.~Nourbakhsh et~al.
+\newblock Ecalelf twiki page.
+\newblock \url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/ECALELF}.
+
+\bibitem{ntuple}
+\url{http://root.cern.ch/root/html/TNtuple.html}.
 
 \end{thebibliography}
