@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.30)  13 JUN 2014 09:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.30)  2 JUL 2014 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -587,18 +587,18 @@ Package tocloft Info: The document has section divisions on input line 44.
 (./9_month_transfer_report.aux)
 \openout1 = `9_month_transfer_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -613,7 +613,7 @@ LaTeX Font Info:    ... okay on input line 74.
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=455.24408pt
-* \textheight=682.86613pt
+* \textheight=711.3189pt
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
 * \topmargin=0.0pt
@@ -708,257 +708,277 @@ File: "HiggsProduction/ggH".pdf Graphic file (type pdf)
 
 <use "HiggsProduction/ggH".pdf>
 Package pdftex.def Info: "HiggsProduction/ggH".pdf used on input line 125.
-(pdftex.def)             Requested size: 100.15425pt x 73.06839pt.
+(pdftex.def)             Requested size: 111.53256pt x 81.37068pt.
 
-<"HiggsProduction/vbf".pdf, id=24, 159.59625pt x 124.465pt>
+<"HiggsProduction/vbf".pdf, id=24, 159.59625pt x 128.48pt>
 File: "HiggsProduction/vbf".pdf Graphic file (type pdf)
 
 <use "HiggsProduction/vbf".pdf>
 Package pdftex.def Info: "HiggsProduction/vbf".pdf used on input line 129.
-(pdftex.def)             Requested size: 100.15425pt x 78.10759pt.
+(pdftex.def)             Requested size: 111.53256pt x 89.78835pt.
 
-<"HiggsProduction/wzH".pdf, id=25, 144.54pt x 116.435pt>
+<"HiggsProduction/wzH".pdf, id=25, 147.55125pt x 116.435pt>
 File: "HiggsProduction/wzH".pdf Graphic file (type pdf)
 
 <use "HiggsProduction/wzH".pdf>
-Package pdftex.def Info: "HiggsProduction/wzH".pdf used on input line 133.
-(pdftex.def)             Requested size: 100.15425pt x 80.67957pt.
+Package pdftex.def Info: "HiggsProduction/wzH".pdf used on input line 134.
+(pdftex.def)             Requested size: 111.53256pt x 88.01358pt.
 
 <"HiggsProduction/ttH".pdf, id=26, 159.59625pt x 137.51375pt>
 File: "HiggsProduction/ttH".pdf Graphic file (type pdf)
 
 <use "HiggsProduction/ttH".pdf>
-Package pdftex.def Info: "HiggsProduction/ttH".pdf used on input line 137.
-(pdftex.def)             Requested size: 100.15425pt x 86.2963pt.
+Package pdftex.def Info: "HiggsProduction/ttH".pdf used on input line 138.
+(pdftex.def)             Requested size: 111.53256pt x 96.1016pt.
  [3 <./HiggsProduction/ggH.pdf> <./HiggsProduction/vbf.pdf> <./HiggsProduction/
 wzH.pdf> <./HiggsProduction/ttH.pdf>]
-<"SignalStrength".png, id=64, 606.265pt x 280.04625pt>
+<"SignalStrength".png, id=73, 606.265pt x 280.04625pt>
 File: "SignalStrength".png Graphic file (type png)
 
 <use "SignalStrength".png>
-Package pdftex.def Info: "SignalStrength".png used on input line 150.
-(pdftex.def)             Requested size: 455.24408pt x 210.29054pt.
+Package pdftex.def Info: "SignalStrength".png used on input line 151.
+(pdftex.def)             Requested size: 432.48048pt x 199.7743pt.
+ <"Higgs_XS".jpg, id=74, 569.0058pt x 408.0846pt>
+File: "Higgs_XS".jpg Graphic file (type jpg)
 
-<"CMSExploded".png, id=65, 1075.01625pt x 763.85374pt>
+<use "Higgs_XS".jpg>
+Package pdftex.def Info: "Higgs_XS".jpg used on input line 159.
+(pdftex.def)             Requested size: 227.62204pt x 163.2434pt.
+ <"Higgs_BR".jpg, id=75, 569.0058pt x 548.7702pt>
+File: "Higgs_BR".jpg Graphic file (type jpg)
+
+<use "Higgs_BR".jpg>
+Package pdftex.def Info: "Higgs_BR".jpg used on input line 166.
+(pdftex.def)             Requested size: 168.43808pt x 162.44682pt.
+ [4 <./SignalStrength.png> <./Higgs_XS.jpg> <./Higgs_BR.jpg>] <"CMSExploded".pn
+g, id=81, 1075.01625pt x 763.85374pt>
 File: "CMSExploded".png Graphic file (type png)
- <use "CMSExploded".png>
-Package pdftex.def Info: "CMSExploded".png used on input line 167.
-(pdftex.def)             Requested size: 386.96024pt x 274.95216pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4 <./SignalStrength.png>] <"EcalEBEE".png, id=69, 778.91pt x 403.5075pt>
+<use "CMSExploded".png>
+Package pdftex.def Info: "CMSExploded".png used on input line 185.
+(pdftex.def)             Requested size: 409.71689pt x 291.11829pt.
+ [5 <./CMSExploded.png>]
+<"EcalEBEE".png, id=85, 778.91pt x 403.5075pt>
 File: "EcalEBEE".png Graphic file (type png)
-
-<use "EcalEBEE".png>
-Package pdftex.def Info: "EcalEBEE".png used on input line 186.
-(pdftex.def)             Requested size: 364.19664pt x 188.66342pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5 <./CMSExploded.png>] [6 <./EcalEBEE.png>] [7] [8]
-<"Hist2_mva".jpg, id=87, 569.0058pt x 522.753pt>
+ <use "EcalEBEE".png>
+Package pdftex.def Info: "EcalEBEE".png used on input line 204.
+(pdftex.def)             Requested size: 341.43306pt x 176.87273pt.
+ [6 <./EcalEBEE.png>] [7] [8] <"Hist2_mva".jpg, id=97, 569.0058pt x 522.753pt>
 File: "Hist2_mva".jpg Graphic file (type jpg)
- <use "Hist2_mva".jpg>
-Package pdftex.def Info: "Hist2_mva".jpg used on input line 264.
-(pdftex.def)             Requested size: 218.51521pt x 200.75401pt.
 
-<"Hist25_mva".jpg, id=88, 569.0058pt x 522.753pt>
+<use "Hist2_mva".jpg>
+Package pdftex.def Info: "Hist2_mva".jpg used on input line 285.
+(pdftex.def)             Requested size: 136.5746pt x 125.47125pt.
+ <"Hist25_mva".jpg, id=98, 569.0058pt x 522.753pt>
 File: "Hist25_mva".jpg Graphic file (type jpg)
- <use "Hist25_mva".jpg>
-Package pdftex.def Info: "Hist25_mva".jpg used on input line 265.
-(pdftex.def)             Requested size: 218.51521pt x 200.75401pt.
 
-[9 <./Hist2_mva.jpg> <./Hist25_mva.jpg>]
-<"EffSigma_vs_eta_mva".jpg, id=92, 569.0058pt x 408.0846pt>
+<use "Hist25_mva".jpg>
+Package pdftex.def Info: "Hist25_mva".jpg used on input line 286.
+(pdftex.def)             Requested size: 136.5746pt x 125.47125pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9] <"EffSigma_vs_eta_mva".jpg, id=104, 569.0058pt x 408.0846pt>
 File: "EffSigma_vs_eta_mva".jpg Graphic file (type jpg)
 
 <use "EffSigma_vs_eta_mva".jpg>
-Package pdftex.def Info: "EffSigma_vs_eta_mva".jpg used on input line 278.
-(pdftex.def)             Requested size: 409.71689pt x 293.84558pt.
- [10 <./EffSigma_vs_eta_mva.jpg>]
-<"Delta".jpg, id=96, 569.0058pt x 265.9536pt>
+Package pdftex.def Info: "EffSigma_vs_eta_mva".jpg used on input line 299.
+(pdftex.def)             Requested size: 295.90587pt x 212.21765pt.
+ [10 <./Hist2_mva.jpg> <./Hist25_mva.jpg> <./EffSigma_vs_eta_mva.jpg>] <"Delta"
+.jpg, id=108, 569.0058pt x 265.9536pt>
 File: "Delta".jpg Graphic file (type jpg)
- <use "Delta".jpg>
-Package pdftex.def Info: "Delta".jpg used on input line 292.
-(pdftex.def)             Requested size: 409.71689pt x 191.50267pt.
+
+<use "Delta".jpg>
+Package pdftex.def Info: "Delta".jpg used on input line 313.
+(pdftex.def)             Requested size: 273.14922pt x 127.66844pt.
 File: "EffSigma_vs_eta_mva".jpg Graphic file (type jpg)
+ <use "EffSigma_vs_eta_mva".jpg>
+Package pdftex.def Info: "EffSigma_vs_eta_mva".jpg used on input line 322.
+(pdftex.def)             Requested size: 191.20168pt x 137.12793pt.
 
-<use "EffSigma_vs_eta_mva".jpg>
-Package pdftex.def Info: "EffSigma_vs_eta_mva".jpg used on input line 301.
-(pdftex.def)             Requested size: 223.0721pt x 159.98051pt.
-
-<"EffSigma_vs_eta_cic".jpg, id=97, 569.0058pt x 408.0846pt>
+<"EffSigma_vs_eta_cic".jpg, id=109, 569.0058pt x 408.0846pt>
 File: "EffSigma_vs_eta_cic".jpg Graphic file (type jpg)
 
 <use "EffSigma_vs_eta_cic".jpg>
-Package pdftex.def Info: "EffSigma_vs_eta_cic".jpg used on input line 306.
-(pdftex.def)             Requested size: 223.0721pt x 159.98051pt.
+Package pdftex.def Info: "EffSigma_vs_eta_cic".jpg used on input line 327.
+(pdftex.def)             Requested size: 191.20168pt x 137.12793pt.
  [11 <./Delta.jpg> <./EffSigma_vs_eta_cic.jpg>]
-[12] [13] <Plots/rawEnergySC_EB.jpg, id=115, 569.0058pt x 545.8794pt>
-File: Plots/rawEnergySC_EB.jpg Graphic file (type jpg)
+[12] [13]
+<fullRunPlots/corrEnergySC_EB_dists.jpg, id=126, 569.4876pt x 546.3612pt>
+File: fullRunPlots/corrEnergySC_EB_dists.jpg Graphic file (type jpg)
 
-<use Plots/rawEnergySC_EB.jpg>
-Package pdftex.def Info: Plots/rawEnergySC_EB.jpg used on input line 359.
-(pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
+<use fullRunPlots/corrEnergySC_EB_dists.jpg>
+Package pdftex.def Info: fullRunPlots/corrEnergySC_EB_dists.jpg used on input l
+ine 382.
+(pdftex.def)             Requested size: 182.09485pt x 174.69742pt.
 
-<Plots/rawEnergySC_EE.jpg, id=116, 569.0058pt x 545.8794pt>
-File: Plots/rawEnergySC_EE.jpg Graphic file (type jpg)
+<fullRunPlots/corrEnergySC_EE_dists.jpg, id=127, 569.4876pt x 546.3612pt>
+File: fullRunPlots/corrEnergySC_EE_dists.jpg Graphic file (type jpg)
 
-<use Plots/rawEnergySC_EE.jpg>
-Package pdftex.def Info: Plots/rawEnergySC_EE.jpg used on input line 367.
-(pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
+<use fullRunPlots/corrEnergySC_EE_dists.jpg>
+Package pdftex.def Info: fullRunPlots/corrEnergySC_EE_dists.jpg used on input l
+ine 387.
+(pdftex.def)             Requested size: 182.09485pt x 174.69742pt.
 
-<Plots/corrEnergySC_EB.jpg, id=117, 569.0058pt x 545.8794pt>
-File: Plots/corrEnergySC_EB.jpg Graphic file (type jpg)
+<fullRunPlots/corrEnergySC_EB.jpg, id=128, 569.4876pt x 546.3612pt>
+File: fullRunPlots/corrEnergySC_EB.jpg Graphic file (type jpg)
 
-<use Plots/corrEnergySC_EB.jpg>
-Package pdftex.def Info: Plots/corrEnergySC_EB.jpg used on input line 375.
-(pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
+<use fullRunPlots/corrEnergySC_EB.jpg>
+Package pdftex.def Info: fullRunPlots/corrEnergySC_EB.jpg used on input line 39
+2.
+(pdftex.def)             Requested size: 182.09485pt x 174.69742pt.
 
-<Plots/corrEnergySC_EE.jpg, id=118, 569.0058pt x 545.8794pt>
-File: Plots/corrEnergySC_EE.jpg Graphic file (type jpg)
+<fullRunPlots/corrEnergySC_EE.jpg, id=129, 569.4876pt x 546.3612pt>
+File: fullRunPlots/corrEnergySC_EE.jpg Graphic file (type jpg)
 
-<use Plots/corrEnergySC_EE.jpg>
-Package pdftex.def Info: Plots/corrEnergySC_EE.jpg used on input line 381.
-(pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Plots/EbyPdist.jpg, id=119, 569.0058pt x 545.8794pt>
-File: Plots/EbyPdist.jpg Graphic file (type jpg)
- <use Plots/EbyPdist.jpg>
-Package pdftex.def Info: Plots/EbyPdist.jpg used on input line 396.
-(pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
-
-<Plots/EbyP.jpg, id=120, 569.0058pt x 545.8794pt>
-File: Plots/EbyP.jpg Graphic file (type jpg)
- <use Plots/EbyP.jpg>
-Package pdftex.def Info: Plots/EbyP.jpg used on input line 401.
-(pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
+<use fullRunPlots/corrEnergySC_EE.jpg>
+Package pdftex.def Info: fullRunPlots/corrEnergySC_EE.jpg used on input line 39
+7.
+(pdftex.def)             Requested size: 182.09485pt x 174.69742pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Plots/R9dist.jpg, id=121, 569.0058pt x 545.8794pt>
-File: Plots/R9dist.jpg Graphic file (type jpg)
- <use Plots/R9dist.jpg>
-Package pdftex.def Info: Plots/R9dist.jpg used on input line 415.
-(pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
+<fullRunPlots/corrE_profile.jpg, id=130, 569.4876pt x 546.3612pt>
+File: fullRunPlots/corrE_profile.jpg Graphic file (type jpg)
 
-<Plots/R9.jpg, id=122, 569.0058pt x 545.8794pt>
-File: Plots/R9.jpg Graphic file (type jpg)
- <use Plots/R9.jpg>
-Package pdftex.def Info: Plots/R9.jpg used on input line 420.
-(pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
+<use fullRunPlots/corrE_profile.jpg>
+Package pdftex.def Info: fullRunPlots/corrE_profile.jpg used on input line 409.
+
+(pdftex.def)             Requested size: 227.62204pt x 218.37387pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14] [15 <./Plots/rawEnergySC_EB.jpg> <./Plots/rawEnergySC_EE.jpg> <./Plots/cor
-rEnergySC_EB.jpg> <./Plots/corrEnergySC_EE.jpg> <./Plots/EbyPdist.jpg> <./Plots
-/EbyP.jpg>] <Plots/fbrem.jpg, id=130, 569.0058pt x 545.8794pt>
-File: Plots/fbrem.jpg Graphic file (type jpg)
+[14]
 
-<use Plots/fbrem.jpg>
-Package pdftex.def Info: Plots/fbrem.jpg used on input line 434.
-(pdftex.def)             Requested size: 182.09485pt x 174.6933pt.
- <Plots/eta.jpg, id=131, 569.0058pt x 545.8794pt>
-File: Plots/eta.jpg Graphic file (type jpg)
+LaTeX Warning: Text page 15 contains only floats.
 
-<use Plots/eta.jpg>
-Package pdftex.def Info: Plots/eta.jpg used on input line 447.
-(pdftex.def)             Requested size: 100.15425pt x 96.08006pt.
- <Plots/phi.jpg, id=132, 569.0058pt x 545.8794pt>
-File: Plots/phi.jpg Graphic file (type jpg)
+[15 <./fullRunPlots/corrEnergySC_EB_dists.jpg> <./fullRunPlots/corrEnergySC_EE_
+dists.jpg> <./fullRunPlots/corrEnergySC_EB.jpg> <./fullRunPlots/corrEnergySC_EE
+.jpg> <./fullRunPlots/corrE_profile.jpg>]
+<fullRunPlots/R9_dist.jpg, id=138, 569.4876pt x 546.3612pt>
+File: fullRunPlots/R9_dist.jpg Graphic file (type jpg)
 
-<use Plots/phi.jpg>
-Package pdftex.def Info: Plots/phi.jpg used on input line 454.
-(pdftex.def)             Requested size: 100.15425pt x 96.08006pt.
- <Plots/etaSC.jpg, id=133, 569.0058pt x 545.8794pt>
-File: Plots/etaSC.jpg Graphic file (type jpg)
+<use fullRunPlots/R9_dist.jpg>
+Package pdftex.def Info: fullRunPlots/R9_dist.jpg used on input line 420.
+(pdftex.def)             Requested size: 168.43808pt x 161.592pt.
 
-<use Plots/etaSC.jpg>
-Package pdftex.def Info: Plots/etaSC.jpg used on input line 461.
-(pdftex.def)             Requested size: 100.15425pt x 96.08006pt.
- <Plots/phiSC.jpg, id=134, 569.0058pt x 545.8794pt>
-File: Plots/phiSC.jpg Graphic file (type jpg)
+<fullRunPlots/R9.jpg, id=139, 569.4876pt x 546.3612pt>
+File: fullRunPlots/R9.jpg Graphic file (type jpg)
 
-<use Plots/phiSC.jpg>
-Package pdftex.def Info: Plots/phiSC.jpg used on input line 466.
-(pdftex.def)             Requested size: 100.15425pt x 96.08006pt.
+<use fullRunPlots/R9.jpg>
+Package pdftex.def Info: fullRunPlots/R9.jpg used on input line 426.
+(pdftex.def)             Requested size: 168.43808pt x 161.592pt.
 
+<fullRunPlots/eta.jpg, id=140, 569.4876pt x 546.3612pt>
+File: fullRunPlots/eta.jpg Graphic file (type jpg)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<use fullRunPlots/eta.jpg>
+Package pdftex.def Info: fullRunPlots/eta.jpg used on input line 440.
+(pdftex.def)             Requested size: 109.26108pt x 104.81845pt.
 
+<fullRunPlots/phi.jpg, id=141, 569.4876pt x 546.3612pt>
+File: fullRunPlots/phi.jpg Graphic file (type jpg)
 
-LaTeX Warning: Reference `posValidation' on page 16 undefined on input line 473
-.
+<use fullRunPlots/phi.jpg>
+Package pdftex.def Info: fullRunPlots/phi.jpg used on input line 447.
+(pdftex.def)             Requested size: 109.26108pt x 104.81845pt.
 
-[16 <./Plots/R9dist.jpg> <./Plots/R9.jpg> <./Plots/fbrem.jpg>]
-<Plots/Zee_corr.jpg, id=139, 569.0058pt x 545.8794pt>
-File: Plots/Zee_corr.jpg Graphic file (type jpg)
- <use Plots/Zee_corr.jpg>
-Package pdftex.def Info: Plots/Zee_corr.jpg used on input line 480.
-(pdftex.def)             Requested size: 364.19664pt x 349.39493pt.
+<fullRunPlots/etaSC.jpg, id=142, 569.4876pt x 546.3612pt>
+File: fullRunPlots/etaSC.jpg Graphic file (type jpg)
 
-[17 <./Plots/eta.jpg> <./Plots/phi.jpg> <./Plots/etaSC.jpg> <./Plots/phiSC.jpg>
- <./Plots/Zee_corr.jpg>] (./9_month_transfer_report.bbl [18]
+<use fullRunPlots/etaSC.jpg>
+Package pdftex.def Info: fullRunPlots/etaSC.jpg used on input line 454.
+(pdftex.def)             Requested size: 109.26108pt x 104.81845pt.
+
+<fullRunPlots/phiSC.jpg, id=143, 569.4876pt x 546.3612pt>
+File: fullRunPlots/phiSC.jpg Graphic file (type jpg)
+
+<use fullRunPlots/phiSC.jpg>
+Package pdftex.def Info: fullRunPlots/phiSC.jpg used on input line 459.
+(pdftex.def)             Requested size: 109.26108pt x 104.81845pt.
+
+<fullRunPlots/Zee_corr_1.jpg, id=144, 569.4876pt x 546.3612pt>
+File: fullRunPlots/Zee_corr_1.jpg Graphic file (type jpg)
+
+<use fullRunPlots/Zee_corr_1.jpg>
+Package pdftex.def Info: fullRunPlots/Zee_corr_1.jpg used on input line 474.
+(pdftex.def)             Requested size: 159.3382pt x 152.86337pt.
+
+<fullRunPlots/Zee_corr_2.jpg, id=145, 569.4876pt x 546.3612pt>
+File: fullRunPlots/Zee_corr_2.jpg Graphic file (type jpg)
+
+<use fullRunPlots/Zee_corr_2.jpg>
+Package pdftex.def Info: fullRunPlots/Zee_corr_2.jpg used on input line 478.
+(pdftex.def)             Requested size: 159.3382pt x 152.86337pt.
+
+<fullRunPlots/Zee_corr_3.jpg, id=146, 569.4876pt x 546.3612pt>
+File: fullRunPlots/Zee_corr_3.jpg Graphic file (type jpg)
+
+<use fullRunPlots/Zee_corr_3.jpg>
+Package pdftex.def Info: fullRunPlots/Zee_corr_3.jpg used on input line 482.
+(pdftex.def)             Requested size: 159.3382pt x 152.86337pt.
+
+<fullRunPlots/Zee_corr_4.jpg, id=147, 569.4876pt x 546.3612pt>
+File: fullRunPlots/Zee_corr_4.jpg Graphic file (type jpg)
+
+<use fullRunPlots/Zee_corr_4.jpg>
+Package pdftex.def Info: fullRunPlots/Zee_corr_4.jpg used on input line 486.
+(pdftex.def)             Requested size: 159.3382pt x 152.86337pt.
+ [16 <./fullRunPlots/R9_dist.jpg> <./fullRunPlots/R9.jpg> <./fullRunPlots/eta.j
+pg> <./fullRunPlots/phi.jpg> <./fullRunPlots/etaSC.jpg> <./fullRunPlots/phiSC.j
+pg>] [17 <./fullRunPlots/Zee_corr_1.jpg> <./fullRunPlots/Zee_corr_2.jpg> <./ful
+lRunPlots/Zee_corr_3.jpg> <./fullRunPlots/Zee_corr_4.jpg>] (./9_month_transfer_
+report.bbl [18]
 Underfull \hbox (badness 1466) in paragraph at lines 162--165
 []\OT1/cmr/m/n/10 S. Dittmaier et al.  Hand-book of LHC Higgs Cross Sec-tions: 
 1. In-clu-sive Ob-serv-ables.
  []
 
-[19] [20]) [21] (./9_month_transfer_report.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[19]) [20] (./9_month_transfer_report.aux) ) 
 Here is how much of TeX's memory you used:
- 6926 strings out of 493315
- 103203 string characters out of 6137904
- 179922 words of memory out of 5000000
- 10233 multiletter control sequences out of 15000+600000
- 15107 words of font info for 57 fonts, out of 8000000 for 9000
+ 6936 strings out of 493315
+ 103953 string characters out of 6137904
+ 179897 words of memory out of 5000000
+ 10241 multiletter control sequences out of 15000+600000
+ 14630 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,10n,43p,2858b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/201
-3/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2013/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2013/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2013/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2013/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmtt9.pfb>
-Output written on 9_month_transfer_report.pdf (21 pages, 4392321 bytes).
+ 38i,10n,43p,2856b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2013/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2013/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2013/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+s10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on 9_month_transfer_report.pdf (20 pages, 4736909 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
+ 251 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,16 +1,16 @@
 \contentsline {section}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {2}The SM and $H \rightarrow \gamma \gamma $}{3}
 \contentsline {subsection}{\numberline {2.1}The Standard Model}{3}
-\contentsline {subsection}{\numberline {2.2}$H \rightarrow \gamma \gamma $}{3}
-\contentsline {section}{\numberline {3}The CMS detector}{4}
-\contentsline {subsection}{\numberline {3.1}Overview of the LHC and CMS}{4}
-\contentsline {subsection}{\numberline {3.2}The electromagnetic calorimeter (ECAL)}{5}
-\contentsline {subsection}{\numberline {3.3}Other sub-detectors}{6}
+\contentsline {subsection}{\numberline {2.2}Higgs production and the decay $H \rightarrow \gamma \gamma $}{3}
+\contentsline {section}{\numberline {3}The CMS detector}{5}
+\contentsline {subsection}{\numberline {3.1}Overview of the LHC and CMS}{5}
+\contentsline {subsection}{\numberline {3.2}The electromagnetic calorimeter (ECAL)}{6}
+\contentsline {subsection}{\numberline {3.3}Other sub-detectors}{7}
 \contentsline {section}{\numberline {4}The $H \rightarrow \gamma \gamma $ analysis}{7}
 \contentsline {subsection}{\numberline {4.1}Overview of the legacy analysis}{7}
-\contentsline {subsection}{\numberline {4.2}Photon resolution studies}{8}
-\contentsline {subsubsection}{\numberline {4.2.1}Motivation}{8}
-\contentsline {subsubsection}{\numberline {4.2.2}Method and Result}{8}
+\contentsline {subsection}{\numberline {4.2}Photon resolution studies}{9}
+\contentsline {subsubsection}{\numberline {4.2.1}Motivation}{9}
+\contentsline {subsubsection}{\numberline {4.2.2}Method and Result}{9}
 \contentsline {subsubsection}{\numberline {4.2.3}Estimation of the error}{10}
 \contentsline {subsubsection}{\numberline {4.2.4}Checks}{11}
 \contentsline {section}{\numberline {5}ECAL clustering validation service work}{12}
@@ -19,11 +19,9 @@
 \contentsline {subsection}{\numberline {5.3}\texttt {CMSSW\_7\_0\_X} and \texttt {CMSSW\_5\_3\_X} electron matching}{13}
 \contentsline {subsection}{\numberline {5.4}Initial validation work}{14}
 \contentsline {subsubsection}{\numberline {5.4.1}Energy}{14}
-\contentsline {subsubsection}{\numberline {5.4.2}$E/p$}{14}
-\contentsline {subsubsection}{\numberline {5.4.3}$R_9$}{14}
-\contentsline {subsubsection}{\numberline {5.4.4}Bremmstrahlung fraction}{16}
-\contentsline {subsubsection}{\numberline {5.4.5}$\eta ,\phi $ coordinates}{16}
-\contentsline {subsubsection}{\numberline {5.4.6}$Z\rightarrow e^+ e^-$ invariant mass }{17}
-\contentsline {subsection}{\numberline {5.5}Next Steps}{18}
+\contentsline {subsubsection}{\numberline {5.4.2}$R_9$}{16}
+\contentsline {subsubsection}{\numberline {5.4.3}$\eta ,\phi $ coordinates}{16}
+\contentsline {subsubsection}{\numberline {5.4.4}$Z\rightarrow e^+ e^-$ invariant mass }{17}
+\contentsline {subsection}{\numberline {5.5}Next Steps}{17}
 \contentsline {section}{\numberline {6}Summary and conclusion}{18}
 \contentsline {section}{References}{18}

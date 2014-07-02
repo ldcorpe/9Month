@@ -16,45 +16,45 @@ Warning--empty journal in CMSTDR
 Warning--empty author and editor in cmsEcal
 Warning--empty author and editor in cmsHcal
 Warning--empty author and editor in cmsMuon
-You've used 53 entries,
+You've used 54 entries,
             1791 wiz_defined-function locations,
-            755 strings with 10149 characters,
-and the built_in function-call counts, 10589 in all, are:
-= -- 948
-> -- 416
+            760 strings with 10261 characters,
+and the built_in function-call counts, 10715 in all, are:
+= -- 961
+> -- 420
 < -- 1
-+ -- 162
-- -- 109
-* -- 683
-:= -- 1690
-add.period$ -- 154
-call.type$ -- 53
++ -- 164
+- -- 110
+* -- 688
+:= -- 1716
+add.period$ -- 157
+call.type$ -- 54
 change.case$ -- 44
 chr.to.int$ -- 0
-cite$ -- 66
-duplicate$ -- 455
-empty$ -- 1108
-format.name$ -- 109
-if$ -- 2364
+cite$ -- 67
+duplicate$ -- 462
+empty$ -- 1119
+format.name$ -- 110
+if$ -- 2390
 int.to.chr$ -- 0
-int.to.str$ -- 53
+int.to.str$ -- 54
 missing$ -- 49
-newline$ -- 258
-num.names$ -- 46
-pop$ -- 119
+newline$ -- 263
+num.names$ -- 47
+pop$ -- 120
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 204
+skip$ -- 206
 stack$ -- 0
 substring$ -- 739
-swap$ -- 50
+swap$ -- 51
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 13
-while$ -- 88
-width$ -- 55
-write$ -- 551
+while$ -- 89
+width$ -- 56
+write$ -- 563
 (There were 13 warnings)
